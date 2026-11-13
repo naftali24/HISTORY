@@ -253,14 +253,21 @@ async function startTimeline() {
     byId("timeLabel").textContent = copy[language].times[entry.timeGroup];
     byId("previous").disabled = current === 0;
     byId("next").disabled = current === stations.length - 1;
-    byId("picture").hidden = !entry.image;
-    byId("imagePlaceholder").hidden = Boolean(entry.image);
-    if (entry.image) {
-      byId("picture").src = entry.image;
-      byId("picture").alt = station.imageAlt || station.title;
-    } else {
-      byId("picture").removeAttribute("src");
-    }
+    const picture = byId("picture");
+    const placeholder = byId("imagePlaceholder");
+    picture.hidden = true;
+    placeholder.hidden = false;
+    picture.onload = () => {
+      picture.hidden = false;
+      placeholder.hidden = true;
+    };
+    picture.onerror = () => {
+      picture.hidden = true;
+      placeholder.hidden = false;
+    };
+    picture.alt = station.imageAlt || station.title;
+    picture.src = entry.image || "./images/" + encodeURIComponent(entry.id) + ".webp";
+    if (picture.complete && picture.naturalWidth) picture.onload();
   }
 
   function renderLanguage() {
