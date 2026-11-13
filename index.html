@@ -6,12 +6,13 @@
 <title>מהתחלה להיום — נפתלי וה־AI</title>
 <style>
 /* Shared visual rules from the Tanakh reader. */
-*{box-sizing:border-box}html,body{margin:0;height:100%;background:#120b04;color:#fff;font-family:Arial,sans-serif}body{height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#120b04;color:#fff;font-family:Arial,sans-serif}body{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column}
 header{background:#0d0803;padding:7px;border-bottom:1px solid #805b17;flex:0 0 auto}h1{margin:0 0 6px;text-align:center;color:#ffd95e;text-shadow:0 2px #6d3d00;font-size:28px}
 .controls{display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap}select,button,input{font-size:15px;font-weight:700;border:0;border-radius:10px;padding:8px 10px}select,button{background:linear-gradient(#ffe788,#d99a16);color:#241300}
 main{flex:1;min-height:0;overflow-y:auto;padding:8px 7px calc(36vh + 18px);scroll-behavior:smooth}.card{margin:8px auto;padding:11px 12px;border-radius:17px;border:1px solid rgba(255,214,79,.22);background:rgba(0,0,0,.34)}.card.active{background:linear-gradient(135deg,rgba(123,75,0,.58),rgba(20,10,0,.86));border-color:#ffe778;box-shadow:0 0 22px rgba(255,207,70,.38)}
 .num{color:#ffd85b;font-size:14px;font-weight:800}.verse{text-align:center;font-size:clamp(23px,4vw,35px);font-weight:900;line-height:1.34;color:#e5b843;text-shadow:0 1px #fff0a0,0 3px #875100,0 7px 10px #000}.active .verse{color:#fff3a9}.perush{text-align:center;margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,.13);font-size:clamp(18px,3vw,25px);color:#ddd4c1}
 body{max-width:1200px;margin-inline:auto}
+body:fullscreen{max-width:none;width:100%;height:100%}
 header{padding:7px 9px}
 h1{font-size:clamp(20px,4.8vw,28px)}
 #topControls{display:flex;flex-wrap:wrap;gap:5px;align-items:center;justify-content:center}
@@ -54,18 +55,18 @@ main{padding:7px;overflow:hidden;display:flex;flex-direction:column}
 [lang=en] #stationText{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-weight:700;line-height:1.15;color:#fff7b5;text-shadow:0 1px #fff,0 3px #9a5b00,0 0 13px rgba(255,232,95,.85)}
 #status{display:block;text-align:center;font-size:13px;margin-top:5px}
 #status:empty{display:none}
-#imageSection{background:#080502;border-top:2px solid #8e661c;flex:0 0 35%;min-height:100px;display:flex;flex-direction:column}
-#cap{display:grid;grid-template-columns:var(--control-size) 1fr var(--control-size);align-items:center;gap:6px;padding:3px 8px;color:#ffe58a;background:#211207;font-weight:800;text-align:center}
-#cap button{display:grid;place-items:center;padding:0}
+#imageSection{position:relative;flex:0 0 clamp(70px,calc(35dvh - 32px),55%);display:flex;min-height:0}
+#cap{position:relative;z-index:1;flex:0 0 auto;opacity:.5;pointer-events:none;display:grid;grid-template-columns:var(--control-size) 1fr var(--control-size);align-items:center;gap:6px;padding:3px 8px;color:#ffe58a;background:#211207;font-weight:800;text-align:center}
+#cap button{pointer-events:auto;display:grid;place-items:center;padding:0}
 #cap button svg{display:block;width:100%;height:100%}
-#imageBox{width:100%;flex:1;min-height:0;display:grid;place-items:center;background:#111;border:3px solid #8e661c;border-radius:12px;touch-action:none;color:#dbbd71;text-align:center;padding:10px;user-select:none}
-#imageBox img{width:100%;height:100%;min-height:0;object-fit:contain}
-dialog{width:min(460px,calc(100% - 24px));max-height:85dvh;overflow:auto;padding:12px;border:2px solid #d6a332;border-radius:15px;background:linear-gradient(145deg,#56310b,#211005);color:#ffe58a}
-dialog::backdrop{background:#080401d9}
-dialog h2{margin:4px 0 10px;text-align:center;font-size:20px}
-dialog button{width:100%;margin-top:6px;white-space:normal}
-dialog p{margin:6px;text-align:center}
-@media(max-height:480px){#imageSection{flex-basis:29%}.card{padding:5px 8px}header{padding:3px 8px}h1{margin-bottom:3px}}
+#imageBox{width:100%;flex:1;min-height:0;display:grid;place-items:center;background:#111;border:3px solid #8e661c;border-radius:12px;touch-action:none;color:#dbbd71;text-align:center;overflow:hidden;user-select:none}
+#imageBox img{position:absolute;inset:3px;width:calc(100% - 6px);height:calc(100% - 6px);object-fit:contain}
+#periodDialog{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;padding:12px;background:rgba(0,0,0,.82);overflow:auto}.periodPanel{width:min(500px,100%);max-height:85dvh;overflow-y:auto;overscroll-behavior:contain;padding:12px;border:2px solid #d6a332;border-radius:15px;background:linear-gradient(145deg,#56310b,#211005);color:#ffe58a;box-shadow:0 0 35px #000}
+
+#periodDialog h2{margin:4px 0 10px;text-align:center;font-size:20px}
+#periodDialog button{width:100%;margin-top:6px;white-space:normal}
+#periodDialog p{margin:6px;text-align:center}
+@media(max-height:480px){#imageSection{flex-basis:clamp(70px,calc(29dvh - 32px),55%)}.card{padding:5px 8px}header{padding:3px 8px}h1{margin-bottom:3px}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -98,32 +99,1297 @@ dialog p{margin:6px;text-align:center}
 <p id="stationText" class="verse stationBox"></p>
 <div id="stationGlossary" class="stationBox" role="region" tabindex="0"></div>
 </div>
-</article>
-</main>
-<section id="imageSection">
 <div id="cap">
 <button type="button" id="previous"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M11 27 L24 14 L37 27 L31 33 L24 26 L17 33 Z" fill="#080808" stroke="#080808" stroke-width="4" stroke-linejoin="round"/></svg></button>
 <span id="timeLabel"></span>
 <button type="button" id="next"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M11 21 L24 34 L37 21 L31 15 L24 22 L17 15 Z" fill="#080808" stroke="#080808" stroke-width="4" stroke-linejoin="round"/></svg></button>
 </div>
+<section id="imageSection">
 <div id="imageBox"><span id="imagePlaceholder"></span><img id="picture" hidden alt=""></div>
 </section>
-<dialog id="periodDialog" aria-labelledby="periodTitle">
+</article>
+</main>
+<div id="periodDialog" role="dialog" aria-modal="true" aria-labelledby="periodTitle" hidden><div class="periodPanel">
 <h2 id="periodTitle"></h2>
 <div id="periodList"></div>
 <button type="button" id="closePeriods"></button>
-</dialog>
+</div></div>
+<script type="application/json" id="offline-data">{
+  "periods": [
+    {
+      "he": "המפץ הגדול עד היווצרות החיים",
+      "en": "The Big Bang to the origin of life",
+      "ready": true
+    },
+    {
+      "he": "החיים עד האדם",
+      "en": "Life to the emergence of humans",
+      "ready": true,
+      "startStation": "life-01",
+      "sections": [
+        "life-11",
+        "life-16",
+        "life-21",
+        "life-26"
+      ]
+    },
+    {
+      "he": "האדם עד ההיסטוריה",
+      "en": "Humans to recorded history",
+      "ready": true,
+      "startStation": "human-01",
+      "sections": [
+        "human-06",
+        "human-11",
+        "human-16"
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "origin-01",
+      "time": {
+        "he": "לפני כ־13.8 B שנה — ראשית ההתפשטות",
+        "en": "About 13.8 B years ago — expansion begins"
+      },
+      "timeGroup": 0,
+      "he": {
+        "title": "המפץ הגדול",
+        "text": "לפני כ־13.8 B שנה היקום היה חם וצפוף מאוד והחל להתפשט ולהתקרר.",
+        "glossary": "יקום — כל המרחב ומה שיש בו, כולל גלקסיות, כוכבים, חומר וקרינה."
+      },
+      "en": {
+        "title": "The Big Bang",
+        "text": "About 13.8 B years ago, the universe was extremely hot and dense. It expanded and cooled.",
+        "glossary": "Universe — all of space and everything in it, including galaxies, stars, matter, and radiation."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-02",
+      "time": {
+        "he": "לפני כ־13.8 B שנה — ראשית ההתפשטות",
+        "en": "About 13.8 B years ago — expansion begins"
+      },
+      "timeGroup": 0,
+      "he": {
+        "title": "התפשטות המרחב",
+        "text": "התפשטות היקום מגדילה את המרחק בין אזורים מרוחקים במרחב. מנקודת המבט של גלקסיה טיפוסית, גלקסיות רחוקות יותר נוטות להתרחק מהר יותר.",
+        "glossary": "גלקסיה — מערכת גדולה של כוכבים, גז ואבק שהכבידה מחזיקה יחד."
+      },
+      "en": {
+        "title": "The expansion of space",
+        "text": "As the universe expands, distances between widely separated regions grow. From a typical galaxy, more distant galaxies generally appear to recede faster.",
+        "glossary": "Galaxy — a large system of stars, gas, and dust held together by gravity."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-07",
+      "time": {
+        "he": "בדקות הראשונות אחרי המפץ הגדול",
+        "en": "In the first minutes after the Big Bang"
+      },
+      "timeGroup": 0,
+      "he": {
+        "title": "גרעיני האטומים הראשונים",
+        "text": "בדקות הראשונות נוצרו גרעינים של יסודות קלים. רוב החומר הרגיל נשאר בצורת גרעיני מימן, ונוצר גם הליום.",
+        "glossary": "גרעין אטום — החלק המרכזי של האטום. בגרעין של המימן הנפוץ יש פרוטון אחד."
+      },
+      "en": {
+        "title": "The first atomic nuclei",
+        "text": "Light nuclei formed in the first few minutes. Most ordinary matter remained in the form of hydrogen nuclei, and helium also formed.",
+        "glossary": "Atomic nucleus — the center of an atom. The most common hydrogen nucleus contains one proton."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-09",
+      "time": {
+        "he": "כ־380 אלף שנה אחרי המפץ הגדול",
+        "en": "About 380,000 years after the Big Bang"
+      },
+      "timeGroup": 0,
+      "he": {
+        "title": "האטומים הראשונים",
+        "text": "כ־380 אלף שנה אחרי המפץ הגדול, גרעינים לכדו אלקטרונים ונוצרו אטומים ניטרליים. האור יכול היה לנוע בחופשיות.",
+        "glossary": "אטום ניטרלי — אטום שמספר האלקטרונים שלו שווה למספר הפרוטונים שלו, ולכן המטען הכולל שלו אפס."
+      },
+      "en": {
+        "title": "The first atoms",
+        "text": "About 380,000 years after the Big Bang, nuclei captured electrons to form neutral atoms. Light could then travel freely.",
+        "glossary": "Neutral atom — an atom with equal numbers of electrons and protons, giving it zero net charge."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-10",
+      "time": {
+        "he": "כ־380 אלף שנה אחרי המפץ הגדול",
+        "en": "About 380,000 years after the Big Bang"
+      },
+      "timeGroup": 0,
+      "he": {
+        "title": "קרינת הרקע הקוסמית",
+        "text": "האור הקדום הזה עדיין מגיע אלינו. התפשטות היקום מתחה את אורכי הגל שלו, ואנו קולטים אותו היום כקרינת מיקרוגל.",
+        "glossary": "אורך גל — המרחק בין שתי פסגות עוקבות של גל. מיקרוגל — סוג של קרינה בעלת גלים ארוכים מאלו של אור נראה."
+      },
+      "en": {
+        "title": "The cosmic microwave background",
+        "text": "That ancient light still reaches us. Cosmic expansion stretched its wavelengths, and we now detect it as microwave radiation.",
+        "glossary": "Wavelength — the distance between two neighboring wave peaks. Microwaves have longer wavelengths than visible light."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-13",
+      "time": {
+        "he": "במאות מיליוני השנים הראשונות — בקירוב",
+        "en": "In the first few hundred million years — approximate"
+      },
+      "timeGroup": 1,
+      "he": {
+        "title": "הכוכבים הראשונים",
+        "text": "ענני גז התכווצו עד שליבתם התחממה מספיק להיתוך גרעיני. כך נדלקו הכוכבים הראשונים, במועד שעדיין נחקר.",
+        "glossary": "היתוך גרעיני — חיבור של גרעיני אטומים לגרעין כבד יותר. בכוכבים התהליך משחרר אנרגיה."
+      },
+      "en": {
+        "title": "The first stars",
+        "text": "Gas clouds contracted until their cores grew hot enough for nuclear fusion. The first stars lit up, at a time still being investigated.",
+        "glossary": "Nuclear fusion — the joining of atomic nuclei into a heavier nucleus. In stars, this process releases energy."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-15",
+      "time": {
+        "he": "במאות מיליוני השנים הראשונות — בקירוב",
+        "en": "In the first few hundred million years — approximate"
+      },
+      "timeGroup": 1,
+      "he": {
+        "title": "הגלקסיות הראשונות",
+        "text": "כוכבים וגז התקבצו במערכות שהכבידה מחזיקה יחד. אלה היו הגלקסיות הראשונות.",
+        "glossary": "כבידה — המשיכה בין גופים בעלי מסה, שמחזיקה בין השאר כוכבים וגז בגלקסיה."
+      },
+      "en": {
+        "title": "The first galaxies",
+        "text": "Stars and gas gathered into systems held together by gravity. These were the first galaxies.",
+        "glossary": "Gravity — the attraction between objects with mass, which helps hold stars and gas in a galaxy."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-17",
+      "time": {
+        "he": "לאורך B שנים, מאז הכוכבים הראשונים",
+        "en": "Over B years, since the first stars"
+      },
+      "timeGroup": 1,
+      "he": {
+        "title": "יסודות בתוך כוכבים",
+        "text": "דורות של כוכבים יצרו יסודות כגון פחמן וחמצן. יסודות אלה נעשו חלק מכוכבים חדשים, מכוכבי לכת ולימים גם מיצורים חיים.",
+        "glossary": "יסוד כימי — חומר שהאטומים שלו מכילים אותו מספר פרוטונים. פחמן וחמצן הם יסודות."
+      },
+      "en": {
+        "title": "Elements inside stars",
+        "text": "Generations of stars made elements such as carbon and oxygen. Those elements later became part of new stars, planets, and living things.",
+        "glossary": "Chemical element — a substance whose atoms all have the same number of protons. Carbon and oxygen are elements."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-21",
+      "time": {
+        "he": "לפני כ־4.6 B שנה",
+        "en": "About 4.6 B years ago"
+      },
+      "timeGroup": 2,
+      "he": {
+        "title": "דיסקה סביב השמש",
+        "text": "הגז והאבק שנותרו סביב השמש הצעירה יצרו דיסקה מסתובבת. ממנה נבנו כוכבי הלכת וגופים קטנים יותר.",
+        "glossary": "דיסקה — מבנה שטוח ועגול יחסית של גז ואבק שמסתובב סביב גוף מרכזי."
+      },
+      "en": {
+        "title": "A disk around the Sun",
+        "text": "Gas and dust left around the young Sun formed a spinning disk. The planets and smaller bodies grew from it.",
+        "glossary": "Disk — a fairly flat, round structure of gas and dust orbiting a central object."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-25",
+      "time": {
+        "he": "לפני כ־4.6 B שנה",
+        "en": "About 4.6 B years ago"
+      },
+      "timeGroup": 2,
+      "he": {
+        "title": "כדור הארץ נבנה",
+        "text": "כדור הארץ גדל כשגופים קטנים יותר התנגשו בו והוסיפו לו חומר. תיארוך מטאוריטים מסייע לקבוע מתי מערכת השמש נוצרה.",
+        "glossary": "מטאוריט — גוף מהחלל שהגיע לקרקע. תיארוך — אומדן הגיל שלו."
+      },
+      "en": {
+        "title": "Earth takes shape",
+        "text": "Earth grew as smaller bodies collided with it and added material. Dating meteorites helps establish when the solar system formed.",
+        "glossary": "Meteorite — material from space that reached the ground. Dating — estimating how old it is."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-28",
+      "time": {
+        "he": "לפני כ־4.5 B שנה — היווצרות הירח",
+        "en": "About 4.5 B years ago — the Moon forms"
+      },
+      "timeGroup": 2,
+      "he": {
+        "title": "הפגיעה שיצרה את הירח",
+        "text": "לפי ההסבר המוביל, פגיעה גדולה אחת או כמה פגיעות בכדור הארץ הצעיר השליכו חומר למסלול סביבו. מהחומר הזה נוצר הירח.",
+        "glossary": "מסלול — הדרך שבה גוף נע סביב גוף אחר בהשפעת הכבידה."
+      },
+      "en": {
+        "title": "The impact that formed the Moon",
+        "text": "The leading explanation is that one or more large impacts threw material from the young Earth into orbit. The Moon formed from that debris.",
+        "glossary": "Orbit — the path one object follows around another under gravity."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-33",
+      "time": {
+        "he": "בשלבים הראשונים של כדור הארץ",
+        "en": "In Earth's early stages"
+      },
+      "timeGroup": 3,
+      "he": {
+        "title": "מים נוזליים על פני הארץ",
+        "text": "כאשר תנאי פני השטח אפשרו למים להישאר נוזליים, יכלו להיווצר מאגרי מים ואוקיינוסים קדומים.",
+        "glossary": "מים נוזליים — מים במצב הנוזלי. הטמפרטורה והלחץ משפיעים על מצב המים."
+      },
+      "en": {
+        "title": "Liquid water at the surface",
+        "text": "When surface conditions allowed water to remain liquid, bodies of water and early oceans could form.",
+        "glossary": "Liquid water — water in its liquid state. Temperature and pressure affect which state water takes."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-36",
+      "time": {
+        "he": "כדור הארץ הקדום — לפני הופעת העדויות לחיים",
+        "en": "Early Earth — before the first evidence of life"
+      },
+      "timeGroup": 4,
+      "he": {
+        "title": "חומרי הגלם של החיים",
+        "text": "מים, מקורות אנרגיה ותרכובות המכילות פחמן יכלו להשתתף בתגובות שיצרו מולקולות מורכבות יותר.",
+        "glossary": "תרכובת — חומר שמכיל שני יסודות או יותר הקשורים כימית. מולקולה — קבוצה של אטומים קשורים."
+      },
+      "en": {
+        "title": "The ingredients for life",
+        "text": "Water, energy sources, and carbon-containing compounds could take part in reactions that made more complex molecules.",
+        "glossary": "Compound — a substance containing two or more chemically joined elements. Molecule — a group of bonded atoms."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-41",
+      "time": {
+        "he": "לפני הופעת החיים — המועד אינו ידוע",
+        "en": "Before life emerged — timing unknown"
+      },
+      "timeGroup": 4,
+      "he": {
+        "title": "השערת עולם הרנ״א",
+        "text": "רנ״א יכול לשאת מידע, ומולקולות מסוימות שלו יכולות גם לזרז תגובות. לכן יש חוקרים המציעים שהיה לו תפקיד מרכזי לפני הופעת התאים המודרניים.",
+        "glossary": "רנ״א — מולקולה שיכולה לשאת מידע. סוגים מסוימים של רנ״א גם מאיצים תגובות כימיות."
+      },
+      "en": {
+        "title": "The RNA world hypothesis",
+        "text": "RNA can carry information, and some RNA molecules can also catalyze reactions. Some researchers propose that it played a central role before modern cells evolved.",
+        "glossary": "RNA — a molecule that can carry information. Some kinds of RNA also speed up chemical reactions."
+      },
+      "image": null
+    },
+    {
+      "id": "origin-50",
+      "time": {
+        "he": "לפני כ־3.5 B שנה — כבר יש עדויות לחיים",
+        "en": "About 3.5 B years ago — evidence of life"
+      },
+      "timeGroup": 4,
+      "he": {
+        "title": "מכימיה לחיים",
+        "text": "לפני כ־3.5 B שנה כבר יש ראיות לחיים מיקרוביאליים. המקום, הזמן והמסלול המדויק שבהם התחילו החיים נשארים שאלות פתוחות.",
+        "glossary": "חיים מיקרוביאליים — חיים של יצורים זעירים, כגון חיידקים."
+      },
+      "en": {
+        "title": "From chemistry to life",
+        "text": "Evidence indicates that microbial life existed around 3.5 B years ago. Where, when, and exactly how life began remain open questions.",
+        "glossary": "Microbial life — life made up of tiny organisms such as bacteria."
+      },
+      "image": null
+    },
+    {
+      "id": "life-01",
+      "time": {
+        "he": "לפני כ־3.5 B שנה — עדויות לחיים",
+        "en": "About 3.5 B years ago — evidence of life"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "עולם של יצורים חד־תאיים",
+        "text": "בחלק הראשון הגענו לעדויות לחיים קדומים. מכאן נעקוב אחר היצורים החד־תאיים. גם תא אחד יכול לקלוט חומרים, להפיק אנרגיה ולהתרבות.",
+        "glossary": "יצור חד־תאי — יצור שכל גופו הוא תא אחד."
+      },
+      "en": {
+        "title": "A world of single-celled organisms",
+        "text": "Part one ended with evidence of early life. Now we follow single-celled organisms. A single cell can take in materials, obtain energy, and reproduce.",
+        "glossary": "Single-celled organism — an organism made up of one cell."
+      },
+      "image": null
+    },
+    {
+      "id": "life-02",
+      "time": {
+        "he": "לפני B שנים — משוער",
+        "en": "B years ago — estimated"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "חיים בסביבה דלה בחמצן",
+        "text": "בתחילת תולדות החיים היה מעט מאוד חמצן חופשי באוויר. יצורים מסוימים מפיקים אנרגיה בלי להשתמש בחמצן, וגם כיום יש כאלה שחיים בבוץ ובמשקעים.",
+        "glossary": "אל־אווירני — מסוגל לחיות או לפעול בלי להשתמש בחמצן חופשי."
+      },
+      "en": {
+        "title": "Life in low-oxygen environments",
+        "text": "Early in the history of life, the air contained very little free oxygen. Some organisms obtain energy without oxygen. Such organisms still live in mud and sediments today.",
+        "glossary": "Anaerobic — able to live or function without using free oxygen."
+      },
+      "image": null
+    },
+    {
+      "id": "life-03",
+      "time": {
+        "he": "לפני כ־3.5 B שנה",
+        "en": "About 3.5 B years ago"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "מיקרובים בונים שכבות",
+        "text": "במים רדודים קהילות מיקרובים יכולות ללכוד גרגרים ולעודד הצטברות מינרלים. כך נוצרות שכבות. בסלעים קדומים נמצאו צורות דומות, ואת מקורן בודקים גם לפי הרכב הסלע וסביבת היווצרותו.",
+        "glossary": "סטרומטוליט — מבנה שכבתי שיכול להיווצר בעזרת קהילות של מיקרובים."
+      },
+      "en": {
+        "title": "Microbes build layers",
+        "text": "In shallow water, microbial communities can trap grains and help minerals accumulate, building layers. Similar shapes occur in ancient rocks. Researchers also examine the rocks’ composition and setting to work out how the layers formed.",
+        "glossary": "Stromatolite — a layered structure that can form through the activity of microbial communities."
+      },
+      "image": null
+    },
+    {
+      "id": "life-04",
+      "time": {
+        "he": "לפני עליית החמצן באטמוספרה",
+        "en": "Before atmospheric oxygen rose"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "להפיק אנרגיה מאור",
+        "text": "יש חיידקים המשתמשים באור כדי לייצר חומרים הדרושים להם. בחלק מסוגי הפוטוסינתזה התהליך מתרחש בלי שחרור חמצן. גם היום קיימים חיידקים שפועלים כך.",
+        "glossary": "פוטוסינתזה — שימוש באנרגיית האור לייצור חומרים אורגניים."
+      },
+      "en": {
+        "title": "Using light for energy",
+        "text": "Some bacteria use light to make materials they need. Some forms of photosynthesis release no oxygen. Bacteria that work this way still exist today.",
+        "glossary": "Photosynthesis — using light energy to make organic compounds."
+      },
+      "image": null
+    },
+    {
+      "id": "life-05",
+      "time": {
+        "he": "לפני כ־2.4 B שנה או קודם — משוער",
+        "en": "About 2.4 B years ago or earlier — estimated"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "פוטוסינתזה משחררת חמצן",
+        "text": "אבות קדומים של הציאנובקטריה השתמשו באור, במים ובפחמן דו־חמצני לייצור חומרים הדרושים לתא. בתהליך הזה משתחרר חמצן. מועד הופעת היכולת הזאת עדיין נחקר.",
+        "glossary": "ציאנובקטריה — קבוצת חיידקים שמבצעת פוטוסינתזה המשחררת חמצן."
+      },
+      "en": {
+        "title": "Photosynthesis releases oxygen",
+        "text": "Ancestors of cyanobacteria used light, water, and carbon dioxide to make compounds needed by the cell. This process releases oxygen. When it first evolved remains under study.",
+        "glossary": "Cyanobacteria — a group of bacteria that perform oxygen-producing photosynthesis."
+      },
+      "image": null
+    },
+    {
+      "id": "life-06",
+      "time": {
+        "he": "לפני העלייה הגדולה בחמצן ובמהלכה",
+        "en": "Before and during the major rise in oxygen"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "לאן הלך החמצן?",
+        "text": "חלק מהחמצן שהשתחרר במים הגיב עם חומרים כמו ברזל מומס. בתנאים מתאימים נוצרו תחמוצות ברזל ששקעו והצטברו. תגובות כאלה צרכו חלק מן החמצן.",
+        "glossary": "תחמוצת ברזל — תרכובת של ברזל וחמצן. חלודה מכילה תחמוצות ברזל."
+      },
+      "en": {
+        "title": "Where did the oxygen go?",
+        "text": "Some oxygen released into water reacted with substances such as dissolved iron. Under suitable conditions, iron oxides formed, settled, and accumulated. Reactions like these consumed some of the oxygen.",
+        "glossary": "Iron oxide — a compound of iron and oxygen. Rust contains iron oxides."
+      },
+      "image": null
+    },
+    {
+      "id": "life-07",
+      "time": {
+        "he": "לפני כ־2.5–2.3 B שנה",
+        "en": "About 2.5–2.3 B years ago"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "העלייה הגדולה בחמצן",
+        "text": "לאורך זמן החמצן החל להצטבר באטמוספרה. שינויים שנשמרו בסלעים עתיקים עוזרים לזהות את המעבר הזה. רמת החמצן נותרה נמוכה בהרבה מזו שאנו מכירים היום.",
+        "glossary": "אטמוספרה — שכבת הגזים העוטפת את כדור הארץ."
+      },
+      "en": {
+        "title": "The Great Oxidation Event",
+        "text": "Over time, oxygen began to accumulate in the atmosphere. Changes recorded in ancient rocks help identify this transition. Oxygen levels remained far below those of today.",
+        "glossary": "Atmosphere — the layer of gases surrounding Earth."
+      },
+      "image": null
+    },
+    {
+      "id": "life-08",
+      "time": {
+        "he": "במהלך עליית החמצן ואחריה",
+        "en": "During and after the oxygen rise"
+      },
+      "timeGroup": 5,
+      "he": {
+        "title": "חמצן משנה את סביבת החיים",
+        "text": "כשחמצן נעשה זמין ביותר מקומות, יצורים שמסוגלים להשתמש בו יכלו להפיק בעזרתו אנרגיה. ליצורים רגישים לחמצן נותרו סביבות דלות בחמצן, למשל בתוך משקעים.",
+        "glossary": "נשימה תאית בעזרת חמצן — תהליך שבו התא משתמש בחמצן כדי להפיק אנרגיה מחומרי מזון."
+      },
+      "en": {
+        "title": "Oxygen changes habitats",
+        "text": "As oxygen became available in more places, organisms that could use it were able to obtain energy with it. Oxygen-sensitive organisms still had low-oxygen habitats, including sediments.",
+        "glossary": "Aerobic cellular respiration — a process in which a cell uses oxygen to obtain energy from nutrients."
+      },
+      "image": null
+    },
+    {
+      "id": "life-09",
+      "time": {
+        "he": "1.7–1.4 B",
+        "en": "1.7–1.4 B"
+      },
+      "timeGroup": 6,
+      "he": {
+        "title": "תאים בעלי גרעין",
+        "text": "בתאים האלה רוב החומר התורשתי נמצא בתוך גרעין. צורות מורכבות בכמה מאובנים זעירים מסייעות לחוקרים לזהות תאים מהקבוצה הזאת. מועד הופעתם הראשונה עדיין אינו ידוע.",
+        "glossary": "איקריוט — יצור שתאיו בעלי גרעין. גם צמחים ובעלי חיים שייכים לקבוצה הזאת."
+      },
+      "en": {
+        "title": "Cells with a nucleus",
+        "text": "In these cells, most genetic material is enclosed in a nucleus. Complex shapes in some microscopic fossils help researchers identify early members of this group. Their first appearance remains uncertain.",
+        "glossary": "Eukaryote — an organism whose cells have a nucleus. Plants and animals belong to this group."
+      },
+      "image": null
+    },
+    {
+      "id": "life-10",
+      "time": {
+        "he": "בשלב מוקדם בהתפתחות התאים בעלי הגרעין — מועד משוער",
+        "en": "Early in eukaryotic evolution — exact timing unknown"
+      },
+      "timeGroup": 6,
+      "he": {
+        "title": "איך נוצרו המיטוכונדריה?",
+        "text": "ממצאים גנטיים מעידים שמיטוכונדריה התפתחו מחיידק שחי בתוך תא מארח קדום. לאורך הדורות הוא נעשה חלק מן התא. המועד המדויק וסדר השלבים עדיין נחקרים.",
+        "glossary": "מיטוכונדריה — מבנים בתא שעוזרים להמיר אנרגיה ממזון לצורה שהתא יכול להשתמש בה."
+      },
+      "en": {
+        "title": "How did mitochondria originate?",
+        "text": "Genetic evidence indicates that mitochondria evolved from a bacterium that lived inside an early host cell. Over generations it became part of the cell. The timing and sequence of events are still studied.",
+        "glossary": "Mitochondria — structures that help convert energy from food into a form the cell can use."
+      },
+      "image": null
+    },
+    {
+      "id": "life-11",
+      "time": {
+        "he": "מועד משוער",
+        "en": "Estimated timing"
+      },
+      "timeGroup": 7,
+      "he": {
+        "title": "כלורופלסטים ואצות",
+        "text": "חיידק שמבצע פוטוסינתזה נעשה חלק מתא בעל גרעין. מצאצאיו התפתחו הכלורופלסטים של אצות וצמחים.",
+        "glossary": "כלורופלסט — מבנה בתא שבו אנרגיית האור משמשת לייצור סוכרים."
+      },
+      "en": {
+        "title": "Chloroplasts and algae",
+        "text": "A photosynthetic bacterium became part of a cell with a nucleus. Its descendants evolved into the chloroplasts of algae and plants.",
+        "glossary": "Chloroplast — a structure in a cell that uses light energy to make sugars."
+      },
+      "image": null
+    },
+    {
+      "id": "life-12",
+      "time": {
+        "he": "בתקופות שונות",
+        "en": "At different times"
+      },
+      "timeGroup": 7,
+      "he": {
+        "title": "כשתאים נשארים יחד",
+        "text": "אחרי חלוקה, תאי הבת יכולים להישאר מחוברים. בקבוצות שונות של יצורים התפתחה רב־תאיות באופן עצמאי, לפעמים עם חלוקת תפקידים בין התאים.",
+        "glossary": "רב־תאיות — קיום של יצור הבנוי מתאים רבים."
+      },
+      "en": {
+        "title": "When cells stay together",
+        "text": "After division, daughter cells can remain attached. Multicellularity evolved independently in different groups, sometimes with cells taking on different roles.",
+        "glossary": "Multicellularity — being made up of many cells."
+      },
+      "image": null
+    },
+    {
+      "id": "life-13",
+      "time": {
+        "he": "כ־1.05 B",
+        "en": "About 1.05 B"
+      },
+      "timeGroup": 7,
+      "he": {
+        "title": "אצה קדומה במאובן",
+        "text": "במאובני בנגיומורפה רואים תאים המסודרים בחוטים ובצברים. המבנה שלהם דומה לזה של אצות אדומיות, ולכן חוקרים מפרשים אותם כעדות מוקדמת לאצה רב־תאית מורכבת.",
+        "glossary": "אצה אדומית — יצור שמבצע פוטוסינתזה ושייך לקבוצה הכוללת גם אצות ים רב־תאיות."
+      },
+      "en": {
+        "title": "An ancient fossil alga",
+        "text": "Bangiomorpha fossils show cells arranged in filaments and clusters. Their structure resembles that of red algae, so researchers interpret them as early evidence of a complex multicellular alga.",
+        "glossary": "Red alga — a photosynthetic organism from a group that includes multicellular seaweeds."
+      },
+      "image": null
+    },
+    {
+      "id": "life-14",
+      "time": {
+        "he": "לפני כ־575 מיליון שנה",
+        "en": "About 575 million years ago"
+      },
+      "timeGroup": 7,
+      "he": {
+        "title": "יצורים רכי גוף בים",
+        "text": "על קרקעית הים חיו יצורים בעלי גוף שטוח או מסועף. מאובנים שימרו את צורתם. השיוך של חלק מהם לקבוצות בעלי חיים עדיין נחקר.",
+        "glossary": "אדיאקרה — תקופה גאולוגית שקדמה לקמבריון ובה מופיעים מאובנים של יצורים רכי גוף."
+      },
+      "en": {
+        "title": "Soft-bodied life in the sea",
+        "text": "Flat or branching organisms lived on the seafloor. Fossils preserved their shapes. Researchers are still working out how some of them relate to animal groups.",
+        "glossary": "Ediacaran — the geological period before the Cambrian that contains fossils of soft-bodied organisms."
+      },
+      "image": null
+    },
+    {
+      "id": "life-15",
+      "time": {
+        "he": "לפני כ־560 מיליון שנה",
+        "en": "About 560 million years ago"
+      },
+      "timeGroup": 7,
+      "he": {
+        "title": "דיקינסוניה ובעלי החיים הראשונים",
+        "text": "דיקינסוניה הייתה יצור שטוח עם דגם חוזר של פסים. צורת המאובנים והממצאים הכימיים תומכים בשיוכה לבעלי החיים. השלב שבו הופיעו בעלי החיים הראשונים עדיין נחקר.",
+        "glossary": "סמן כימי — חומר שנשמר בסלע ויכול לעזור לזהות את מקורו הביולוגי."
+      },
+      "en": {
+        "title": "Dickinsonia and early animals",
+        "text": "Dickinsonia was a flat organism with a repeating ribbed pattern. Fossil shapes and chemical evidence support its identification as an animal. When the first animals appeared remains under study.",
+        "glossary": "Chemical marker — a substance preserved in rock that can help identify its biological origin."
+      },
+      "image": null
+    },
+    {
+      "id": "life-16",
+      "time": {
+        "he": "לפני 539–485 מיליון שנה",
+        "en": "539–485 million years ago"
+      },
+      "timeGroup": 8,
+      "he": {
+        "title": "החיים מתגוונים בים",
+        "text": "בתקופת הקמבריון מופיעים במאובנים סוגים רבים של בעלי חיים ימיים. שלדים, שריונות ועקבות עוזרים לזהות איך הם חיו.",
+        "glossary": "קמבריון — תקופה גאולוגית שבה מגוון בעלי החיים המתועדים במאובנים גדל במהירות."
+      },
+      "en": {
+        "title": "Life diversifies in the sea",
+        "text": "Cambrian fossils show many kinds of marine animals. Skeletons, shells, and traces give clues to how they lived.",
+        "glossary": "Cambrian — a geological period when the diversity of animals recorded in fossils increased rapidly."
+      },
+      "image": null
+    },
+    {
+      "id": "life-17",
+      "time": {
+        "he": "לפני כ־470 מיליון שנה",
+        "en": "About 470 million years ago"
+      },
+      "timeGroup": 8,
+      "he": {
+        "title": "צמחים ראשונים ביבשה",
+        "text": "בסלעים נמצאו נבגים זעירים שמקשרים לצמחי יבשה קדומים. הם נותנים מושג על גילו של הממצא, והמועד שבו הצמחים הראשונים התבססו ביבשה עדיין נחקר.",
+        "glossary": "נבג — תא רבייה זעיר שממנו יכול להתפתח שלב חדש במחזור החיים."
+      },
+      "en": {
+        "title": "Early plants on land",
+        "text": "Tiny spores in rocks are linked to early land plants. They date the evidence, while the first establishment of plants on land remains under study.",
+        "glossary": "Spore — a tiny reproductive cell that can grow into a new stage of an organism’s life cycle."
+      },
+      "image": null
+    },
+    {
+      "id": "life-18",
+      "time": {
+        "he": "לפני כ־450 מיליון שנה",
+        "en": "About 450 million years ago"
+      },
+      "timeGroup": 8,
+      "he": {
+        "title": "עקבות של בעלי חיים ביבשה",
+        "text": "עקבות עתיקות מלמדות שבעלי חיים נעו על משטחים שנחשפו לאוויר. חלק מהעקבות מיוחסות לפרוקי רגליים, והן מעידות על תנועה ביבשה גם בלי לספר כמה זמן שהו שם.",
+        "glossary": "פרוקי רגליים — קבוצת בעלי חיים בעלי גפיים עם מפרקים, ובה חרקים, סרטנים ועכבישים."
+      },
+      "en": {
+        "title": "Animal tracks on land",
+        "text": "Ancient tracks show that animals moved across surfaces exposed to air. Some tracks are attributed to arthropods. They record movement on land, while the length of the visits is uncertain.",
+        "glossary": "Arthropods — animals with jointed limbs, including insects, crustaceans, and spiders."
+      },
+      "image": null
+    },
+    {
+      "id": "life-19",
+      "time": {
+        "he": "לפני כ־375 מיליון שנה",
+        "en": "About 375 million years ago"
+      },
+      "timeGroup": 8,
+      "he": {
+        "title": "טיקטאליק — סנפירים עם עצמות תומכות",
+        "text": "לטיקטאליק היו קשקשים וסנפירים, וגם צוואר ועצמות סנפיר שיכלו לתמוך בגופו. המאובן עוזר להבין אילו תכונות הופיעו בענף שממנו התפתחו בעלי ארבע גפיים.",
+        "glossary": "סנפיר בשרני — סנפיר שבבסיסו בשר ועצמות פנימיות."
+      },
+      "en": {
+        "title": "Tiktaalik — fins with supporting bones",
+        "text": "Tiktaalik had scales and fins, along with a neck and fin bones that could help support its body. Its fossils show traits that appeared in the lineage from which tetrapods evolved.",
+        "glossary": "Lobe fin — a fin with a fleshy base and internal bones."
+      },
+      "image": null
+    },
+    {
+      "id": "life-20",
+      "time": {
+        "he": "לפני כ־365 מיליון שנה",
+        "en": "About 365 million years ago"
+      },
+      "timeGroup": 8,
+      "he": {
+        "title": "גפיים עם אצבעות במים",
+        "text": "לאקנתוסטגה היו גפיים עם אצבעות ותכונות שמעידות על אורח חיים מימי. המאובן מראה שגפיים עם אצבעות שימשו גם בעלי חוליות שחיו במים.",
+        "glossary": "בעלי ארבע גפיים — קבוצת בעלי חוליות הכוללת את אקנתוסטגה וגם דו־חיים, זוחלים, עופות ויונקים."
+      },
+      "en": {
+        "title": "Limbs with digits in water",
+        "text": "Acanthostega had limbs with digits and traits associated with an aquatic lifestyle. Its fossils show that limbs with digits were also used by vertebrates that lived in water.",
+        "glossary": "Tetrapods — a group of vertebrates that includes Acanthostega as well as amphibians, reptiles, birds, and mammals."
+      },
+      "image": null
+    },
+    {
+      "id": "life-21",
+      "time": {
+        "he": "לפני כ־230 מיליון שנה",
+        "en": "About 230 million years ago"
+      },
+      "timeGroup": 9,
+      "he": {
+        "title": "דינוזאורים ראשונים",
+        "text": "בדרום אמריקה נמצאו מאובנים של דינוזאורים קדומים. חלקם היו קטנים והלכו על שתי רגליים. המאובנים מתעדים את קיומם בטריאס, וייתכן שהקבוצה הופיעה עוד קודם.",
+        "glossary": "טריאס — התקופה הגאולוגית שבה הופיעו הדינוזאורים הקדומים."
+      },
+      "en": {
+        "title": "Early dinosaurs",
+        "text": "Fossils of early dinosaurs have been found in South America. Some were small and walked on two legs. The fossils show they existed in the Triassic, and the group may have appeared earlier.",
+        "glossary": "Triassic — the geological period in which early dinosaurs appeared."
+      },
+      "image": null
+    },
+    {
+      "id": "life-22",
+      "time": {
+        "he": "לפני כ־205 מיליון שנה",
+        "en": "About 205 million years ago"
+      },
+      "timeGroup": 9,
+      "he": {
+        "title": "יונקים קדומים לצד הדינוזאורים",
+        "text": "לצד הדינוזאורים חיו גם קרובים קדומים של היונקים, כמו מורגנוקודון. שיניים מאובנות מראות הבדלים בין שיניים קדמיות ואחוריות ועוזרות לחוקרים להבין איך בעלי החיים האלה אכלו.",
+        "glossary": "מורגנוקודון — בעל חיים קטן וקדום הקרוב ליונקים החיים כיום."
+      },
+      "en": {
+        "title": "Early mammals alongside dinosaurs",
+        "text": "Early mammal relatives such as Morganucodon lived alongside dinosaurs. Fossil teeth show differences between front and back teeth and help researchers work out how these animals ate.",
+        "glossary": "Morganucodon — a small ancient animal related to living mammals."
+      },
+      "image": null
+    },
+    {
+      "id": "life-23",
+      "time": {
+        "he": "לפני כ־150 מיליון שנה",
+        "en": "About 150 million years ago"
+      },
+      "timeGroup": 9,
+      "he": {
+        "title": "הציפורים צומחות מענף של דינוזאורים",
+        "text": "לארכאופטריקס היו נוצות, שיניים וזנב גרמי ארוך. השילוב הזה עוזר להסביר את מוצא הציפורים מקבוצה של דינוזאורים שנקראת תרופודים.",
+        "glossary": "תרופודים — קבוצת דינוזאורים הכוללת את אבות הציפורים ואת הציפורים עצמן."
+      },
+      "en": {
+        "title": "Birds evolve within the dinosaur family tree",
+        "text": "Archaeopteryx had feathers, teeth, and a long bony tail. This combination helps explain how birds evolved within a group of dinosaurs called theropods.",
+        "glossary": "Theropods — a dinosaur group that includes the ancestors of birds and birds themselves."
+      },
+      "image": null
+    },
+    {
+      "id": "life-24",
+      "time": {
+        "he": "לפני כ־66 מיליון שנה",
+        "en": "About 66 million years ago"
+      },
+      "timeGroup": 9,
+      "he": {
+        "title": "פגיעת האסטרואיד וההכחדה",
+        "text": "אסטרואיד פגע באזור יוקטן של ימינו והשאיר את מכתש צ׳יקשולוב. בעקבות הפגיעה השתנו תנאי הסביבה ברחבי העולם. הדינוזאורים שאינם עופות נכחדו, וחלק משושלות העופות שרדו.",
+        "glossary": "הכחדה המונית — אובדן של מינים רבים ברחבי העולם בתוך פרק זמן קצר יחסית במונחים גאולוגיים."
+      },
+      "en": {
+        "title": "The asteroid impact and extinction",
+        "text": "An asteroid struck what is now the Yucatán region and left the Chicxulub crater. The impact altered environments worldwide. Non-avian dinosaurs went extinct, and some bird lineages survived.",
+        "glossary": "Mass extinction — the global loss of many species over a relatively short geological interval."
+      },
+      "image": null
+    },
+    {
+      "id": "life-25",
+      "time": {
+        "he": "אחרי ההכחדה לפני כ־66 מיליון שנה",
+        "en": "After the extinction about 66 million years ago"
+      },
+      "timeGroup": 9,
+      "he": {
+        "title": "יונקים מתגוונים",
+        "text": "אחרי ההכחדה, שושלות יונקים ששרדו התגוונו. לאורך מיליוני שנים הופיעו יונקים בעלי גדלים, מזונות ואורחות חיים שונים. בשלב הבא נעקוב אחר ענף הפרימטים.",
+        "glossary": "התגוונות — התפתחות של שושלות ומינים בעלי תכונות ואורחות חיים שונים."
+      },
+      "en": {
+        "title": "Mammals diversify",
+        "text": "After the extinction, surviving mammal lineages diversified. Over millions of years, mammals evolved a wide range of sizes, diets, and ways of life. Next, we follow the primate branch.",
+        "glossary": "Diversification — the evolution of lineages and species with different traits and ways of life."
+      },
+      "image": null
+    },
+    {
+      "id": "life-26",
+      "time": {
+        "he": "לפני כ־56 מיליון שנה",
+        "en": "About 56 million years ago"
+      },
+      "timeGroup": 10,
+      "he": {
+        "title": "פרימטים קדומים",
+        "text": "שיניים ועצמות זעירות מעידות שפרימטים קדומים כבר חיו בראשית האאוקן. מאובנים מאירופה ומאסיה עוזרים לשחזר את ההיסטוריה המוקדמת של הקבוצה.",
+        "glossary": "פרימטים — קבוצת יונקים הכוללת למורים, קופים, קופי אדם ובני אדם."
+      },
+      "en": {
+        "title": "Early primates",
+        "text": "Tiny fossil teeth and bones show that early primates lived by the beginning of the Eocene. Fossils from Europe and Asia help reconstruct the group's early history.",
+        "glossary": "Primates — a group of mammals that includes lemurs, monkeys, apes, and humans."
+      },
+      "image": null
+    },
+    {
+      "id": "life-27",
+      "time": {
+        "he": "לפני כ־8–6 מיליון שנה",
+        "en": "About 8–6 million years ago"
+      },
+      "timeGroup": 10,
+      "he": {
+        "title": "ענפי האדם והשימפנזה",
+        "text": "האדם והשימפנזה חולקים אב קדמון. השוואת הדנ״א של המינים החיים מסייעת להעריך מתי השושלות נפרדו. המועד המדויק ומראהו של האב הקדמון עדיין אינם ידועים.",
+        "glossary": "אב קדמון משותף — אוכלוסייה קדומה שממנה התפתחו שתי שושלות או יותר."
+      },
+      "en": {
+        "title": "Human and chimpanzee lineages",
+        "text": "Humans and chimpanzees share a common ancestor. Comparing the DNA of living species helps estimate when the lineages split. The exact timing and the ancestor's appearance remain uncertain.",
+        "glossary": "Common ancestor — an ancestral population from which two or more lineages evolved."
+      },
+      "image": null
+    },
+    {
+      "id": "life-28",
+      "time": {
+        "he": "לפני כ־3.6 מיליון שנה",
+        "en": "About 3.6 million years ago"
+      },
+      "timeGroup": 10,
+      "he": {
+        "title": "עקבות על שתי רגליים",
+        "text": "בלַאֵטוֹלִי שבטנזניה השתמרו עקבות באפר געשי. העקבות מעידות שקרובי אדם קדומים הלכו זקופים על שתי רגליים. זהות המין שהותיר אותן עדיין נחקרת.",
+        "glossary": "הליכה דו־רגלית — תנועה על שתי רגליים."
+      },
+      "en": {
+        "title": "Footprints on two feet",
+        "text": "Footprints at Laetoli in Tanzania were preserved in volcanic ash. They show that early human relatives walked upright on two feet. The exact species that made them is still studied.",
+        "glossary": "Bipedal walking — moving on two legs."
+      },
+      "image": null
+    },
+    {
+      "id": "life-29",
+      "time": {
+        "he": "לפני כ־1.9–1.8 מיליון שנה",
+        "en": "About 1.9–1.8 million years ago"
+      },
+      "timeGroup": 10,
+      "he": {
+        "title": "הומו ארקטוס מחוץ לאפריקה",
+        "text": "מאובנים קדומים של הומו ארקטוס נמצאו באפריקה. בדמניסי שבגאורגיה נמצאו גולגולות קדומות המשויכות לקבוצה זו, מהעדויות המוקדמות לנוכחות בני אדם קדומים מחוץ לאפריקה.",
+        "glossary": "הומו ארקטוס — מין אדם קדום שחי באפריקה ובחלקים מאסיה."
+      },
+      "en": {
+        "title": "Homo erectus beyond Africa",
+        "text": "Early Homo erectus fossils have been found in Africa. Ancient skulls from Dmanisi in Georgia are attributed to this group and are among the early signs of human presence outside Africa.",
+        "glossary": "Homo erectus — an early human species that lived in Africa and parts of Asia."
+      },
+      "image": null
+    },
+    {
+      "id": "life-30",
+      "time": {
+        "he": "לפני כ־300 אלף שנה",
+        "en": "About 300,000 years ago"
+      },
+      "timeGroup": 10,
+      "he": {
+        "title": "הופעת הומו ספיינס",
+        "text": "מאובנים מאפריקה מראים שמינים המשויכים לענף האדם התקיימו שם, ובהם המין שלנו, הומו ספיינס. מאובנים מוקדמים המשויכים למין שלנו מתוארכים לכ־300 אלף שנה.",
+        "glossary": "הומו ספיינס — המין שאליו שייכים כל בני האדם החיים כיום."
+      },
+      "en": {
+        "title": "The emergence of Homo sapiens",
+        "text": "African fossils document several members of the human lineage, including our species, Homo sapiens. Early fossils attributed to our species date to around 300,000 years ago.",
+        "glossary": "Homo sapiens — the species to which all living humans belong."
+      },
+      "image": null
+    },
+    {
+      "id": "human-01",
+      "time": {
+        "he": "לפני כ־300 אלף שנה",
+        "en": "About 300,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "הופעת האדם המודרני",
+        "text": "מאובנים מאפריקה מעידים שבני אדם בעלי מאפיינים אנטומיים של הומו ספיינס חיו כבר לפני כ־300 אלף שנה. התפתחות המין הייתה הדרגתית ולא אירוע יחיד.",
+        "glossary": "הומו ספיינס — שמו המדעי של מין האדם החי כיום."
+      },
+      "en": {
+        "title": "Early Homo sapiens",
+        "text": "Fossils from Africa indicate that people with anatomical features of Homo sapiens lived around 300,000 years ago. Our species evolved gradually, not in a single event.",
+        "glossary": "Homo sapiens — the scientific name of the human species living today."
+      },
+      "image": null
+    },
+    {
+      "id": "human-02",
+      "time": {
+        "he": "לפני כ־200–100 אלף שנה",
+        "en": "About 200,000–100,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "כלי אבן מורכבים",
+        "text": "בני אדם קדומים עיצבו אבנים לצורות מתוכננות וייצרו חודים ולהבים. כלי אבן מלמדים על טכניקה, אך לא חושפים ישירות את מחשבות יוצריהם.",
+        "glossary": "להב — חלק חד של כלי המשמש לחיתוך."
+      },
+      "en": {
+        "title": "Complex stone tools",
+        "text": "Early humans shaped stone into planned forms, including points and blades. Stone tools reveal techniques but cannot directly show what their makers thought.",
+        "glossary": "Blade — a sharp-edged part of a tool used for cutting."
+      },
+      "image": null
+    },
+    {
+      "id": "human-03",
+      "time": {
+        "he": "לפני יותר מ־100 אלף שנה",
+        "en": "More than 100,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "פיגמנטים וקישוטים",
+        "text": "באתרים באפריקה ובמזרח התיכון נמצאו צבעי אוכרה וחרוזים קדומים. ייתכן ששימשו לקישוט ולתקשורת חברתית, אך משמעותם המדויקת אינה ידועה.",
+        "glossary": "אוכרה — חומר טבעי המכיל מינרלים של ברזל ומשמש לצביעה."
+      },
+      "en": {
+        "title": "Pigments and ornaments",
+        "text": "Ancient ochre pigments and beads have been found at sites in Africa and the Middle East. They may have served decoration or social communication, but their exact meanings are unknown.",
+        "glossary": "Ochre — a natural iron-rich material used as pigment."
+      },
+      "image": null
+    },
+    {
+      "id": "human-04",
+      "time": {
+        "he": "לפני כ־100–60 אלף שנה — בקירוב",
+        "en": "About 100,000–60,000 years ago — approximate"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "יציאה מאפריקה",
+        "text": "קבוצות של בני אדם מודרניים יצאו מאפריקה בזמנים שונים. מחקר גנטי ומאובנים מצביעים על התפשטות רחבה שהובילה לאוכלוסיות רבות מחוץ לאפריקה.",
+        "glossary": "נדידה — מעבר של אוכלוסייה מאזור לאזור לאורך זמן."
+      },
+      "en": {
+        "title": "Dispersal beyond Africa",
+        "text": "Groups of modern humans left Africa at different times. Genetics and fossils indicate major dispersals that contributed to populations across the world.",
+        "glossary": "Dispersal — the movement and spread of populations into new regions."
+      },
+      "image": null
+    },
+    {
+      "id": "human-05",
+      "time": {
+        "he": "לפני עשרות אלפי שנים",
+        "en": "Tens of thousands of years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "מפגש עם הניאנדרטלים",
+        "text": "בדנ״א של רבים מבני האדם החיים מחוץ לאפריקה נמצאו מקטעים שמקורם בניאנדרטלים. הדבר מעיד על מפגשים ועל הולדת צאצאים משותפים בעבר.",
+        "glossary": "ניאנדרטלים — קבוצת בני אדם קדומים הקרובה להומו ספיינס."
+      },
+      "en": {
+        "title": "Meeting Neanderthals",
+        "text": "DNA in many people living outside Africa contains segments inherited from Neanderthals, evidence that these groups met and had offspring together.",
+        "glossary": "Neanderthals — an extinct human group closely related to Homo sapiens."
+      },
+      "image": null
+    },
+    {
+      "id": "human-06",
+      "time": {
+        "he": "לפני כ־50–40 אלף שנה",
+        "en": "About 50,000–40,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "אמנות במערות",
+        "text": "במערות באירופה ובאסיה נשמרו ציורי בעלי חיים וסימנים. התיארוך מבוסס על ממצאים וחומרים במערות, אך אין ודאות מה סימלו הציורים ליוצריהם.",
+        "glossary": "אמנות מערות — ציורים וחריטות שנעשו על קירות מערות."
+      },
+      "en": {
+        "title": "Cave art",
+        "text": "Caves in Europe and Asia preserve animal paintings and signs. Dating relies on archaeological materials, but the meanings these images held for their makers remain uncertain.",
+        "glossary": "Cave art — paintings and engravings made on cave walls."
+      },
+      "image": null
+    },
+    {
+      "id": "human-07",
+      "time": {
+        "he": "לפני כ־45–30 אלף שנה",
+        "en": "About 45,000–30,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "התיישבות באוסטרליה ובסביבתה",
+        "text": "ממצאים ארכאולוגיים מעידים על נוכחות בני אדם ביבשת הקדומה סהול, שכללה את אוסטרליה וגינאה החדשה. מועדי ההגעה המדויקים נתונים למחקר.",
+        "glossary": "סהול — יבשת קדומה שחיברה אזורים שכיום מופרדים בים."
+      },
+      "en": {
+        "title": "Peopling of Sahul",
+        "text": "Archaeological evidence documents humans in ancient Sahul, the landmass that included Australia and New Guinea. The earliest arrival dates remain debated.",
+        "glossary": "Sahul — an ancient landmass linking areas now separated by sea."
+      },
+      "image": null
+    },
+    {
+      "id": "human-08",
+      "time": {
+        "he": "לפני כ־30–20 אלף שנה",
+        "en": "About 30,000–20,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "חיים בעידן הקרח",
+        "text": "בתקופות קרות התקיימו קבוצות ציידים־לקטים בסביבות מגוונות. הן השתמשו באש, בלבוש ובמחסות, והסתגלו לשינויים באקלים.",
+        "glossary": "ציידים־לקטים — אנשים שהשיגו מזון מציד ומאיסוף צמחי בר."
+      },
+      "en": {
+        "title": "Life during the Ice Age",
+        "text": "During cold periods, hunter-gatherer groups lived in diverse environments, using fire, clothing, and shelters while adapting to climatic changes.",
+        "glossary": "Hunter-gatherers — people obtaining food by hunting and gathering wild resources."
+      },
+      "image": null
+    },
+    {
+      "id": "human-09",
+      "time": {
+        "he": "לפני כ־25–15 אלף שנה — בקירוב",
+        "en": "About 25,000–15,000 years ago — approximate"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "התפשטות באמריקות",
+        "text": "עדויות ארכאולוגיות וגנטיות מצביעות על הגעת בני אדם לאמריקות בתקופת הקרח המאוחרת. נתיבי ההגעה והעיתוי המדויק עדיין נחקרים.",
+        "glossary": "ברינגיה — אזור יבשתי קדום שחיבר את סיביר ואלסקה כשמפלס הים היה נמוך."
+      },
+      "en": {
+        "title": "Settlement of the Americas",
+        "text": "Archaeological and genetic evidence points to human settlement of the Americas during the late Ice Age. Routes and exact timing remain under study.",
+        "glossary": "Beringia — an ancient land region linking Siberia and Alaska when sea levels were lower."
+      },
+      "image": null
+    },
+    {
+      "id": "human-10",
+      "time": {
+        "he": "לפני כ־20–12 אלף שנה",
+        "en": "About 20,000–12,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "מחנות ומקומות מפגש",
+        "text": "שרידי מדורות, כלי אבן ועצמות מעידים על מקומות שבהם קבוצות חיו, עבדו ונפגשו. גודל הקבוצות ואופי הקשרים ביניהן השתנו ממקום למקום.",
+        "glossary": "מוקד אש — מקום שבו הבעירו אש, ולעיתים נשמרו בו אפר ופחם."
+      },
+      "en": {
+        "title": "Camps and gathering places",
+        "text": "Hearths, tools, and bones reveal places where groups lived, worked, and gathered. Group sizes and social ties varied by place and time.",
+        "glossary": "Hearth — a place where fire was maintained, sometimes preserving ash and charcoal."
+      },
+      "image": null
+    },
+    {
+      "id": "human-11",
+      "time": {
+        "he": "לפני כ־15–12 אלף שנה",
+        "en": "About 15,000–12,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "ראשית יישובי קבע",
+        "text": "במזרח הקרוב נמצאו אתרים שבהם אנשים שהו לאורך תקופות ארוכות והקימו מבנים. התיישבות ממושכת החלה בחלק מהמקומות עוד לפני חקלאות מלאה.",
+        "glossary": "יישוב קבע — מקום מגורים שאנשים שוהים בו לאורך זמן ולא רק בביקור קצר."
+      },
+      "en": {
+        "title": "Early settled communities",
+        "text": "Sites in the Near East show long-term occupation and built structures. Some communities became more settled before full-scale farming emerged.",
+        "glossary": "Permanent settlement — a place occupied for extended periods rather than brief visits."
+      },
+      "image": null
+    },
+    {
+      "id": "human-12",
+      "time": {
+        "he": "לפני כ־12,000 שנה",
+        "en": "About 12,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "תחילת החקלאות",
+        "text": "באזורים שונים החלו בני אדם לגדל צמחים באופן מכוון. המעבר מציד ולקט לחקלאות היה הדרגתי ולא התרחש בכל העולם באותו זמן.",
+        "glossary": "ביות צמחים — שינוי הדרגתי של צמחי בר בעקבות גידול וברירה בידי בני אדם."
+      },
+      "en": {
+        "title": "Beginnings of farming",
+        "text": "People in different regions began deliberately cultivating plants. The shift from foraging to farming was gradual and occurred at different times around the world.",
+        "glossary": "Plant domestication — gradual changes to wild plants through human cultivation and selection."
+      },
+      "image": null
+    },
+    {
+      "id": "human-13",
+      "time": {
+        "he": "לפני כ־11–9 אלף שנה",
+        "en": "About 11,000–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "ביות בעלי חיים",
+        "text": "במזרח הקרוב החלו קהילות לגדל עזים וכבשים, ובהמשך גם בעלי חיים נוספים. הביות שינה את אספקת המזון ואת יחסי האדם עם בעלי החיים.",
+        "glossary": "ביות — תהליך שבו אוכלוסיית בעלי חיים משתנה לאורך דורות בהשפעת האדם."
+      },
+      "en": {
+        "title": "Domestication of animals",
+        "text": "Communities in the Near East began managing goats and sheep, later followed by other animals. Domestication changed food supplies and human-animal relationships.",
+        "glossary": "Domestication — changes in animal populations over generations under human influence."
+      },
+      "image": null
+    },
+    {
+      "id": "human-14",
+      "time": {
+        "he": "לפני כ־10–8 אלף שנה",
+        "en": "About 10,000–8,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כפרים גדלים",
+        "text": "כפרים חקלאיים כללו בתים, אזורי אחסון ומרחבים משותפים. שרידי מבנים ומזון מלמדים על ארגון חיי היום־יום ועל חלוקת עבודה אפשרית.",
+        "glossary": "מחסן תבואה — מקום לאחסון גרעינים שנאספו לשימוש מאוחר יותר."
+      },
+      "en": {
+        "title": "Growing villages",
+        "text": "Farming villages included houses, storage spaces, and shared areas. Buildings and food remains reveal daily organization and possible divisions of labor.",
+        "glossary": "Granary — a place for storing harvested grain for later use."
+      },
+      "image": null
+    },
+    {
+      "id": "human-15",
+      "time": {
+        "he": "לפני כ־9–7 אלף שנה",
+        "en": "About 9,000–7,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כלי חרס נפוצים",
+        "text": "במקומות רבים החלו לייצר כלי חרס לאחסון, לבישול ולהגשה. צורת הכלים והחומר שממנו נעשו מסייעים לחוקרים לזהות מסורות וקשרים בין קהילות.",
+        "glossary": "חרס — חומר חרסיתי שהוקשה באמצעות חימום."
+      },
+      "en": {
+        "title": "Pottery becomes widespread",
+        "text": "Pottery became common in many regions for storage, cooking, and serving. Shapes and materials help researchers trace traditions and contacts between communities.",
+        "glossary": "Ceramic — clay-based material hardened by firing."
+      },
+      "image": null
+    },
+    {
+      "id": "human-16",
+      "time": {
+        "he": "לפני כ־7–5 אלף שנה",
+        "en": "About 7,000–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "נחושת ומלאכות חדשות",
+        "text": "קהילות למדו לעבד נחושת ולייצר ממנה חפצים. כלי אבן המשיכו לשמש לצד המתכת, והמעבר לטכנולוגיות חדשות היה שונה בין אזורים.",
+        "glossary": "התכה — חימום חומר עד שהוא הופך לנוזל, למשל מתכת."
+      },
+      "en": {
+        "title": "Copper and new crafts",
+        "text": "Communities learned to work copper into objects. Stone tools remained in use alongside metal, and technological change differed between regions.",
+        "glossary": "Smelting — extracting metal from ore using heat and chemical reactions."
+      },
+      "image": null
+    },
+    {
+      "id": "human-17",
+      "time": {
+        "he": "לפני כ־6–5 אלף שנה",
+        "en": "About 6,000–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ערים ראשונות במסופוטמיה",
+        "text": "בדרום מסופוטמיה גדלו יישובים ובהם מבני ציבור, מלאכות מתמחות ומערכות ניהול. התפתחות הערים הייתה תהליך ממושך.",
+        "glossary": "מסופוטמיה — אזור הנהרות פרת וחידקל, בעיקר בעיראק של ימינו."
+      },
+      "en": {
+        "title": "Early cities in Mesopotamia",
+        "text": "Settlements in southern Mesopotamia grew, with public buildings, specialized crafts, and administration. Urban development was a long process.",
+        "glossary": "Mesopotamia — the region of the Tigris and Euphrates rivers, mainly in present-day Iraq."
+      },
+      "image": null
+    },
+    {
+      "id": "human-18",
+      "time": {
+        "he": "לפני כ־5,500–5,000 שנה",
+        "en": "About 5,500–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "רישום כמויות וסחורות",
+        "text": "לפני הכתב המלא השתמשו במסופוטמיה באמצעי ספירה ובסימנים על לוחות חרס. ניהול סחורות ומלאים תרם להתפתחות מערכות רישום.",
+        "glossary": "לוח חרס — משטח מחומר רך שעליו הטביעו סימנים ואחר כך ייבשו אותו."
+      },
+      "en": {
+        "title": "Recording goods and quantities",
+        "text": "Before full writing developed, Mesopotamians used counting devices and marks on clay tablets. Managing goods and inventories contributed to record-keeping systems.",
+        "glossary": "Clay tablet — a soft clay surface marked with signs and then dried."
+      },
+      "image": null
+    },
+    {
+      "id": "human-19",
+      "time": {
+        "he": "בסביבות 3400–3200 לפנה״ס",
+        "en": "Around 3400–3200 BCE"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ראשית הכתב",
+        "text": "בדרום מסופוטמיה הופיעו לוחות עם סימנים המתעדים כמויות וסחורות. סימנים אלה התפתחו בהדרגה למערכת כתב מורכבת.",
+        "glossary": "כתב — מערכת מוסכמת של סימנים המייצגים מידע לשוני."
+      },
+      "en": {
+        "title": "The emergence of writing",
+        "text": "In southern Mesopotamia, tablets appeared with signs recording quantities and goods. These signs gradually developed into a complex writing system.",
+        "glossary": "Writing — a conventional system of signs used to represent language."
+      },
+      "image": null
+    },
+    {
+      "id": "human-20",
+      "time": {
+        "he": "בסביבות 3100 לפנה״ס",
+        "en": "Around 3100 BCE"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ממלכות וראשית ההיסטוריה הכתובה",
+        "text": "במצרים התגבשה ממלכה מאוחדת בקירוב בתקופה זו, וגם שם התפתח כתב. מרגע שנשמרו מקורות כתובים אפשר לשלב עדויות ארכאולוגיות עם תיעוד בני התקופה.",
+        "glossary": "היסטוריה כתובה — חקר העבר גם באמצעות מסמכים וכתובות שהשתמרו."
+      },
+      "en": {
+        "title": "Kingdoms and recorded history",
+        "text": "A unified kingdom emerged in Egypt around this time, where writing also developed. Surviving written records allow archaeology to be studied alongside accounts from the period.",
+        "glossary": "Recorded history — the study of the past using surviving documents and inscriptions alongside other evidence."
+      },
+      "image": null
+    }
+  ]
+}
+</script>
 <script>
 "use strict";
 
 async function startTimeline() {
-  const localFile = !["https:", "http:"].includes(location.protocol);
-  const dataUrl = localFile
-    ? "https://raw.githubusercontent.com/naftali24/HISTORY/main/history-data.json"
-    : "./history-data.json";
-  const response = await fetch(dataUrl, { cache: "no-cache" });
-  if (!response.ok) throw new Error("Could not load timeline data: " + response.status);
-  const { periods, stations } = await response.json();
+  const localFile = true;
+  const { periods, stations } = JSON.parse(document.getElementById("offline-data").textContent);
   if (!Array.isArray(periods) || !Array.isArray(stations) || stations.length === 0) {
     throw new Error("Invalid timeline data");
   }
@@ -145,7 +1411,7 @@ async function startTimeline() {
       unavailable: "הדפדפן או המכשיר לא הצליח להפעיל הקראה בשפה זו.",
       gpt: "בקש מ־ChatGPT להרחיב על התחנה",
       gptPrompt: (station, time) => ["אני לומד על ההיסטוריה של היקום והחיים.", "התחנה: " + station.title, "זמן: " + time, "הטקסט בתחנה: " + station.text, "הרחב בעברית פשוטה על מה שמתואר בתחנה. הסבר איך יודעים זאת, והבחן בין ממצאים מבוססים לבין השערות ומועדים משוערים."].join("\n"),
-      times: ["ראשית היקום","הכוכבים והגלקסיות הראשונים","לפני כ־4.6 B שנה","כדור הארץ הקדום","ראשית החיים","חיים חד־תאיים וחמצן","תאים בעלי גרעין","מתא אחד לבעלי החיים הראשונים","מהים ליבשה","דינוזאורים, ציפורים ויונקים","ענף האדם"]
+      times: ["ראשית היקום","הכוכבים והגלקסיות הראשונים","לפני כ־4.6 B שנה","כדור הארץ הקדום","ראשית החיים","חיים חד־תאיים וחמצן","תאים בעלי גרעין","מתא אחד לבעלי החיים הראשונים","מהים ליבשה","דינוזאורים, ציפורים ויונקים","ענף האדם","האדם המודרני והנדידה","אמנות וקהילות קדומות","חקלאות וכפרים","ערים וראשית הכתב"]
     },
     en: {
       title: "Beginning to Today — Naftali & AI", menu: "Eras", play: "Read aloud", stop: "Stop",
@@ -155,7 +1421,7 @@ async function startTimeline() {
       unavailable: "Your browser or device could not read aloud in this language.",
       gpt: "Ask ChatGPT to expand on this station",
       gptPrompt: (station, time) => ["I am learning about the history of the universe and life.", "Station: " + station.title, "Time: " + time, "Station text: " + station.text, "Expand on this station in plain English. Explain how we know what happened and distinguish established evidence from hypotheses and approximate dates."].join("\n"),
-      times: ["The early universe","The first stars and galaxies","About 4.6 B years ago","Early Earth","The origin of life","Single-celled life and oxygen","Cells with a nucleus","From one cell to the first animals","From sea to land","Dinosaurs, birds, and mammals","The human lineage"]
+      times: ["The early universe","The first stars and galaxies","About 4.6 B years ago","Early Earth","The origin of life","Single-celled life and oxygen","Cells with a nucleus","From one cell to the first animals","From sea to land","Dinosaurs, birds, and mammals","The human lineage","Modern humans and migration","Art and early communities","Farming and villages","Cities and early writing"]
     }
   };
   let language = "he";
@@ -254,7 +1520,7 @@ async function startTimeline() {
     term.textContent = station.glossary.slice(0, separator);
     glossary.replaceChildren(term, document.createTextNode(station.glossary.slice(separator)));
     glossary.scrollTop = 0;
-    byId("timeLabel").textContent = copy[language].times[entry.timeGroup];
+    byId("timeLabel").textContent = station.title;
     byId("previous").disabled = current === 0;
     byId("next").disabled = current === stations.length - 1;
     const picture = byId("picture");
@@ -305,7 +1571,7 @@ async function startTimeline() {
       button.textContent = label;
       button.disabled = start < 0;
       button.addEventListener("click", () => {
-        byId("periodDialog").close();
+        closePeriodMenu();
         goTo(start);
       });
       return button;
@@ -368,6 +1634,10 @@ async function startTimeline() {
     if (mode === "continuous") readStation(mode);
   }
 
+  function openPeriodMenu() { const dialog = byId("periodDialog"); dialog.hidden = false; byId("closePeriods").focus(); }
+  function closePeriodMenu() { byId("periodDialog").hidden = true; byId("menuBtn").focus(); }
+  byId("periodDialog").addEventListener("click", event => { if (event.target === byId("periodDialog")) closePeriodMenu(); });
+  document.addEventListener("keydown", event => { if (event.key === "Escape" && !byId("periodDialog").hidden) closePeriodMenu(); });
   byId("speak").onclick = () => playback ? stopSpeech() : readStation("single");
   byId("sequence").onclick = () => playback === "continuous" ? stopSpeech() : readStation("continuous");
   byId("langBtn").onclick = () => {
@@ -380,8 +1650,8 @@ async function startTimeline() {
   };
   byId("previous").onclick = () => goTo(current - 1);
   byId("next").onclick = () => goTo(current + 1);
-  byId("menuBtn").onclick = () => byId("periodDialog").showModal();
-  byId("closePeriods").onclick = () => byId("periodDialog").close();
+  byId("menuBtn").onclick = event => { event.stopPropagation(); openPeriodMenu(); };
+  byId("closePeriods").onclick = () => closePeriodMenu();
   let lastWheel = -Infinity;
   byId("imageBox").addEventListener("wheel", event => {
     event.preventDefault();
@@ -401,7 +1671,7 @@ async function startTimeline() {
   }, { passive: true });
   byId("imageBox").addEventListener("touchcancel", () => { swipeStart = null; });
   document.addEventListener("keydown", event => {
-    if (document.querySelector("dialog[open]") || event.target.closest("button,select,a")) return;
+    if (!byId("periodDialog").hidden || event.target.closest("button,select,a")) return;
     if (event.key === "ArrowDown" || event.key === "ArrowUp") {
       event.preventDefault();
       goTo(current + (event.key === "ArrowDown" ? 1 : -1));
@@ -410,6 +1680,16 @@ async function startTimeline() {
   window.addEventListener("pagehide", () => synth?.cancel());
   document.getElementById("status").textContent = "";
   renderLanguage();
+}
+
+function enterFullscreen() {
+  if (!document.fullscreenElement && document.body.requestFullscreen) {
+    document.body.requestFullscreen().catch(() => {});
+  }
+}
+
+if (document.fullscreenEnabled) {
+  document.getElementById("imageBox").addEventListener("click", enterFullscreen);
 }
 
 document.getElementById("appTitle").textContent = document.title;
