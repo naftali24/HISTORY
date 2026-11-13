@@ -20,7 +20,13 @@
     {
       "he": "האדם עד ההיסטוריה",
       "en": "Humans to recorded history",
-      "ready": false
+      "ready": true,
+      "startStation": "human-01",
+      "sections": [
+        "human-06",
+        "human-11",
+        "human-16"
+      ]
     }
   ],
   "stations": [
@@ -41,7 +47,7 @@
         "text": "About 13.8 B years ago, the universe was extremely hot and dense. It expanded and cooled.",
         "glossary": "Universe — all of space and everything in it, including galaxies, stars, matter, and radiation."
       },
-      "image": "images/origin-01.webp"
+      "image": null
     },
     {
       "id": "origin-02",
@@ -60,7 +66,7 @@
         "text": "As the universe expands, distances between widely separated regions grow. From a typical galaxy, more distant galaxies generally appear to recede faster.",
         "glossary": "Galaxy — a large system of stars, gas, and dust held together by gravity."
       },
-      "image": "images/origin-02.webp"
+      "image": null
     },
     {
       "id": "origin-07",
@@ -79,7 +85,7 @@
         "text": "Light nuclei formed in the first few minutes. Most ordinary matter remained in the form of hydrogen nuclei, and helium also formed.",
         "glossary": "Atomic nucleus — the center of an atom. The most common hydrogen nucleus contains one proton."
       },
-      "image": "images/origin-07.webp"
+      "image": null
     },
     {
       "id": "origin-09",
@@ -98,7 +104,7 @@
         "text": "About 380,000 years after the Big Bang, nuclei captured electrons to form neutral atoms. Light could then travel freely.",
         "glossary": "Neutral atom — an atom with equal numbers of electrons and protons, giving it zero net charge."
       },
-      "image": "images/origin-09.webp"
+      "image": null
     },
     {
       "id": "origin-10",
@@ -117,7 +123,7 @@
         "text": "That ancient light still reaches us. Cosmic expansion stretched its wavelengths, and we now detect it as microwave radiation.",
         "glossary": "Wavelength — the distance between two neighboring wave peaks. Microwaves have longer wavelengths than visible light."
       },
-      "image": "images/origin-10.webp"
+      "image": null
     },
     {
       "id": "origin-13",
@@ -136,7 +142,7 @@
         "text": "Gas clouds contracted until their cores grew hot enough for nuclear fusion. The first stars lit up, at a time still being investigated.",
         "glossary": "Nuclear fusion — the joining of atomic nuclei into a heavier nucleus. In stars, this process releases energy."
       },
-      "image": "images/origin-13.webp"
+      "image": null
     },
     {
       "id": "origin-15",
@@ -155,7 +161,7 @@
         "text": "Stars and gas gathered into systems held together by gravity. These were the first galaxies.",
         "glossary": "Gravity — the attraction between objects with mass, which helps hold stars and gas in a galaxy."
       },
-      "image": "images/origin-15.webp"
+      "image": null
     },
     {
       "id": "origin-17",
@@ -174,7 +180,7 @@
         "text": "Generations of stars made elements such as carbon and oxygen. Those elements later became part of new stars, planets, and living things.",
         "glossary": "Chemical element — a substance whose atoms all have the same number of protons. Carbon and oxygen are elements."
       },
-      "image": "images/origin-17.webp"
+      "image": null
     },
     {
       "id": "origin-21",
@@ -193,7 +199,7 @@
         "text": "Gas and dust left around the young Sun formed a spinning disk. The planets and smaller bodies grew from it.",
         "glossary": "Disk — a fairly flat, round structure of gas and dust orbiting a central object."
       },
-      "image": "images/origin-21.webp"
+      "image": null
     },
     {
       "id": "origin-25",
@@ -212,7 +218,7 @@
         "text": "Earth grew as smaller bodies collided with it and added material. Dating meteorites helps establish when the solar system formed.",
         "glossary": "Meteorite — material from space that reached the ground. Dating — estimating how old it is."
       },
-      "image": "images/origin-25.webp"
+      "image": null
     },
     {
       "id": "origin-28",
@@ -231,7 +237,7 @@
         "text": "The leading explanation is that one or more large impacts threw material from the young Earth into orbit. The Moon formed from that debris.",
         "glossary": "Orbit — the path one object follows around another under gravity."
       },
-      "image": "images/origin-28.webp"
+      "image": null
     },
     {
       "id": "origin-33",
@@ -250,7 +256,7 @@
         "text": "When surface conditions allowed water to remain liquid, bodies of water and early oceans could form.",
         "glossary": "Liquid water — water in its liquid state. Temperature and pressure affect which state water takes."
       },
-      "image": "images/origin-33.webp"
+      "image": null
     },
     {
       "id": "origin-36",
@@ -269,7 +275,7 @@
         "text": "Water, energy sources, and carbon-containing compounds could take part in reactions that made more complex molecules.",
         "glossary": "Compound — a substance containing two or more chemically joined elements. Molecule — a group of bonded atoms."
       },
-      "image": "images/origin-36.webp"
+      "image": null
     },
     {
       "id": "origin-41",
@@ -288,7 +294,7 @@
         "text": "RNA can carry information, and some RNA molecules can also catalyze reactions. Some researchers propose that it played a central role before modern cells evolved.",
         "glossary": "RNA — a molecule that can carry information. Some kinds of RNA also speed up chemical reactions."
       },
-      "image": "images/origin-41.webp"
+      "image": null
     },
     {
       "id": "origin-50",
@@ -307,7 +313,7 @@
         "text": "Evidence indicates that microbial life existed around 3.5 B years ago. Where, when, and exactly how life began remain open questions.",
         "glossary": "Microbial life — life made up of tiny organisms such as bacteria."
       },
-      "image": "images/origin-50.webp"
+      "image": null
     },
     {
       "id": "life-01",
@@ -326,7 +332,7 @@
         "text": "Part one ended with evidence of early life. Now we follow single-celled organisms. A single cell can take in materials, obtain energy, and reproduce.",
         "glossary": "Single-celled organism — an organism made up of one cell."
       },
-      "image": "images/life-01.webp"
+      "image": null
     },
     {
       "id": "life-02",
@@ -345,7 +351,7 @@
         "text": "Early in the history of life, the air contained very little free oxygen. Some organisms obtain energy without oxygen. Such organisms still live in mud and sediments today.",
         "glossary": "Anaerobic — able to live or function without using free oxygen."
       },
-      "image": "images/life-02.webp"
+      "image": null
     },
     {
       "id": "life-03",
@@ -364,7 +370,7 @@
         "text": "In shallow water, microbial communities can trap grains and help minerals accumulate, building layers. Similar shapes occur in ancient rocks. Researchers also examine the rocks’ composition and setting to work out how the layers formed.",
         "glossary": "Stromatolite — a layered structure that can form through the activity of microbial communities."
       },
-      "image": "images/life-03.webp"
+      "image": null
     },
     {
       "id": "life-04",
@@ -383,7 +389,7 @@
         "text": "Some bacteria use light to make materials they need. Some forms of photosynthesis release no oxygen. Bacteria that work this way still exist today.",
         "glossary": "Photosynthesis — using light energy to make organic compounds."
       },
-      "image": "images/life-04.webp"
+      "image": null
     },
     {
       "id": "life-05",
@@ -402,7 +408,7 @@
         "text": "Ancestors of cyanobacteria used light, water, and carbon dioxide to make compounds needed by the cell. This process releases oxygen. When it first evolved remains under study.",
         "glossary": "Cyanobacteria — a group of bacteria that perform oxygen-producing photosynthesis."
       },
-      "image": "images/life-05.webp"
+      "image": null
     },
     {
       "id": "life-06",
@@ -421,7 +427,7 @@
         "text": "Some oxygen released into water reacted with substances such as dissolved iron. Under suitable conditions, iron oxides formed, settled, and accumulated. Reactions like these consumed some of the oxygen.",
         "glossary": "Iron oxide — a compound of iron and oxygen. Rust contains iron oxides."
       },
-      "image": "images/life-06.webp"
+      "image": null
     },
     {
       "id": "life-07",
@@ -440,7 +446,7 @@
         "text": "Over time, oxygen began to accumulate in the atmosphere. Changes recorded in ancient rocks help identify this transition. Oxygen levels remained far below those of today.",
         "glossary": "Atmosphere — the layer of gases surrounding Earth."
       },
-      "image": "images/life-07.webp"
+      "image": null
     },
     {
       "id": "life-08",
@@ -459,7 +465,7 @@
         "text": "As oxygen became available in more places, organisms that could use it were able to obtain energy with it. Oxygen-sensitive organisms still had low-oxygen habitats, including sediments.",
         "glossary": "Aerobic cellular respiration — a process in which a cell uses oxygen to obtain energy from nutrients."
       },
-      "image": "images/life-08.webp"
+      "image": null
     },
     {
       "id": "life-09",
@@ -478,7 +484,7 @@
         "text": "In these cells, most genetic material is enclosed in a nucleus. Complex shapes in some microscopic fossils help researchers identify early members of this group. Their first appearance remains uncertain.",
         "glossary": "Eukaryote — an organism whose cells have a nucleus. Plants and animals belong to this group."
       },
-      "image": "images/life-09.webp"
+      "image": null
     },
     {
       "id": "life-10",
@@ -497,7 +503,7 @@
         "text": "Genetic evidence indicates that mitochondria evolved from a bacterium that lived inside an early host cell. Over generations it became part of the cell. The timing and sequence of events are still studied.",
         "glossary": "Mitochondria — structures that help convert energy from food into a form the cell can use."
       },
-      "image": "images/life-10.webp"
+      "image": null
     },
     {
       "id": "life-11",
@@ -516,7 +522,7 @@
         "text": "A photosynthetic bacterium became part of a cell with a nucleus. Its descendants evolved into the chloroplasts of algae and plants.",
         "glossary": "Chloroplast — a structure in a cell that uses light energy to make sugars."
       },
-      "image": "images/life-11.webp"
+      "image": null
     },
     {
       "id": "life-12",
@@ -535,7 +541,7 @@
         "text": "After division, daughter cells can remain attached. Multicellularity evolved independently in different groups, sometimes with cells taking on different roles.",
         "glossary": "Multicellularity — being made up of many cells."
       },
-      "image": "images/life-12.webp"
+      "image": null
     },
     {
       "id": "life-13",
@@ -554,7 +560,7 @@
         "text": "Bangiomorpha fossils show cells arranged in filaments and clusters. Their structure resembles that of red algae, so researchers interpret them as early evidence of a complex multicellular alga.",
         "glossary": "Red alga — a photosynthetic organism from a group that includes multicellular seaweeds."
       },
-      "image": "images/life-13.webp"
+      "image": null
     },
     {
       "id": "life-14",
@@ -573,7 +579,7 @@
         "text": "Flat or branching organisms lived on the seafloor. Fossils preserved their shapes. Researchers are still working out how some of them relate to animal groups.",
         "glossary": "Ediacaran — the geological period before the Cambrian that contains fossils of soft-bodied organisms."
       },
-      "image": "images/life-14.webp"
+      "image": null
     },
     {
       "id": "life-15",
@@ -592,7 +598,7 @@
         "text": "Dickinsonia was a flat organism with a repeating ribbed pattern. Fossil shapes and chemical evidence support its identification as an animal. When the first animals appeared remains under study.",
         "glossary": "Chemical marker — a substance preserved in rock that can help identify its biological origin."
       },
-      "image": "images/life-15.webp"
+      "image": null
     },
     {
       "id": "life-16",
@@ -611,7 +617,7 @@
         "text": "Cambrian fossils show many kinds of marine animals. Skeletons, shells, and traces give clues to how they lived.",
         "glossary": "Cambrian — a geological period when the diversity of animals recorded in fossils increased rapidly."
       },
-      "image": "images/life-16.webp"
+      "image": null
     },
     {
       "id": "life-17",
@@ -630,7 +636,7 @@
         "text": "Tiny spores in rocks are linked to early land plants. They date the evidence, while the first establishment of plants on land remains under study.",
         "glossary": "Spore — a tiny reproductive cell that can grow into a new stage of an organism’s life cycle."
       },
-      "image": "images/life-17.webp"
+      "image": null
     },
     {
       "id": "life-18",
@@ -649,7 +655,7 @@
         "text": "Ancient tracks show that animals moved across surfaces exposed to air. Some tracks are attributed to arthropods. They record movement on land, while the length of the visits is uncertain.",
         "glossary": "Arthropods — animals with jointed limbs, including insects, crustaceans, and spiders."
       },
-      "image": "images/life-18.webp"
+      "image": null
     },
     {
       "id": "life-19",
@@ -668,7 +674,7 @@
         "text": "Tiktaalik had scales and fins, along with a neck and fin bones that could help support its body. Its fossils show traits that appeared in the lineage from which tetrapods evolved.",
         "glossary": "Lobe fin — a fin with a fleshy base and internal bones."
       },
-      "image": "images/life-19.webp"
+      "image": null
     },
     {
       "id": "life-20",
@@ -687,7 +693,7 @@
         "text": "Acanthostega had limbs with digits and traits associated with an aquatic lifestyle. Its fossils show that limbs with digits were also used by vertebrates that lived in water.",
         "glossary": "Tetrapods — a group of vertebrates that includes Acanthostega as well as amphibians, reptiles, birds, and mammals."
       },
-      "image": "images/life-20.webp"
+      "image": null
     },
     {
       "id": "life-21",
@@ -706,7 +712,7 @@
         "text": "Fossils of early dinosaurs have been found in South America. Some were small and walked on two legs. The fossils show they existed in the Triassic, and the group may have appeared earlier.",
         "glossary": "Triassic — the geological period in which early dinosaurs appeared."
       },
-      "image": "images/life-21.webp"
+      "image": null
     },
     {
       "id": "life-22",
@@ -725,7 +731,7 @@
         "text": "Early mammal relatives such as Morganucodon lived alongside dinosaurs. Fossil teeth show differences between front and back teeth and help researchers work out how these animals ate.",
         "glossary": "Morganucodon — a small ancient animal related to living mammals."
       },
-      "image": "images/life-22.webp"
+      "image": null
     },
     {
       "id": "life-23",
@@ -744,7 +750,7 @@
         "text": "Archaeopteryx had feathers, teeth, and a long bony tail. This combination helps explain how birds evolved within a group of dinosaurs called theropods.",
         "glossary": "Theropods — a dinosaur group that includes the ancestors of birds and birds themselves."
       },
-      "image": "images/life-23.webp"
+      "image": null
     },
     {
       "id": "life-24",
@@ -763,7 +769,7 @@
         "text": "An asteroid struck what is now the Yucatán region and left the Chicxulub crater. The impact altered environments worldwide. Non-avian dinosaurs went extinct, and some bird lineages survived.",
         "glossary": "Mass extinction — the global loss of many species over a relatively short geological interval."
       },
-      "image": "images/life-24.webp"
+      "image": null
     },
     {
       "id": "life-25",
@@ -782,7 +788,7 @@
         "text": "After the extinction, surviving mammal lineages diversified. Over millions of years, mammals evolved a wide range of sizes, diets, and ways of life. Next, we follow the primate branch.",
         "glossary": "Diversification — the evolution of lineages and species with different traits and ways of life."
       },
-      "image": "images/life-25.webp"
+      "image": null
     },
     {
       "id": "life-26",
@@ -801,7 +807,7 @@
         "text": "Tiny fossil teeth and bones show that early primates lived by the beginning of the Eocene. Fossils from Europe and Asia help reconstruct the group's early history.",
         "glossary": "Primates — a group of mammals that includes lemurs, monkeys, apes, and humans."
       },
-      "image": "images/life-26.webp"
+      "image": null
     },
     {
       "id": "life-27",
@@ -820,7 +826,7 @@
         "text": "Humans and chimpanzees share a common ancestor. Comparing the DNA of living species helps estimate when the lineages split. The exact timing and the ancestor's appearance remain uncertain.",
         "glossary": "Common ancestor — an ancestral population from which two or more lineages evolved."
       },
-      "image": "images/life-27.webp"
+      "image": null
     },
     {
       "id": "life-28",
@@ -839,7 +845,7 @@
         "text": "Footprints at Laetoli in Tanzania were preserved in volcanic ash. They show that early human relatives walked upright on two feet. The exact species that made them is still studied.",
         "glossary": "Bipedal walking — moving on two legs."
       },
-      "image": "images/life-28.webp"
+      "image": null
     },
     {
       "id": "life-29",
@@ -858,7 +864,7 @@
         "text": "Early Homo erectus fossils have been found in Africa. Ancient skulls from Dmanisi in Georgia are attributed to this group and are among the early signs of human presence outside Africa.",
         "glossary": "Homo erectus — an early human species that lived in Africa and parts of Asia."
       },
-      "image": "images/life-29.webp"
+      "image": null
     },
     {
       "id": "life-30",
@@ -877,7 +883,387 @@
         "text": "African fossils document several members of the human lineage, including our species, Homo sapiens. Early fossils attributed to our species date to around 300,000 years ago.",
         "glossary": "Homo sapiens — the species to which all living humans belong."
       },
-      "image": "images/life-30.webp"
+      "image": null
+    },
+    {
+      "id": "human-01",
+      "time": {
+        "he": "לפני כ־300 אלף שנה",
+        "en": "About 300,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "הופעת האדם המודרני",
+        "text": "מאובנים מאפריקה מעידים שבני אדם בעלי מאפיינים אנטומיים של הומו ספיינס חיו כבר לפני כ־300 אלף שנה. התפתחות המין הייתה הדרגתית ולא אירוע יחיד.",
+        "glossary": "הומו ספיינס — שמו המדעי של מין האדם החי כיום."
+      },
+      "en": {
+        "title": "Early Homo sapiens",
+        "text": "Fossils from Africa indicate that people with anatomical features of Homo sapiens lived around 300,000 years ago. Our species evolved gradually, not in a single event.",
+        "glossary": "Homo sapiens — the scientific name of the human species living today."
+      },
+      "image": null
+    },
+    {
+      "id": "human-02",
+      "time": {
+        "he": "לפני כ־200–100 אלף שנה",
+        "en": "About 200,000–100,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "כלי אבן מורכבים",
+        "text": "בני אדם קדומים עיצבו אבנים לצורות מתוכננות וייצרו חודים ולהבים. כלי אבן מלמדים על טכניקה, אך לא חושפים ישירות את מחשבות יוצריהם.",
+        "glossary": "להב — חלק חד של כלי המשמש לחיתוך."
+      },
+      "en": {
+        "title": "Complex stone tools",
+        "text": "Early humans shaped stone into planned forms, including points and blades. Stone tools reveal techniques but cannot directly show what their makers thought.",
+        "glossary": "Blade — a sharp-edged part of a tool used for cutting."
+      },
+      "image": null
+    },
+    {
+      "id": "human-03",
+      "time": {
+        "he": "לפני יותר מ־100 אלף שנה",
+        "en": "More than 100,000 years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "פיגמנטים וקישוטים",
+        "text": "באתרים באפריקה ובמזרח התיכון נמצאו צבעי אוכרה וחרוזים קדומים. ייתכן ששימשו לקישוט ולתקשורת חברתית, אך משמעותם המדויקת אינה ידועה.",
+        "glossary": "אוכרה — חומר טבעי המכיל מינרלים של ברזל ומשמש לצביעה."
+      },
+      "en": {
+        "title": "Pigments and ornaments",
+        "text": "Ancient ochre pigments and beads have been found at sites in Africa and the Middle East. They may have served decoration or social communication, but their exact meanings are unknown.",
+        "glossary": "Ochre — a natural iron-rich material used as pigment."
+      },
+      "image": null
+    },
+    {
+      "id": "human-04",
+      "time": {
+        "he": "לפני כ־100–60 אלף שנה — בקירוב",
+        "en": "About 100,000–60,000 years ago — approximate"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "יציאה מאפריקה",
+        "text": "קבוצות של בני אדם מודרניים יצאו מאפריקה בזמנים שונים. מחקר גנטי ומאובנים מצביעים על התפשטות רחבה שהובילה לאוכלוסיות רבות מחוץ לאפריקה.",
+        "glossary": "נדידה — מעבר של אוכלוסייה מאזור לאזור לאורך זמן."
+      },
+      "en": {
+        "title": "Dispersal beyond Africa",
+        "text": "Groups of modern humans left Africa at different times. Genetics and fossils indicate major dispersals that contributed to populations across the world.",
+        "glossary": "Dispersal — the movement and spread of populations into new regions."
+      },
+      "image": null
+    },
+    {
+      "id": "human-05",
+      "time": {
+        "he": "לפני עשרות אלפי שנים",
+        "en": "Tens of thousands of years ago"
+      },
+      "timeGroup": 11,
+      "he": {
+        "title": "מפגש עם הניאנדרטלים",
+        "text": "בדנ״א של רבים מבני האדם החיים מחוץ לאפריקה נמצאו מקטעים שמקורם בניאנדרטלים. הדבר מעיד על מפגשים ועל הולדת צאצאים משותפים בעבר.",
+        "glossary": "ניאנדרטלים — קבוצת בני אדם קדומים הקרובה להומו ספיינס."
+      },
+      "en": {
+        "title": "Meeting Neanderthals",
+        "text": "DNA in many people living outside Africa contains segments inherited from Neanderthals, evidence that these groups met and had offspring together.",
+        "glossary": "Neanderthals — an extinct human group closely related to Homo sapiens."
+      },
+      "image": null
+    },
+    {
+      "id": "human-06",
+      "time": {
+        "he": "לפני כ־50–40 אלף שנה",
+        "en": "About 50,000–40,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "אמנות במערות",
+        "text": "במערות באירופה ובאסיה נשמרו ציורי בעלי חיים וסימנים. התיארוך מבוסס על ממצאים וחומרים במערות, אך אין ודאות מה סימלו הציורים ליוצריהם.",
+        "glossary": "אמנות מערות — ציורים וחריטות שנעשו על קירות מערות."
+      },
+      "en": {
+        "title": "Cave art",
+        "text": "Caves in Europe and Asia preserve animal paintings and signs. Dating relies on archaeological materials, but the meanings these images held for their makers remain uncertain.",
+        "glossary": "Cave art — paintings and engravings made on cave walls."
+      },
+      "image": null
+    },
+    {
+      "id": "human-07",
+      "time": {
+        "he": "לפני כ־45–30 אלף שנה",
+        "en": "About 45,000–30,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "התיישבות באוסטרליה ובסביבתה",
+        "text": "ממצאים ארכאולוגיים מעידים על נוכחות בני אדם ביבשת הקדומה סהול, שכללה את אוסטרליה וגינאה החדשה. מועדי ההגעה המדויקים נתונים למחקר.",
+        "glossary": "סהול — יבשת קדומה שחיברה אזורים שכיום מופרדים בים."
+      },
+      "en": {
+        "title": "Peopling of Sahul",
+        "text": "Archaeological evidence documents humans in ancient Sahul, the landmass that included Australia and New Guinea. The earliest arrival dates remain debated.",
+        "glossary": "Sahul — an ancient landmass linking areas now separated by sea."
+      },
+      "image": null
+    },
+    {
+      "id": "human-08",
+      "time": {
+        "he": "לפני כ־30–20 אלף שנה",
+        "en": "About 30,000–20,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "חיים בעידן הקרח",
+        "text": "בתקופות קרות התקיימו קבוצות ציידים־לקטים בסביבות מגוונות. הן השתמשו באש, בלבוש ובמחסות, והסתגלו לשינויים באקלים.",
+        "glossary": "ציידים־לקטים — אנשים שהשיגו מזון מציד ומאיסוף צמחי בר."
+      },
+      "en": {
+        "title": "Life during the Ice Age",
+        "text": "During cold periods, hunter-gatherer groups lived in diverse environments, using fire, clothing, and shelters while adapting to climatic changes.",
+        "glossary": "Hunter-gatherers — people obtaining food by hunting and gathering wild resources."
+      },
+      "image": null
+    },
+    {
+      "id": "human-09",
+      "time": {
+        "he": "לפני כ־25–15 אלף שנה — בקירוב",
+        "en": "About 25,000–15,000 years ago — approximate"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "התפשטות באמריקות",
+        "text": "עדויות ארכאולוגיות וגנטיות מצביעות על הגעת בני אדם לאמריקות בתקופת הקרח המאוחרת. נתיבי ההגעה והעיתוי המדויק עדיין נחקרים.",
+        "glossary": "ברינגיה — אזור יבשתי קדום שחיבר את סיביר ואלסקה כשמפלס הים היה נמוך."
+      },
+      "en": {
+        "title": "Settlement of the Americas",
+        "text": "Archaeological and genetic evidence points to human settlement of the Americas during the late Ice Age. Routes and exact timing remain under study.",
+        "glossary": "Beringia — an ancient land region linking Siberia and Alaska when sea levels were lower."
+      },
+      "image": null
+    },
+    {
+      "id": "human-10",
+      "time": {
+        "he": "לפני כ־20–12 אלף שנה",
+        "en": "About 20,000–12,000 years ago"
+      },
+      "timeGroup": 12,
+      "he": {
+        "title": "מחנות ומקומות מפגש",
+        "text": "שרידי מדורות, כלי אבן ועצמות מעידים על מקומות שבהם קבוצות חיו, עבדו ונפגשו. גודל הקבוצות ואופי הקשרים ביניהן השתנו ממקום למקום.",
+        "glossary": "מוקד אש — מקום שבו הבעירו אש, ולעיתים נשמרו בו אפר ופחם."
+      },
+      "en": {
+        "title": "Camps and gathering places",
+        "text": "Hearths, tools, and bones reveal places where groups lived, worked, and gathered. Group sizes and social ties varied by place and time.",
+        "glossary": "Hearth — a place where fire was maintained, sometimes preserving ash and charcoal."
+      },
+      "image": null
+    },
+    {
+      "id": "human-11",
+      "time": {
+        "he": "לפני כ־15–12 אלף שנה",
+        "en": "About 15,000–12,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "ראשית יישובי קבע",
+        "text": "במזרח הקרוב נמצאו אתרים שבהם אנשים שהו לאורך תקופות ארוכות והקימו מבנים. התיישבות ממושכת החלה בחלק מהמקומות עוד לפני חקלאות מלאה.",
+        "glossary": "יישוב קבע — מקום מגורים שאנשים שוהים בו לאורך זמן ולא רק בביקור קצר."
+      },
+      "en": {
+        "title": "Early settled communities",
+        "text": "Sites in the Near East show long-term occupation and built structures. Some communities became more settled before full-scale farming emerged.",
+        "glossary": "Permanent settlement — a place occupied for extended periods rather than brief visits."
+      },
+      "image": null
+    },
+    {
+      "id": "human-12",
+      "time": {
+        "he": "לפני כ־12,000 שנה",
+        "en": "About 12,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "תחילת החקלאות",
+        "text": "באזורים שונים החלו בני אדם לגדל צמחים באופן מכוון. המעבר מציד ולקט לחקלאות היה הדרגתי ולא התרחש בכל העולם באותו זמן.",
+        "glossary": "ביות צמחים — שינוי הדרגתי של צמחי בר בעקבות גידול וברירה בידי בני אדם."
+      },
+      "en": {
+        "title": "Beginnings of farming",
+        "text": "People in different regions began deliberately cultivating plants. The shift from foraging to farming was gradual and occurred at different times around the world.",
+        "glossary": "Plant domestication — gradual changes to wild plants through human cultivation and selection."
+      },
+      "image": null
+    },
+    {
+      "id": "human-13",
+      "time": {
+        "he": "לפני כ־11–9 אלף שנה",
+        "en": "About 11,000–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "ביות בעלי חיים",
+        "text": "במזרח הקרוב החלו קהילות לגדל עזים וכבשים, ובהמשך גם בעלי חיים נוספים. הביות שינה את אספקת המזון ואת יחסי האדם עם בעלי החיים.",
+        "glossary": "ביות — תהליך שבו אוכלוסיית בעלי חיים משתנה לאורך דורות בהשפעת האדם."
+      },
+      "en": {
+        "title": "Domestication of animals",
+        "text": "Communities in the Near East began managing goats and sheep, later followed by other animals. Domestication changed food supplies and human-animal relationships.",
+        "glossary": "Domestication — changes in animal populations over generations under human influence."
+      },
+      "image": null
+    },
+    {
+      "id": "human-14",
+      "time": {
+        "he": "לפני כ־10–8 אלף שנה",
+        "en": "About 10,000–8,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כפרים גדלים",
+        "text": "כפרים חקלאיים כללו בתים, אזורי אחסון ומרחבים משותפים. שרידי מבנים ומזון מלמדים על ארגון חיי היום־יום ועל חלוקת עבודה אפשרית.",
+        "glossary": "מחסן תבואה — מקום לאחסון גרעינים שנאספו לשימוש מאוחר יותר."
+      },
+      "en": {
+        "title": "Growing villages",
+        "text": "Farming villages included houses, storage spaces, and shared areas. Buildings and food remains reveal daily organization and possible divisions of labor.",
+        "glossary": "Granary — a place for storing harvested grain for later use."
+      },
+      "image": null
+    },
+    {
+      "id": "human-15",
+      "time": {
+        "he": "לפני כ־9–7 אלף שנה",
+        "en": "About 9,000–7,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כלי חרס נפוצים",
+        "text": "במקומות רבים החלו לייצר כלי חרס לאחסון, לבישול ולהגשה. צורת הכלים והחומר שממנו נעשו מסייעים לחוקרים לזהות מסורות וקשרים בין קהילות.",
+        "glossary": "חרס — חומר חרסיתי שהוקשה באמצעות חימום."
+      },
+      "en": {
+        "title": "Pottery becomes widespread",
+        "text": "Pottery became common in many regions for storage, cooking, and serving. Shapes and materials help researchers trace traditions and contacts between communities.",
+        "glossary": "Ceramic — clay-based material hardened by firing."
+      },
+      "image": null
+    },
+    {
+      "id": "human-16",
+      "time": {
+        "he": "לפני כ־7–5 אלף שנה",
+        "en": "About 7,000–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "נחושת ומלאכות חדשות",
+        "text": "קהילות למדו לעבד נחושת ולייצר ממנה חפצים. כלי אבן המשיכו לשמש לצד המתכת, והמעבר לטכנולוגיות חדשות היה שונה בין אזורים.",
+        "glossary": "התכה — חימום חומר עד שהוא הופך לנוזל, למשל מתכת."
+      },
+      "en": {
+        "title": "Copper and new crafts",
+        "text": "Communities learned to work copper into objects. Stone tools remained in use alongside metal, and technological change differed between regions.",
+        "glossary": "Smelting — extracting metal from ore using heat and chemical reactions."
+      },
+      "image": null
+    },
+    {
+      "id": "human-17",
+      "time": {
+        "he": "לפני כ־6–5 אלף שנה",
+        "en": "About 6,000–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ערים ראשונות במסופוטמיה",
+        "text": "בדרום מסופוטמיה גדלו יישובים ובהם מבני ציבור, מלאכות מתמחות ומערכות ניהול. התפתחות הערים הייתה תהליך ממושך.",
+        "glossary": "מסופוטמיה — אזור הנהרות פרת וחידקל, בעיקר בעיראק של ימינו."
+      },
+      "en": {
+        "title": "Early cities in Mesopotamia",
+        "text": "Settlements in southern Mesopotamia grew, with public buildings, specialized crafts, and administration. Urban development was a long process.",
+        "glossary": "Mesopotamia — the region of the Tigris and Euphrates rivers, mainly in present-day Iraq."
+      },
+      "image": null
+    },
+    {
+      "id": "human-18",
+      "time": {
+        "he": "לפני כ־5,500–5,000 שנה",
+        "en": "About 5,500–5,000 years ago"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "רישום כמויות וסחורות",
+        "text": "לפני הכתב המלא השתמשו במסופוטמיה באמצעי ספירה ובסימנים על לוחות חרס. ניהול סחורות ומלאים תרם להתפתחות מערכות רישום.",
+        "glossary": "לוח חרס — משטח מחומר רך שעליו הטביעו סימנים ואחר כך ייבשו אותו."
+      },
+      "en": {
+        "title": "Recording goods and quantities",
+        "text": "Before full writing developed, Mesopotamians used counting devices and marks on clay tablets. Managing goods and inventories contributed to record-keeping systems.",
+        "glossary": "Clay tablet — a soft clay surface marked with signs and then dried."
+      },
+      "image": null
+    },
+    {
+      "id": "human-19",
+      "time": {
+        "he": "בסביבות 3400–3200 לפנה״ס",
+        "en": "Around 3400–3200 BCE"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ראשית הכתב",
+        "text": "בדרום מסופוטמיה הופיעו לוחות עם סימנים המתעדים כמויות וסחורות. סימנים אלה התפתחו בהדרגה למערכת כתב מורכבת.",
+        "glossary": "כתב — מערכת מוסכמת של סימנים המייצגים מידע לשוני."
+      },
+      "en": {
+        "title": "The emergence of writing",
+        "text": "In southern Mesopotamia, tablets appeared with signs recording quantities and goods. These signs gradually developed into a complex writing system.",
+        "glossary": "Writing — a conventional system of signs used to represent language."
+      },
+      "image": null
+    },
+    {
+      "id": "human-20",
+      "time": {
+        "he": "בסביבות 3100 לפנה״ס",
+        "en": "Around 3100 BCE"
+      },
+      "timeGroup": 14,
+      "he": {
+        "title": "ממלכות וראשית ההיסטוריה הכתובה",
+        "text": "במצרים התגבשה ממלכה מאוחדת בקירוב בתקופה זו, וגם שם התפתח כתב. מרגע שנשמרו מקורות כתובים אפשר לשלב עדויות ארכאולוגיות עם תיעוד בני התקופה.",
+        "glossary": "היסטוריה כתובה — חקר העבר גם באמצעות מסמכים וכתובות שהשתמרו."
+      },
+      "en": {
+        "title": "Kingdoms and recorded history",
+        "text": "A unified kingdom emerged in Egypt around this time, where writing also developed. Surviving written records allow archaeology to be studied alongside accounts from the period.",
+        "glossary": "Recorded history — the study of the past using surviving documents and inscriptions alongside other evidence."
+      },
+      "image": null
     }
   ]
 }
