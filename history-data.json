@@ -41,7 +41,7 @@
         "text": "About 13.8 B years ago, the universe was extremely hot and dense. It expanded and cooled.",
         "glossary": "Universe — all of space and everything in it, including galaxies, stars, matter, and radiation."
       },
-      "image": null
+      "image": "images/origin-01.webp"
     },
     {
       "id": "origin-02",
@@ -60,7 +60,7 @@
         "text": "As the universe expands, distances between widely separated regions grow. From a typical galaxy, more distant galaxies generally appear to recede faster.",
         "glossary": "Galaxy — a large system of stars, gas, and dust held together by gravity."
       },
-      "image": null
+      "image": "images/origin-02.webp"
     },
     {
       "id": "origin-07",
@@ -79,7 +79,7 @@
         "text": "Light nuclei formed in the first few minutes. Most ordinary matter remained in the form of hydrogen nuclei, and helium also formed.",
         "glossary": "Atomic nucleus — the center of an atom. The most common hydrogen nucleus contains one proton."
       },
-      "image": null
+      "image": "images/origin-07.webp"
     },
     {
       "id": "origin-09",
@@ -98,7 +98,7 @@
         "text": "About 380,000 years after the Big Bang, nuclei captured electrons to form neutral atoms. Light could then travel freely.",
         "glossary": "Neutral atom — an atom with equal numbers of electrons and protons, giving it zero net charge."
       },
-      "image": null
+      "image": "images/origin-09.webp"
     },
     {
       "id": "origin-10",
@@ -117,7 +117,7 @@
         "text": "That ancient light still reaches us. Cosmic expansion stretched its wavelengths, and we now detect it as microwave radiation.",
         "glossary": "Wavelength — the distance between two neighboring wave peaks. Microwaves have longer wavelengths than visible light."
       },
-      "image": null
+      "image": "images/origin-10.webp"
     },
     {
       "id": "origin-13",
@@ -136,7 +136,7 @@
         "text": "Gas clouds contracted until their cores grew hot enough for nuclear fusion. The first stars lit up, at a time still being investigated.",
         "glossary": "Nuclear fusion — the joining of atomic nuclei into a heavier nucleus. In stars, this process releases energy."
       },
-      "image": null
+      "image": "images/origin-13.webp"
     },
     {
       "id": "origin-15",
@@ -155,7 +155,7 @@
         "text": "Stars and gas gathered into systems held together by gravity. These were the first galaxies.",
         "glossary": "Gravity — the attraction between objects with mass, which helps hold stars and gas in a galaxy."
       },
-      "image": null
+      "image": "images/origin-15.webp"
     },
     {
       "id": "origin-17",
@@ -174,7 +174,7 @@
         "text": "Generations of stars made elements such as carbon and oxygen. Those elements later became part of new stars, planets, and living things.",
         "glossary": "Chemical element — a substance whose atoms all have the same number of protons. Carbon and oxygen are elements."
       },
-      "image": null
+      "image": "images/origin-17.webp"
     },
     {
       "id": "origin-21",
@@ -193,7 +193,7 @@
         "text": "Gas and dust left around the young Sun formed a spinning disk. The planets and smaller bodies grew from it.",
         "glossary": "Disk — a fairly flat, round structure of gas and dust orbiting a central object."
       },
-      "image": null
+      "image": "images/origin-21.webp"
     },
     {
       "id": "origin-25",
@@ -212,7 +212,7 @@
         "text": "Earth grew as smaller bodies collided with it and added material. Dating meteorites helps establish when the solar system formed.",
         "glossary": "Meteorite — material from space that reached the ground. Dating — estimating how old it is."
       },
-      "image": null
+      "image": "images/origin-25.webp"
     },
     {
       "id": "origin-28",
@@ -231,7 +231,7 @@
         "text": "The leading explanation is that one or more large impacts threw material from the young Earth into orbit. The Moon formed from that debris.",
         "glossary": "Orbit — the path one object follows around another under gravity."
       },
-      "image": null
+      "image": "images/origin-28.webp"
     },
     {
       "id": "origin-33",
@@ -250,7 +250,7 @@
         "text": "When surface conditions allowed water to remain liquid, bodies of water and early oceans could form.",
         "glossary": "Liquid water — water in its liquid state. Temperature and pressure affect which state water takes."
       },
-      "image": null
+      "image": "images/origin-33.webp"
     },
     {
       "id": "origin-36",
@@ -269,7 +269,7 @@
         "text": "Water, energy sources, and carbon-containing compounds could take part in reactions that made more complex molecules.",
         "glossary": "Compound — a substance containing two or more chemically joined elements. Molecule — a group of bonded atoms."
       },
-      "image": null
+      "image": "images/origin-36.webp"
     },
     {
       "id": "origin-41",
@@ -288,7 +288,7 @@
         "text": "RNA can carry information, and some RNA molecules can also catalyze reactions. Some researchers propose that it played a central role before modern cells evolved.",
         "glossary": "RNA — a molecule that can carry information. Some kinds of RNA also speed up chemical reactions."
       },
-      "image": null
+      "image": "images/origin-41.webp"
     },
     {
       "id": "origin-50",
@@ -307,7 +307,7 @@
         "text": "Evidence indicates that microbial life existed around 3.5 B years ago. Where, when, and exactly how life began remain open questions.",
         "glossary": "Microbial life — life made up of tiny organisms such as bacteria."
       },
-      "image": null
+      "image": "images/origin-50.webp"
     },
     {
       "id": "life-01",
@@ -326,7 +326,7 @@
         "text": "Part one ended with evidence of early life. Now we follow single-celled organisms. A single cell can take in materials, obtain energy, and reproduce.",
         "glossary": "Single-celled organism — an organism made up of one cell."
       },
-      "image": null
+      "image": "images/life-01.webp"
     },
     {
       "id": "life-02",
@@ -345,7 +345,7 @@
         "text": "Early in the history of life, the air contained very little free oxygen. Some organisms obtain energy without oxygen. Such organisms still live in mud and sediments today.",
         "glossary": "Anaerobic — able to live or function without using free oxygen."
       },
-      "image": null
+      "image": "images/life-02.webp"
     },
     {
       "id": "life-03",
@@ -364,7 +364,7 @@
         "text": "In shallow water, microbial communities can trap grains and help minerals accumulate, building layers. Similar shapes occur in ancient rocks. Researchers also examine the rocks’ composition and setting to work out how the layers formed.",
         "glossary": "Stromatolite — a layered structure that can form through the activity of microbial communities."
       },
-      "image": null
+      "image": "images/life-03.webp"
     },
     {
       "id": "life-04",
@@ -383,7 +383,7 @@
         "text": "Some bacteria use light to make materials they need. Some forms of photosynthesis release no oxygen. Bacteria that work this way still exist today.",
         "glossary": "Photosynthesis — using light energy to make organic compounds."
       },
-      "image": null
+      "image": "images/life-04.webp"
     },
     {
       "id": "life-05",
@@ -402,7 +402,7 @@
         "text": "Ancestors of cyanobacteria used light, water, and carbon dioxide to make compounds needed by the cell. This process releases oxygen. When it first evolved remains under study.",
         "glossary": "Cyanobacteria — a group of bacteria that perform oxygen-producing photosynthesis."
       },
-      "image": null
+      "image": "images/life-05.webp"
     },
     {
       "id": "life-06",
@@ -421,7 +421,7 @@
         "text": "Some oxygen released into water reacted with substances such as dissolved iron. Under suitable conditions, iron oxides formed, settled, and accumulated. Reactions like these consumed some of the oxygen.",
         "glossary": "Iron oxide — a compound of iron and oxygen. Rust contains iron oxides."
       },
-      "image": null
+      "image": "images/life-06.webp"
     },
     {
       "id": "life-07",
@@ -440,7 +440,7 @@
         "text": "Over time, oxygen began to accumulate in the atmosphere. Changes recorded in ancient rocks help identify this transition. Oxygen levels remained far below those of today.",
         "glossary": "Atmosphere — the layer of gases surrounding Earth."
       },
-      "image": null
+      "image": "images/life-07.webp"
     },
     {
       "id": "life-08",
@@ -459,7 +459,7 @@
         "text": "As oxygen became available in more places, organisms that could use it were able to obtain energy with it. Oxygen-sensitive organisms still had low-oxygen habitats, including sediments.",
         "glossary": "Aerobic cellular respiration — a process in which a cell uses oxygen to obtain energy from nutrients."
       },
-      "image": null
+      "image": "images/life-08.webp"
     },
     {
       "id": "life-09",
@@ -478,7 +478,7 @@
         "text": "In these cells, most genetic material is enclosed in a nucleus. Complex shapes in some microscopic fossils help researchers identify early members of this group. Their first appearance remains uncertain.",
         "glossary": "Eukaryote — an organism whose cells have a nucleus. Plants and animals belong to this group."
       },
-      "image": null
+      "image": "images/life-09.webp"
     },
     {
       "id": "life-10",
@@ -497,7 +497,7 @@
         "text": "Genetic evidence indicates that mitochondria evolved from a bacterium that lived inside an early host cell. Over generations it became part of the cell. The timing and sequence of events are still studied.",
         "glossary": "Mitochondria — structures that help convert energy from food into a form the cell can use."
       },
-      "image": null
+      "image": "images/life-10.webp"
     },
     {
       "id": "life-11",
@@ -516,7 +516,7 @@
         "text": "A photosynthetic bacterium became part of a cell with a nucleus. Its descendants evolved into the chloroplasts of algae and plants.",
         "glossary": "Chloroplast — a structure in a cell that uses light energy to make sugars."
       },
-      "image": null
+      "image": "images/life-11.webp"
     },
     {
       "id": "life-12",
@@ -535,7 +535,7 @@
         "text": "After division, daughter cells can remain attached. Multicellularity evolved independently in different groups, sometimes with cells taking on different roles.",
         "glossary": "Multicellularity — being made up of many cells."
       },
-      "image": null
+      "image": "images/life-12.webp"
     },
     {
       "id": "life-13",
@@ -554,7 +554,7 @@
         "text": "Bangiomorpha fossils show cells arranged in filaments and clusters. Their structure resembles that of red algae, so researchers interpret them as early evidence of a complex multicellular alga.",
         "glossary": "Red alga — a photosynthetic organism from a group that includes multicellular seaweeds."
       },
-      "image": null
+      "image": "images/life-13.webp"
     },
     {
       "id": "life-14",
@@ -573,7 +573,7 @@
         "text": "Flat or branching organisms lived on the seafloor. Fossils preserved their shapes. Researchers are still working out how some of them relate to animal groups.",
         "glossary": "Ediacaran — the geological period before the Cambrian that contains fossils of soft-bodied organisms."
       },
-      "image": null
+      "image": "images/life-14.webp"
     },
     {
       "id": "life-15",
@@ -592,7 +592,7 @@
         "text": "Dickinsonia was a flat organism with a repeating ribbed pattern. Fossil shapes and chemical evidence support its identification as an animal. When the first animals appeared remains under study.",
         "glossary": "Chemical marker — a substance preserved in rock that can help identify its biological origin."
       },
-      "image": null
+      "image": "images/life-15.webp"
     },
     {
       "id": "life-16",
@@ -611,7 +611,7 @@
         "text": "Cambrian fossils show many kinds of marine animals. Skeletons, shells, and traces give clues to how they lived.",
         "glossary": "Cambrian — a geological period when the diversity of animals recorded in fossils increased rapidly."
       },
-      "image": null
+      "image": "images/life-16.webp"
     },
     {
       "id": "life-17",
@@ -630,7 +630,7 @@
         "text": "Tiny spores in rocks are linked to early land plants. They date the evidence, while the first establishment of plants on land remains under study.",
         "glossary": "Spore — a tiny reproductive cell that can grow into a new stage of an organism’s life cycle."
       },
-      "image": null
+      "image": "images/life-17.webp"
     },
     {
       "id": "life-18",
@@ -649,7 +649,7 @@
         "text": "Ancient tracks show that animals moved across surfaces exposed to air. Some tracks are attributed to arthropods. They record movement on land, while the length of the visits is uncertain.",
         "glossary": "Arthropods — animals with jointed limbs, including insects, crustaceans, and spiders."
       },
-      "image": null
+      "image": "images/life-18.webp"
     },
     {
       "id": "life-19",
@@ -668,7 +668,7 @@
         "text": "Tiktaalik had scales and fins, along with a neck and fin bones that could help support its body. Its fossils show traits that appeared in the lineage from which tetrapods evolved.",
         "glossary": "Lobe fin — a fin with a fleshy base and internal bones."
       },
-      "image": null
+      "image": "images/life-19.webp"
     },
     {
       "id": "life-20",
@@ -687,7 +687,7 @@
         "text": "Acanthostega had limbs with digits and traits associated with an aquatic lifestyle. Its fossils show that limbs with digits were also used by vertebrates that lived in water.",
         "glossary": "Tetrapods — a group of vertebrates that includes Acanthostega as well as amphibians, reptiles, birds, and mammals."
       },
-      "image": null
+      "image": "images/life-20.webp"
     },
     {
       "id": "life-21",
@@ -706,7 +706,7 @@
         "text": "Fossils of early dinosaurs have been found in South America. Some were small and walked on two legs. The fossils show they existed in the Triassic, and the group may have appeared earlier.",
         "glossary": "Triassic — the geological period in which early dinosaurs appeared."
       },
-      "image": null
+      "image": "images/life-21.webp"
     },
     {
       "id": "life-22",
@@ -725,7 +725,7 @@
         "text": "Early mammal relatives such as Morganucodon lived alongside dinosaurs. Fossil teeth show differences between front and back teeth and help researchers work out how these animals ate.",
         "glossary": "Morganucodon — a small ancient animal related to living mammals."
       },
-      "image": null
+      "image": "images/life-22.webp"
     },
     {
       "id": "life-23",
@@ -744,7 +744,7 @@
         "text": "Archaeopteryx had feathers, teeth, and a long bony tail. This combination helps explain how birds evolved within a group of dinosaurs called theropods.",
         "glossary": "Theropods — a dinosaur group that includes the ancestors of birds and birds themselves."
       },
-      "image": null
+      "image": "images/life-23.webp"
     },
     {
       "id": "life-24",
@@ -763,7 +763,7 @@
         "text": "An asteroid struck what is now the Yucatán region and left the Chicxulub crater. The impact altered environments worldwide. Non-avian dinosaurs went extinct, and some bird lineages survived.",
         "glossary": "Mass extinction — the global loss of many species over a relatively short geological interval."
       },
-      "image": null
+      "image": "images/life-24.webp"
     },
     {
       "id": "life-25",
@@ -782,7 +782,7 @@
         "text": "After the extinction, surviving mammal lineages diversified. Over millions of years, mammals evolved a wide range of sizes, diets, and ways of life. Next, we follow the primate branch.",
         "glossary": "Diversification — the evolution of lineages and species with different traits and ways of life."
       },
-      "image": null
+      "image": "images/life-25.webp"
     },
     {
       "id": "life-26",
@@ -801,7 +801,7 @@
         "text": "Tiny fossil teeth and bones show that early primates lived by the beginning of the Eocene. Fossils from Europe and Asia help reconstruct the group's early history.",
         "glossary": "Primates — a group of mammals that includes lemurs, monkeys, apes, and humans."
       },
-      "image": null
+      "image": "images/life-26.webp"
     },
     {
       "id": "life-27",
@@ -820,7 +820,7 @@
         "text": "Humans and chimpanzees share a common ancestor. Comparing the DNA of living species helps estimate when the lineages split. The exact timing and the ancestor's appearance remain uncertain.",
         "glossary": "Common ancestor — an ancestral population from which two or more lineages evolved."
       },
-      "image": null
+      "image": "images/life-27.webp"
     },
     {
       "id": "life-28",
@@ -839,7 +839,7 @@
         "text": "Footprints at Laetoli in Tanzania were preserved in volcanic ash. They show that early human relatives walked upright on two feet. The exact species that made them is still studied.",
         "glossary": "Bipedal walking — moving on two legs."
       },
-      "image": null
+      "image": "images/life-28.webp"
     },
     {
       "id": "life-29",
@@ -858,7 +858,7 @@
         "text": "Early Homo erectus fossils have been found in Africa. Ancient skulls from Dmanisi in Georgia are attributed to this group and are among the early signs of human presence outside Africa.",
         "glossary": "Homo erectus — an early human species that lived in Africa and parts of Asia."
       },
-      "image": null
+      "image": "images/life-29.webp"
     },
     {
       "id": "life-30",
@@ -877,7 +877,7 @@
         "text": "African fossils document several members of the human lineage, including our species, Homo sapiens. Early fossils attributed to our species date to around 300,000 years ago.",
         "glossary": "Homo sapiens — the species to which all living humans belong."
       },
-      "image": null
+      "image": "images/life-30.webp"
     }
   ]
 }
