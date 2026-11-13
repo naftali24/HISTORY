@@ -117,7 +117,7 @@ dialog p{margin:6px;text-align:center}
 "use strict";
 
 async function startTimeline() {
-  const localFile = location.protocol === "file:";
+  const localFile = !["https:", "http:"].includes(location.protocol);
   const dataUrl = localFile
     ? "https://raw.githubusercontent.com/naftali24/HISTORY/main/history-data.json"
     : "./history-data.json";
