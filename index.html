@@ -117,7 +117,11 @@ dialog p{margin:6px;text-align:center}
 "use strict";
 
 async function startTimeline() {
-  const response = await fetch("./history-data.json", { cache: "no-cache" });
+  const localFile = location.protocol === "file:";
+  const dataUrl = localFile
+    ? "https://raw.githubusercontent.com/naftali24/HISTORY/main/history-data.json"
+    : "./history-data.json";
+  const response = await fetch(dataUrl, { cache: "no-cache" });
   if (!response.ok) throw new Error("Could not load timeline data: " + response.status);
   const { periods, stations } = await response.json();
   if (!Array.isArray(periods) || !Array.isArray(stations) || stations.length === 0) {
@@ -266,7 +270,8 @@ async function startTimeline() {
       placeholder.hidden = false;
     };
     picture.alt = station.imageAlt || station.title;
-    picture.src = entry.image || "./images/" + encodeURIComponent(entry.id) + ".webp";
+    const imagePath = entry.image || "./images/" + encodeURIComponent(entry.id) + ".webp";
+    picture.src = localFile ? new URL(imagePath, "https://naftali24.github.io/HISTORY/").href : imagePath;
     if (picture.complete && picture.naturalWidth) picture.onload();
   }
 
@@ -411,7 +416,7 @@ document.getElementById("appTitle").textContent = document.title;
 document.getElementById("status").textContent = "טוען את ציר הזמן…";
 startTimeline().catch(error => {
   console.error(error);
-  document.getElementById("status").textContent = "לא ניתן לטעון את ציר הזמן. רענן את הדף ונסה שוב.";
+  document.getElementById("status").textContent = "לא ניתן לטעון את ציר הזמן. בדוק את החיבור לאינטרנט ופתח מחדש את האפליקציה.";
 });
 </script>
 </body>
