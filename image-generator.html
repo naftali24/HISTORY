@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>מחולל תמונות · מהתחלה להיום</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#14100c;color:#fff2da;font:17px/1.5 Arial,sans-serif}main{max-width:820px;margin:auto;padding:20px}h1{color:#ffd57a;font-size:clamp(23px,5vw,34px);margin:0 0 14px}section{background:#251b12;border:1px solid #8c673a;border-radius:14px;padding:16px;margin:12px 0}h2{font-size:20px;margin:0 0 8px}label{display:block}select,input,button,textarea,a.action{font:inherit}select,textarea{width:100%;background:#17120d;color:inherit;border:1px solid #a78455;border-radius:8px;padding:8px}textarea{min-height:115px;resize:vertical;margin-top:10px}button,a.action{display:inline-block;background:#ffd57a;color:#25190c;border:0;border-radius:8px;padding:8px 12px;text-decoration:none;font-weight:bold;cursor:pointer}button:disabled{opacity:.55;cursor:default}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}img{display:block;max-width:100%;max-height:340px;object-fit:contain;margin-top:12px}img[hidden],a[hidden]{display:none}p{margin:8px 0}code{direction:ltr;unicode-bidi:isolate;color:#bce5ff}
+</style>
+</head>
+<body><main>
+<h1>מחולל תמונות · מהתחלה להיום</h1>
+<p id="status" role="status">טוען תחנות…</p>
+<section id="work" hidden>
+<label for="station">תחנה</label><select id="station"></select>
+<p id="summary"></p>
+<label for="prompt">בקשת תמונה לעריכה או להעתקה</label>
+<textarea id="prompt" dir="ltr"></textarea>
+<div class="actions"><button id="create" type="button">צור תמונה ב־ChatGPT</button><button id="copy" type="button">העתק בקשה</button></div>
+<p id="copyStatus" role="status"></p>
+</section>
+<section id="compressor" hidden>
+<h2>דחיסה והורדה</h2>
+<label for="input">בחר את התמונה שהתקבלה</label><input id="input" type="file" accept="image/*">
+<p>יעד לתמונה אחת עד 45 KB. התמונה נשמרת בשלמותה, ללא חיתוך.</p>
+<p id="result" role="status"></p>
+<img id="preview" alt="תצוגת התמונה הדחוסה" hidden>
+<div class="actions"><a id="download" class="action" hidden>הורד WebP</a></div>
+<p>להצגה בציר הזמן, העלה את הקובץ למאגר בתיקייה <code>images</code>.</p>
+</section>
+</main>
+<script>
+"use strict";
+const byId = id => document.getElementById(id);
+const stationSelect = byId("station");
+const input = byId("input");
+const preview = byId("preview");
+const download = byId("download");
+const budget = 45000;
+let resultUrl;
+let revision = 0;
+
+function clearResult() {
+  if (resultUrl) URL.revokeObjectURL(resultUrl);
+  resultUrl = undefined;
+  preview.hidden = download.hidden = true;
+  preview.removeAttribute("src");
+  download.removeAttribute("href");
+  byId("result").textContent = "";
+}
+
+async function compress(file) {
+  const source = URL.createObjectURL(file);
+  try {
+    const image = new Image();
+    image.src = source;
+    await image.decode();
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    for (const maxSide of [800, 640, 512, 400, 320, 240]) {
+      const scale = Math.min(1, maxSide / Math.max(image.naturalWidth, image.naturalHeight));
+      canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+      canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+      ctx.fillStyle = "#17120d";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      for (const quality of [0.8, 0.65, 0.5, 0.36, 0.24]) {
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/webp", quality));
+        if (blob?.type !== "image/webp") throw new Error("הדפדפן אינו יכול לשמור WebP.");
+        if (blob.size <= budget) return {blob, width: canvas.width, height: canvas.height};
+      }
+    }
+    throw new Error("התמונה לא נכנסה ל־45 KB. נסה תמונה אחרת.");
+  } finally {
+    URL.revokeObjectURL(source);
+  }
+}
+
+async function init() {
+  const response = await fetch("./history-data.json", {cache: "no-cache"});
+  if (!response.ok) throw new Error("Timeline unavailable");
+  const {stations} = await response.json();
+  if (!Array.isArray(stations) || !stations.length) throw new Error("No stations");
+  for (const [index, station] of stations.entries()) {
+    stationSelect.add(new Option((index + 1) + ". " + station.he.title, station.id));
+  }
+  function selectStation() {
+    const station = stations[stationSelect.selectedIndex];
+    ++revision;
+    input.value = "";
+    clearResult();
+    byId("copyStatus").textContent = "";
+    byId("summary").textContent = station.time.he + " · " + station.he.text;
+    byId("prompt").value = [
+      "Create one landscape 16:9 educational illustration, with no text, lettering, labels, or watermark.",
+      "Station: " + station.en.title,
+      "Time: " + station.time.en,
+      "Depict: " + station.en.text,
+      "Use a clear focal subject, realistic lighting and scientifically plausible details. Keep speculative details visually plausible, and avoid anachronisms."
+    ].join("\n");
+  }
+  stationSelect.onchange = selectStation;
+  input.onchange = async () => {
+    const request = ++revision;
+    clearResult();
+    const file = input.files[0];
+    if (!file) return;
+    byId("result").textContent = "דוחס את התמונה…";
+    try {
+      const {blob, width, height} = await compress(file);
+      if (request !== revision) return;
+      resultUrl = URL.createObjectURL(blob);
+      preview.src = download.href = resultUrl;
+      download.download = stationSelect.value + ".webp";
+      preview.hidden = download.hidden = false;
+      byId("result").textContent = download.download + " · " + (blob.size / 1000).toFixed(1) + " KB · " + width + "×" + height;
+    } catch (error) {
+      if (request === revision) byId("result").textContent = error.message;
+    }
+  };
+  byId("create").onclick = () => {
+    const prompt = byId("prompt").value.trim();
+    if (prompt) window.open("https://chatgpt.com/?q=" + encodeURIComponent(prompt), "_blank", "noopener,noreferrer");
+  };
+  byId("copy").onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(byId("prompt").value);
+      byId("copyStatus").textContent = "הבקשה הועתקה.";
+    } catch {
+      byId("prompt").select();
+      byId("copyStatus").textContent = "הבקשה מסומנת להעתקה ידנית.";
+    }
+  };
+  selectStation();
+  byId("status").textContent = stations.length + " תחנות זמינות";
+  byId("work").hidden = byId("compressor").hidden = false;
+}
+
+init().catch(() => {
+  byId("status").textContent = "לא ניתן לטעון את התחנות. רענן את הדף ונסה שוב.";
+});
+</script></body></html>
