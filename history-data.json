@@ -25,7 +25,8 @@
       "sections": [
         "human-06",
         "human-11",
-        "human-16"
+        "human-16",
+        "agriculture-01"
       ]
     }
   ],
@@ -1095,23 +1096,194 @@
       "image": "images/human-11.webp"
     },
     {
-      "id": "human-12",
+      "id": "agriculture-01",
       "time": {
-        "he": "לפני כ־12,000–10,000 שנה — בקירוב",
-        "en": "About 12,000–10,000 years ago — approximately"
+        "he": "לפני כ־15,000–12,000 שנה",
+        "en": "About 15,000–12,000 years ago"
       },
       "timeGroup": 13,
       "he": {
-        "title": "ראשית החקלאות",
-        "text": "במשך מאות אלפי שנים התקיימו בני האדם בעיקר מציד, מדיג ומאיסוף צמחי בר.\nלפני כ־12,000 שנה החלו חלק מהקהילות לשנות בהדרגה את דרכי השגת המזון.\nבמזרח התיכון החלו אנשים לגדל צמחים בקרבת מקומות מגוריהם.\nאחד האזורים המרכזיים בתהליך היה הסהר הפורה, הכולל גם את ארץ ישראל.\nבני האדם הכירו היטב צמחי בר כמו חיטה ושעורה עוד לפני שהחלו לגדל אותם.\nהם למדו לשמור זרעים ולזרוע אותם בעונות המתאימות.\nבמשך דורות נבחרו צמחים בעלי תכונות שהקלו על הגידול והקציר.\nכך התפתחו בהדרגה זנים מבויתים של דגנים.\nכלי צור משוננים שימשו לקצירת גבעולי הדגן.\nאבני שחיקה שימשו לטחינת גרעינים ולהכנת מזון.\nאנשים החלו לייצר מקומות אחסון לשמירת יבולים.\nגידול מזון אפשר לחלק מהקהילות להתגורר ביישובי קבע גדולים יותר.\nעם זאת, יישובי קבע התקיימו באזור עוד לפני התפתחות החקלאות המלאה.\nבהמשך בויתו גם בעלי חיים, ובהם עזים וכבשים.\nבעלי החיים סיפקו בשר ומוצרים נוספים, ובהמשך גם חלב וצמר.\nהחקלאות הגדילה בהדרגה את האפשרות לייצר מזון עבור אוכלוסיות גדולות.\nהחיים ביישובים צפופים הביאו גם מחלות חדשות ולשינויים בתזונה.\nהחקלאות לא הומצאה ביום אחד ולא בידי אדם אחד.\nהיא התפתחה בתקופות שונות ובאופן עצמאי בכמה אזורים בעולם.\nהמעבר לחקלאות היה אחד השינויים החשובים ביותר בתולדות החברה האנושית.",
-        "glossary": "ביות צמחים — שינוי הדרגתי של צמחי בר בעקבות גידול וברירה בידי בני אדם."
+        "title": "זרעים לפני החקלאות",
+        "text": "ציידים־לקטים אספו דגני בר.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nחיטה ושעורה גדלו באופן טבעי במזרח הקרוב.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nהם הכירו את עונות הבשלת הזרעים.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nקבוצות חזרו לאתרי איסוף מוכרים.\nהחוקרים משווים אתרים מאזורים שונים.\nגרעינים סיפקו מזון עשיר באנרגיה.\nתנאי הסביבה השפיעו על התהליך.\nאיסוף הדגן דרש עבודה משותפת.\nהמעבר לא התרחש בבת אחת.\nלהבי צור שימשו לקצירת שיבולים.\nבמקומות שונים היו דרכי חיים שונות.\nאבני שחיקה עזרו לעבד גרעינים.\nחלק מההסברים הם השערות מחקריות.\nחלק מהזרעים נשמרו לשימוש מאוחר.\nממצאים חדשים עשויים לשנות את התמונה.\nמחסנים אפשרו להתמודד עם עונות מחסור.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
       },
       "en": {
-        "title": "The beginnings of agriculture",
-        "text": "For hundreds of thousands of years, humans lived mainly by hunting, fishing, and gathering wild plants.\nAbout 12,000 years ago, some communities gradually began changing how they obtained food.\nIn the Middle East, people began growing plants near their homes.\nOne important region was the Fertile Crescent, which includes the land of Israel.\nPeople knew wild plants such as wheat and barley long before cultivating them.\nThey learned to save seeds and sow them in suitable seasons.\nOver generations, people selected plants with traits that made growing and harvesting easier.\nDomesticated varieties of cereals gradually developed.\nSerrated flint tools were used to cut grain stalks.\nGrinding stones were used to crush grains and prepare food.\nPeople began building storage places for harvested crops.\nFood production allowed some communities to live in larger permanent settlements.\nHowever, permanent settlements already existed in the region before full-scale farming.\nLater, people also domesticated animals, including goats and sheep.\nThese animals provided meat and other products, and later milk and wool.\nFarming gradually made it possible to feed larger populations.\nLiving in crowded settlements also brought new diseases and dietary changes.\nAgriculture was not invented in a single day or by one person.\nIt developed at different times and independently in several parts of the world.\nThe transition to agriculture was one of the most important changes in human society.",
-        "glossary": "Plant domestication — gradual changes to wild plants through human cultivation and selection."
+        "title": "Seeds before farming",
+        "text": "Foragers gathered wild grains.\nEvidence includes seeds, tools, and settlement remains.\nWheat and barley grew naturally in the Near East.\nDating finds provides approximate time ranges.\nPeople knew when seeds ripened.\nNot every detail of ancient community life is known.\nGroups returned to familiar gathering places.\nResearchers compare sites from different regions.\nGrains provided energy-rich food.\nEnvironmental conditions shaped the process.\nCollecting grain required shared work.\nThe transition did not happen all at once.\nFlint blades helped cut stalks.\nDifferent places had different ways of life.\nGrinding stones processed grain.\nSome explanations remain research hypotheses.\nSome seeds were saved for later.\nNew finds may change our understanding.\nStorage helped during food shortages.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
       },
-      "image": "images/human-12.webp"
+      "image": null
+    },
+    {
+      "id": "agriculture-02",
+      "time": {
+        "he": "לפני כ־12,000–11,000 שנה",
+        "en": "About 12,000–11,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "הכרת עונות הזריעה",
+        "text": "אנשים הבחינו שזרעים שנפלו לאדמה נובטים.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nגשם וטמפרטורה השפיעו על הנביטה.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nניסוי וטעייה לימדו מתי כדאי לזרוע.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nזריעה מכוונת התפתחה בהדרגה.\nהחוקרים משווים אתרים מאזורים שונים.\nלא כל קהילה עברה לחקלאות.\nתנאי הסביבה השפיעו על התהליך.\nציד ואיסוף נמשכו לצד ניסיונות גידול.\nהמעבר לא התרחש בבת אחת.\nחלקות סמוכות ליישובים היו נוחות להשגחה.\nבמקומות שונים היו דרכי חיים שונות.\nעשבים מתחרים יכלו לפגוע ביבול.\nחלק מההסברים הם השערות מחקריות.\nבני אדם למדו לטפל בקרקע.\nממצאים חדשים עשויים לשנות את התמונה.\nהצלחת הזריעה השתנתה משנה לשנה.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Learning when to sow",
+        "text": "People noticed that fallen seeds could sprout.\nEvidence includes seeds, tools, and settlement remains.\nRain and temperature affected germination.\nDating finds provides approximate time ranges.\nTrial and error taught sowing seasons.\nNot every detail of ancient community life is known.\nDeliberate sowing developed gradually.\nResearchers compare sites from different regions.\nNot every community adopted farming.\nEnvironmental conditions shaped the process.\nHunting and gathering continued alongside cultivation.\nThe transition did not happen all at once.\nPlots near settlements were easier to watch.\nDifferent places had different ways of life.\nWeeds could reduce yields.\nSome explanations remain research hypotheses.\nPeople learned to tend the soil.\nNew finds may change our understanding.\nSuccess varied from year to year.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-03",
+      "time": {
+        "he": "לפני כ־11,500–10,500 שנה",
+        "en": "About 11,500–10,500 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "ראשית גידול הדגנים",
+        "text": "קהילות החלו לטפח חיטה ושעורה.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nהגידול התפתח במקומות שונים בסהר הפורה.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nזרעים נאספו גם משדות מעובדים.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nמלאכת הקציר נעשתה מאורגנת יותר.\nהחוקרים משווים אתרים מאזורים שונים.\nגידול הדגן דרש תכנון עונתי.\nתנאי הסביבה השפיעו על התהליך.\nהיבול היה תלוי בכמות הגשמים.\nהמעבר לא התרחש בבת אחת.\nכלי אבן שימשו לקציר ולעיבוד.\nבמקומות שונים היו דרכי חיים שונות.\nגרעינים נוקו מקליפות ומפסולת.\nחלק מההסברים הם השערות מחקריות.\nחלק מהתוצרת נאכל מיד.\nממצאים חדשים עשויים לשנות את התמונה.\nחלק אחר נשמר לעונות הבאות.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Early cereal cultivation",
+        "text": "Communities began tending wheat and barley.\nEvidence includes seeds, tools, and settlement remains.\nCultivation developed across the Fertile Crescent.\nDating finds provides approximate time ranges.\nSeeds were gathered from cultivated fields too.\nNot every detail of ancient community life is known.\nHarvesting became more organized.\nResearchers compare sites from different regions.\nCereals required seasonal planning.\nEnvironmental conditions shaped the process.\nYields depended on rainfall.\nThe transition did not happen all at once.\nStone tools helped harvest and process crops.\nDifferent places had different ways of life.\nGrain was cleaned of husks and debris.\nSome explanations remain research hypotheses.\nSome produce was eaten immediately.\nNew finds may change our understanding.\nOther grain was stored for future seasons.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-04",
+      "time": {
+        "he": "לפני כ־11,000–9,500 שנה",
+        "en": "About 11,000–9,500 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כיצד בויתו הצמחים",
+        "text": "צמחי בר מפזרים את זרעיהם באופן טבעי.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nבחלק מהדגנים השיבולת מתפרקת בקלות.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nקציר וזריעה שינו את סיכויי ההתרבות.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nזרעים שנותרו על השיבולת נאספו ביתר קלות.\nהחוקרים משווים אתרים מאזורים שונים.\nלאורך דורות התרבו תכונות מועילות לחקלאים.\nתנאי הסביבה השפיעו על התהליך.\nהביות היה שינוי באוכלוסיית הצמחים.\nהמעבר לא התרחש בבת אחת.\nהוא לא התרחש בעונה אחת.\nבמקומות שונים היו דרכי חיים שונות.\nהחוקרים מזהים שינויים בשרידי זרעים.\nחלק מההסברים הם השערות מחקריות.\nשיבולים מבויתות שונות לעיתים משיבולי בר.\nממצאים חדשים עשויים לשנות את התמונה.\nהמעבר היה הדרגתי ולא אחיד.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "How plants became domesticated",
+        "text": "Wild plants naturally disperse their seeds.\nEvidence includes seeds, tools, and settlement remains.\nSome cereal heads break apart easily.\nDating finds provides approximate time ranges.\nHarvesting and sowing changed which plants reproduced.\nNot every detail of ancient community life is known.\nSeeds retained on stalks were easier to gather.\nResearchers compare sites from different regions.\nUseful traits became common over generations.\nEnvironmental conditions shaped the process.\nDomestication changed plant populations.\nThe transition did not happen all at once.\nIt did not happen in one season.\nDifferent places had different ways of life.\nResearchers identify changes in ancient seed remains.\nSome explanations remain research hypotheses.\nDomesticated cereal heads can differ from wild ones.\nNew finds may change our understanding.\nThe change was gradual and uneven.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-05",
+      "time": {
+        "he": "לפני כ־11,000–9,000 שנה",
+        "en": "About 11,000–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "כלי הקציר והטחינה",
+        "text": "מגלים עם להבי צור שימשו לקציר.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nבחלק מהלהבים נוצר ברק משימוש בדגנים.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nאבני ריחיים שימשו לטחינת גרעינים.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nטחינה הפכה גרעינים לקלים יותר להכנה.\nהחוקרים משווים אתרים מאזורים שונים.\nעלי ומכתש סייעו לכתישת מזון.\nתנאי הסביבה השפיעו על התהליך.\nכלים נשחקו והיה צורך לתקנם.\nהמעבר לא התרחש בבת אחת.\nהכנת מזון דרשה זמן ומאמץ.\nבמקומות שונים היו דרכי חיים שונות.\nכלי העבודה נמצאו בתוך יישובים קדומים.\nחלק מההסברים הם השערות מחקריות.\nהם מעידים על שגרת עבודה חוזרת.\nממצאים חדשים עשויים לשנות את התמונה.\nצורת הכלים השתנתה בין אזורים.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Harvesting and grinding tools",
+        "text": "Sickles with flint blades harvested crops.\nEvidence includes seeds, tools, and settlement remains.\nSome blades developed a sheen from cutting cereals.\nDating finds provides approximate time ranges.\nGrinding stones crushed grain.\nNot every detail of ancient community life is known.\nGrinding made grain easier to prepare.\nResearchers compare sites from different regions.\nPestles and mortars helped pound food.\nEnvironmental conditions shaped the process.\nTools wore down and needed repairs.\nThe transition did not happen all at once.\nFood preparation required time and effort.\nDifferent places had different ways of life.\nTools were found inside ancient settlements.\nSome explanations remain research hypotheses.\nThey show repeated daily tasks.\nNew finds may change our understanding.\nTool designs varied across regions.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-06",
+      "time": {
+        "he": "לפני כ־11,000–9,000 שנה",
+        "en": "About 11,000–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "אחסון היבול",
+        "text": "החקלאים נזקקו למקום לשמור בו גרעינים.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nנבנו בורות ומתקני אחסון.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nשמירת מזון עזרה לעבור עונות קשות.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nזרעים שנשמרו שימשו גם לזריעה.\nהחוקרים משווים אתרים מאזורים שונים.\nלחות ומזיקים סיכנו את התבואה.\nתנאי הסביבה השפיעו על התהליך.\nאחסון חייב השגחה ותחזוקה.\nהמעבר לא התרחש בבת אחת.\nשרידי גרעינים נמצאו באתרים ארכאולוגיים.\nבמקומות שונים היו דרכי חיים שונות.\nמבני אחסון מלמדים על ארגון היישוב.\nחלק מההסברים הם השערות מחקריות.\nלא תמיד ברור למי השתייך כל מחסן.\nממצאים חדשים עשויים לשנות את התמונה.\nחלוקת המזון בין משפחות נחקרת עד היום.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Storing the harvest",
+        "text": "Farmers needed places to keep grain.\nEvidence includes seeds, tools, and settlement remains.\nPits and storage facilities were built.\nDating finds provides approximate time ranges.\nStored food helped during difficult seasons.\nNot every detail of ancient community life is known.\nSaved seed could also be sown.\nResearchers compare sites from different regions.\nMoisture and pests threatened supplies.\nEnvironmental conditions shaped the process.\nStorage required care and maintenance.\nThe transition did not happen all at once.\nArchaeologists find grain remains at sites.\nDifferent places had different ways of life.\nStorage buildings reveal settlement organization.\nSome explanations remain research hypotheses.\nOwnership of each store is often unknown.\nNew finds may change our understanding.\nResearchers still study how food was shared.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-07",
+      "time": {
+        "he": "לפני כ־10,500–9,000 שנה",
+        "en": "About 10,500–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "הכפר החקלאי",
+        "text": "חלק מהיישובים גדלו עם התרחבות החקלאות.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nבתים נבנו מחומרים מקומיים.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nחצרות שימשו לעבודה ולהכנת מזון.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nמגורים ממושכים דרשו תחזוקה.\nהחוקרים משווים אתרים מאזורים שונים.\nמשפחות פיתחו שגרת עבודה עונתית.\nתנאי הסביבה השפיעו על התהליך.\nשדות היו סמוכים לעיתים לבתים.\nהמעבר לא התרחש בבת אחת.\nהקשר בין תושבים לקרקע התחזק.\nבמקומות שונים היו דרכי חיים שונות.\nעם זאת היו יישובי קבע עוד לפני החקלאות.\nחלק מההסברים הם השערות מחקריות.\nלא כל תושבי הכפר עסקו באותן עבודות.\nממצאים חדשים עשויים לשנות את התמונה.\nהכפרים נבדלו בגודלם ובארגונם.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "The farming village",
+        "text": "Some settlements grew as farming expanded.\nEvidence includes seeds, tools, and settlement remains.\nHouses used local building materials.\nDating finds provides approximate time ranges.\nCourtyards were used for work and food preparation.\nNot every detail of ancient community life is known.\nLong-term residence required maintenance.\nResearchers compare sites from different regions.\nFamilies developed seasonal work routines.\nEnvironmental conditions shaped the process.\nFields were sometimes near houses.\nThe transition did not happen all at once.\nTies between people and land grew stronger.\nDifferent places had different ways of life.\nYet permanent settlements existed before farming.\nSome explanations remain research hypotheses.\nNot everyone did the same work.\nNew finds may change our understanding.\nVillages differed in size and organization.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-08",
+      "time": {
+        "he": "לפני כ־10,500–9,000 שנה",
+        "en": "About 10,500–9,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "החקלאות ובעלי החיים",
+        "text": "ציד המשיך לספק מזון בקהילות רבות.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nבהדרגה החל גם ניהול עדרים.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nעזים וכבשים היו בין בעלי החיים שבויתו.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nביות בעלי חיים היה תהליך ממושך.\nהחוקרים משווים אתרים מאזורים שונים.\nעדרים סיפקו מקור מזון נוסף.\nתנאי הסביבה השפיעו על התהליך.\nבני אדם בחרו אילו בעלי חיים לגדל.\nהמעבר לא התרחש בבת אחת.\nהעדרים נזקקו למים ולמרעה.\nבמקומות שונים היו דרכי חיים שונות.\nהיחסים בין האדם לחיות השתנו.\nחלק מההסברים הם השערות מחקריות.\nחקלאות צמחים ורעייה התפתחו יחד במקומות מסוימים.\nממצאים חדשים עשויים לשנות את התמונה.\nבמקומות אחרים הן התפתחו בזמנים שונים.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Farming and animals",
+        "text": "Hunting continued to provide food.\nEvidence includes seeds, tools, and settlement remains.\nPeople gradually began managing herds.\nDating finds provides approximate time ranges.\nGoats and sheep were among domesticated animals.\nNot every detail of ancient community life is known.\nAnimal domestication took many generations.\nResearchers compare sites from different regions.\nHerds offered another food source.\nEnvironmental conditions shaped the process.\nPeople selected which animals to raise.\nThe transition did not happen all at once.\nHerds needed water and grazing.\nDifferent places had different ways of life.\nHuman-animal relationships changed.\nSome explanations remain research hypotheses.\nCrops and herding developed together in some places.\nNew finds may change our understanding.\nElsewhere they developed at different times.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-09",
+      "time": {
+        "he": "לפני כ־10,000–8,000 שנה",
+        "en": "About 10,000–8,000 years ago"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "מחיר החיים החקלאיים",
+        "text": "החקלאות אפשרה לייצר יותר מזון במקומות מסוימים.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nאך יבול עלול היה להיכשל בגלל בצורת.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nהסתמכות על מעט גידולים צמצמה מגוון תזונתי.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nעבודה בשדות דרשה מאמץ גופני.\nהחוקרים משווים אתרים מאזורים שונים.\nיישובים צפופים הקלו על מעבר מחלות.\nתנאי הסביבה השפיעו על התהליך.\nקרבה לבעלי חיים יצרה סיכונים חדשים.\nהמעבר לא התרחש בבת אחת.\nשרידי עצמות מלמדים על בריאות ותזונה.\nבמקומות שונים היו דרכי חיים שונות.\nההשפעות השתנו בין קהילות.\nחלק מההסברים הם השערות מחקריות.\nהמעבר לחקלאות לא היה תמיד שיפור מיידי.\nממצאים חדשים עשויים לשנות את התמונה.\nהיו לו יתרונות וגם מחירים.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Costs of farming life",
+        "text": "Farming increased food production in some places.\nEvidence includes seeds, tools, and settlement remains.\nBut drought could cause harvest failures.\nDating finds provides approximate time ranges.\nReliance on few crops reduced dietary variety.\nNot every detail of ancient community life is known.\nFieldwork demanded physical effort.\nResearchers compare sites from different regions.\nCrowded villages helped diseases spread.\nEnvironmental conditions shaped the process.\nLiving near animals created new risks.\nThe transition did not happen all at once.\nHuman bones reveal clues about health and diet.\nDifferent places had different ways of life.\nEffects differed across communities.\nSome explanations remain research hypotheses.\nFarming was not always an immediate improvement.\nNew finds may change our understanding.\nIt brought both benefits and costs.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
+    },
+    {
+      "id": "agriculture-10",
+      "time": {
+        "he": "לפני כ־10,000–5,000 שנה — בקירוב",
+        "en": "About 10,000–5,000 years ago — approximately"
+      },
+      "timeGroup": 13,
+      "he": {
+        "title": "החקלאות מתפשטת בעולם",
+        "text": "החקלאות התפתחה ביותר מאזור אחד בעולם.\nהממצאים כוללים זרעים, כלים ושרידי יישובים.\nבמזרח הקרוב גידלו חיטה ושעורה.\nתיארוך הממצאים מאפשר לקבוע טווחי זמן משוערים.\nבמזרח אסיה בויתו אורז ודוחן.\nלא כל פרט בחיי הקהילות הקדומות ידוע.\nבאמריקות התפתח גידול תירס וצמחים נוספים.\nהחוקרים משווים אתרים מאזורים שונים.\nהגידולים התאימו לסביבות שונות.\nתנאי הסביבה השפיעו על התהליך.\nידע עבר לעיתים בין קהילות שכנות.\nהמעבר לא התרחש בבת אחת.\nלעיתים אנשים נדדו עם זרעים ובעלי חיים.\nבמקומות שונים היו דרכי חיים שונות.\nבאזורים אחרים התפתח ביות עצמאי.\nחלק מההסברים הם השערות מחקריות.\nציד ולקט לא נעלמו מיד.\nממצאים חדשים עשויים לשנות את התמונה.\nהחקלאות שינתה בהדרגה את תולדות האנושות.\nזהו שלב חשוב בסיפור התפתחות החקלאות.",
+        "glossary": "חקלאות — גידול מכוון של צמחים לצורכי האדם."
+      },
+      "en": {
+        "title": "Farming spreads across the world",
+        "text": "Farming developed in more than one world region.\nEvidence includes seeds, tools, and settlement remains.\nThe Near East grew wheat and barley.\nDating finds provides approximate time ranges.\nEast Asia domesticated rice and millet.\nNot every detail of ancient community life is known.\nThe Americas developed maize and other crops.\nResearchers compare sites from different regions.\nCrops suited different environments.\nEnvironmental conditions shaped the process.\nKnowledge sometimes spread between neighbors.\nThe transition did not happen all at once.\nMigrants sometimes carried seeds and animals.\nDifferent places had different ways of life.\nOther areas developed farming independently.\nSome explanations remain research hypotheses.\nHunting and gathering did not vanish immediately.\nNew finds may change our understanding.\nFarming gradually changed human history.\nThis is an important stage in the history of farming.",
+        "glossary": "Agriculture — deliberate cultivation of plants for human use."
+      },
+      "image": null
     },
     {
       "id": "human-13",
