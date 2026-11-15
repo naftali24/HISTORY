@@ -1742,10 +1742,6 @@ async function startTimeline() {
       for (const start of sectionStarts[index]) {
         entries.push({ label: labels.times[stations[start].timeGroup], start });
       }
-      if (index === 2) {
-        const agricultureStart = stations.findIndex(s => s.id === "agriculture-01");
-        if (agricultureStart >= 0 && !entries.some(e => e.start === agricultureStart)) entries.push({label: language === "he" ? "ראשית החקלאות — 10 תחנות" : "Early agriculture — 10 stations", start:agricultureStart});
-      }
       return entries;
     });
     byId("periodList").replaceChildren(...menuEntries.map(({ label, start }) => {
