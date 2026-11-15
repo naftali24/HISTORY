@@ -1740,7 +1740,14 @@ async function startTimeline() {
         start: periodStarts[index]
       }];
       for (const start of sectionStarts[index]) {
-        entries.push({ label: labels.times[stations[start].timeGroup], start });
+        const stationId = stations[start].id;
+        const sectionNames = {
+          "human-11": {he:"ראשית יישובי הקבע",en:"Early permanent settlements"},
+          "agriculture-01": {he:"ראשית החקלאות — 10 תחנות",en:"Early agriculture — 10 stations"},
+          "human-16": {he:"ערים, מתכות וראשית הכתב",en:"Cities, metals and early writing"}
+        };
+        const custom = sectionNames[stationId];
+        entries.push({ label: custom ? custom[language] : labels.times[stations[start].timeGroup], start });
       }
       return entries;
     });
