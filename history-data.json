@@ -26,7 +26,8 @@
         "human-06",
         "settlement-01",
         "agriculture-01",
-        "human-16"
+        "human-16",
+        "bronze-01"
       ]
     }
   ],
@@ -1607,6 +1608,196 @@
         "glossary": "Recorded history — the study of the past using surviving documents and inscriptions alongside other evidence."
       },
       "image": "images/human-20.webp"
+    },
+    {
+      "id": "bronze-01",
+      "time": {
+        "he": "בסביבות 3100–2600 לפנה״ס — בקירוב",
+        "en": "Around 3100–2600 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "ערי שומר מתרחבות",
+        "text": "בדרום מסופוטמיה התפתחו ערי־מדינה ובהן אורוכ, אור ולגש. תעלות, מקדשים ובתי מלאכה העידו על ארגון עירוני מורכב.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Sumerian cities expand",
+        "text": "In southern Mesopotamia, city-states such as Uruk, Ur and Lagash developed. Canals, temples and workshops reveal complex urban organization.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-01.webp"
+    },
+    {
+      "id": "bronze-02",
+      "time": {
+        "he": "בסביבות 3000–2500 לפנה״ס — בקירוב",
+        "en": "Around 3000–2500 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "שלטון ומוסדות בעיר",
+        "text": "מושלים, פקידים ומוסדות דת ניהלו משאבים ועבודה. צורות השלטון היו שונות, והידע שלנו נובע מכתובות וממצאים ארכאולוגיים.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Rulers and urban institutions",
+        "text": "Governors, officials and religious institutions managed resources and labor. Government varied, as inscriptions and archaeological finds indicate.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-02.webp"
+    },
+    {
+      "id": "bronze-03",
+      "time": {
+        "he": "בסביבות 3000–2500 לפנה״ס — בקירוב",
+        "en": "Around 3000–2500 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "כתב לניהול ולזיכרון",
+        "text": "כתב היתדות במסופוטמיה שימש לרישום סחורות, עובדים והקצאות מזון. בהדרגה נכתבו גם שמות, הקדשות וטקסטים נוספים.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Writing for records",
+        "text": "Cuneiform in Mesopotamia recorded goods, workers and food allocations. Names, dedications and other texts gradually appeared.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-03.webp"
+    },
+    {
+      "id": "bronze-04",
+      "time": {
+        "he": "בסביבות בסביבות 3100 לפנה״ס — בקירוב",
+        "en": "Around Around 3100 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "מצרים מתאחדת",
+        "text": "לאורך הנילוס התגבשה ממלכה מאוחדת, תהליך שמקושר במסורת למלך נערמר. האיחוד היה ככל הנראה תהליך ולא אירוע יחיד.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Egyptian unification",
+        "text": "A unified kingdom emerged along the Nile, traditionally associated with Narmer. Unification was likely a process rather than one single event.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-04.webp"
+    },
+    {
+      "id": "bronze-05",
+      "time": {
+        "he": "בסביבות 3000–2500 לפנה״ס — בקירוב",
+        "en": "Around 3000–2500 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "הנילוס ומחזור ההצפה",
+        "text": "ההצפה העונתית של הנילוס תרמה לחקלאות מצרים. קהילות ארגנו שדות, תעלות ומחסנים, אך שיטות הניהול השתנו לאורך הזמן.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "The Nile and its floods",
+        "text": "Seasonal Nile floods supported Egyptian agriculture. Communities organized fields, canals and stores, though methods changed over time.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-05.webp"
+    },
+    {
+      "id": "bronze-06",
+      "time": {
+        "he": "בסביבות בסביבות 2650–2500 לפנה״ס — בקירוב",
+        "en": "Around Around 2650–2500 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "בניית פירמידות קדומות",
+        "text": "במצרים נבנתה פירמידת המדרגות של ג׳וסר ובהמשך פירמידות גדולות בגיזה. מחצבות, כלי עבודה ויישובי פועלים מסייעים להבין את הבנייה.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Early pyramid building",
+        "text": "Egypt built Djoser's Step Pyramid and later the great pyramids at Giza. Quarries, tools and workers' settlements help explain their construction.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-06.webp"
+    },
+    {
+      "id": "bronze-07",
+      "time": {
+        "he": "בסביבות 3000–2500 לפנה״ס — בקירוב",
+        "en": "Around 3000–2500 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "מסחר בין ארצות",
+        "text": "ערים וממלכות החליפו עץ, אבן, מתכות ומוצרים מעובדים. חומרים שמקורם רחוק מעידים על רשתות מסחר, לא תמיד על מסע ישיר של אותו סוחר.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Trade across regions",
+        "text": "Cities and kingdoms exchanged timber, stone, metals and crafted goods. Distant materials show trade networks, not necessarily direct journeys by individual traders.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-07.webp"
+    },
+    {
+      "id": "bronze-08",
+      "time": {
+        "he": "בסביבות בסביבות 2600 לפנה״ס — בקירוב",
+        "en": "Around Around 2600 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "ערים בעמק האינדוס",
+        "text": "בדרום אסיה התפתחו ערים מתוכננות ובהן הראפה ומוהנג׳ו־דארו. רחובות, לבנים ומערכות ניקוז מעידים על תכנון; הכתב המקומי טרם פוענח.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Cities of the Indus region",
+        "text": "Planned cities such as Harappa and Mohenjo-daro developed in South Asia. Streets, bricks and drains show planning; the script remains undeciphered.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-08.webp"
+    },
+    {
+      "id": "bronze-09",
+      "time": {
+        "he": "בסביבות 3000–2000 לפנה״ס — בקירוב — בקירוב",
+        "en": "Around 3000–2000 BCE — approximate — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "תקופת הברונזה",
+        "text": "שימוש בסגסוגות נחושת, ובהן ברונזה, התרחב באזורים שונים בזמנים שונים. כלי אבן לא נעלמו, והמעבר למתכת לא היה אחיד.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "The Bronze Age",
+        "text": "Copper alloys, including bronze, spread at different times across regions. Stone tools remained in use, and the transition was uneven.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-09.webp"
+    },
+    {
+      "id": "bronze-10",
+      "time": {
+        "he": "בסביבות 2600–2000 לפנה״ס — בקירוב",
+        "en": "Around 2600–2000 BCE — approximate"
+      },
+      "timeGroup": 15,
+      "he": {
+        "title": "ערים, עושר ואי־שוויון",
+        "text": "קברים עשירים, מבני ציבור ובתי מגורים שונים בגודלם מלמדים על הבדלי מעמד ועושר בחלק מהחברות. הממצאים אינם מספרים את סיפורם של כל התושבים.",
+        "glossary": "תקופת הברונזה — תקופה שבה נעשה שימוש נרחב בכלי מתכת, בעיקר מסגסוגות נחושת, לצד כלי אבן."
+      },
+      "en": {
+        "title": "Cities, wealth and inequality",
+        "text": "Rich burials, public buildings and unequal house sizes suggest differences in status and wealth in some societies. The finds do not tell every resident's story.",
+        "glossary": "Bronze Age — a period of widespread metal tool use, especially copper alloys, alongside stone tools."
+      },
+      "image": "images/bronze-10.webp"
     }
   ]
 }
