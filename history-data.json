@@ -1264,6 +1264,25 @@
         "glossary": "Recorded history — the study of the past using surviving documents and inscriptions alongside other evidence."
       },
       "image": "images/human-20.webp"
+    },
+    {
+      "id": "human-21",
+      "time": {
+        "he": "בסביבות 3100–2500 לפנה״ס — בקירוב",
+        "en": "Around 3100–2500 BCE — approximate"
+      },
+      "timeGroup": 2,
+      "he": {
+        "title": "התפתחות הערים והממלכות הראשונות",
+        "text": "1. בדרום מסופוטמיה גדלו ערים כגון אורוכ, ובהן חיו אלפי אנשים.\n2. העיר כללה בתי מגורים, רחובות, מקדשים ומקומות עבודה.\n3. רוב התושבים עדיין התפרנסו מחקלאות בשדות שסביב העיר.\n4. תעלות השקיה סייעו להעביר מים מנהרות החידקל והפרת לשדות.\n5. החקלאים גידלו בעיקר שעורה, וכן תמרים וגידולים נוספים.\n6. עודפי מזון אפשרו לחלק מהתושבים להתמחות במלאכות אחרות.\n7. קדרים יצרו כלי חרס, ואומנים עבדו בנחושת, באבן ובצמר.\n8. סוחרים העבירו סחורות בין יישובים ואף לאזורים מרוחקים.\n9. מקדשים היו מוקדי פולחן ולעיתים גם מוקדים כלכליים ומנהליים.\n10. מנהיגים מקומיים צברו כוח, אך צורות השלטון השתנו מעיר לעיר.\n11. ערי המדינה התחרו לעיתים על אדמות, מים ודרכי מסחר.\n12. פקידים השתמשו בלוחות חרס כדי לרשום כמויות של תבואה וסחורות.\n13. סימני הכתב נעשו בהדרגה מורכבים יותר ואפשרו תיעוד מגוון.\n14. חותמות גליל הוטבעו בחומר רך כדי לסמן בעלות או אישור.\n15. ארכאולוגים לומדים על התקופה ממבנים, כלים, קברים ולוחות; פרטים רבים על חיי האנשים עדיין אינם ידועים.",
+        "glossary": "מסופוטמיה — ארץ הנהרות חידקל ופרת. עיר־מדינה — עיר והאזור שסביבה בעלי שלטון עצמאי. חותם גליל — גליל חרוט שמגלגלים על חומר רך ליצירת סימן."
+      },
+      "en": {
+        "title": "The growth of early cities and kingdoms",
+        "text": "1. In southern Mesopotamia, cities such as Uruk grew to house thousands of people.\n2. Cities contained homes, streets, temples, and workplaces.\n3. Most people still depended on farming in fields around the city.\n4. Irrigation canals helped carry water from the Tigris and Euphrates to fields.\n5. Farmers grew mainly barley, along with dates and other crops.\n6. Food surpluses allowed some residents to specialize in other work.\n7. Potters made ceramics, while craftspeople worked with copper, stone, and wool.\n8. Traders moved goods between settlements and to distant regions.\n9. Temples served religious purposes and sometimes economic and administrative roles.\n10. Local leaders gained power, but forms of government varied among cities.\n11. City-states sometimes competed over land, water, and trade routes.\n12. Officials used clay tablets to record quantities of grain and other goods.\n13. Writing signs gradually became more complex and supported wider recordkeeping.\n14. Cylinder seals were rolled over soft clay to mark ownership or authorization.\n15. Archaeologists study buildings, tools, burials, and tablets; much about ordinary people's lives remains unknown.",
+        "glossary": "Mesopotamia — the region of the Tigris and Euphrates rivers. City-state — a city and surrounding territory with its own government. Cylinder seal — an engraved cylinder rolled over soft clay to leave a mark."
+      },
+      "image": "images/human-21.webp"
     }
   ]
 }
