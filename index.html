@@ -79,8 +79,8 @@ main{padding:7px;overflow:hidden;display:flex;flex-direction:column}
 <svg class="playIcon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 8h4l6-5v18l-6-5H2z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
 <svg class="stopIcon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor"/></svg>
 </button>
-<button type="button" id="sequence" class="iconControl" aria-pressed="false" aria-label="רצף">
-<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10V8a3 3 0 0 1 3-3h14m-4-4 4 4-4 4m5 5v2a3 3 0 0 1-3 3H4m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<button type="button" id="sequence" class="iconControl" aria-pressed="false" aria-label="התחל מחדש ללא קול" title="התחל מחדש ללא קול">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M20 12a8 8 0 1 0 1 5" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 <button type="button" id="langBtn" class="iconControl" aria-label="תרגום לאנגלית">🇬🇧</button>
 <a id="stationGpt" target="_blank" rel="noopener noreferrer">GPT</a>
@@ -1691,8 +1691,8 @@ async function startTimeline() {
   function renderPlayback() {
     byId("speak").setAttribute("aria-label", playback ? copy[language].stop : copy[language].play);
     byId("speak").setAttribute("aria-pressed", String(Boolean(playback)));
-    byId("sequence").setAttribute("aria-label", copy[language].sequence);
-    byId("sequence").setAttribute("aria-pressed", String(playback === "continuous"));
+    byId("sequence").setAttribute("aria-label", language === "he" ? "התחל מחדש ללא קול" : "Restart without audio");
+    byId("sequence").setAttribute("aria-pressed", "false");
   }
 
   function renderStation() {
@@ -1841,7 +1841,7 @@ async function startTimeline() {
   byId("periodDialog").addEventListener("click", event => { if (event.target === byId("periodDialog")) closePeriodMenu(); });
   document.addEventListener("keydown", event => { if (event.key === "Escape" && !byId("periodDialog").hidden) closePeriodMenu(); });
   byId("speak").onclick = () => playback ? stopSpeech() : readStation("single");
-  byId("sequence").onclick = () => playback === "continuous" ? stopSpeech() : readStation("continuous");
+  byId("sequence").onclick = () => { stopSpeech(); byId("status").textContent = ""; current = 0; renderStation(); };
   const restartBtn = byId("restart");
   if (restartBtn) restartBtn.onclick = () => { stopSpeech(); current = 0; renderStation(); };
   byId("langBtn").onclick = () => {
