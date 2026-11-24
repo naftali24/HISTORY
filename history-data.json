@@ -89,6 +89,13 @@
         "india-06",
         "india-11"
       ]
+    },
+    {
+      "he": "התקופה ההלניסטית — מאלכסנדר ועד קלאופטרה",
+      "en": "The Hellenistic era — from Alexander to Cleopatra",
+      "ready": true,
+      "startStation": "hellenistic-01",
+      "sections": []
     }
   ],
   "stations": [
@@ -3568,6 +3575,291 @@
         "glossary": "Shakuntala is a celebrated play by Kalidasa; ancient medical treatments require modern scientific evaluation."
       },
       "image": "images/india-15.webp"
+    },
+    {
+      "id": "hellenistic-01",
+      "time": {
+        "he": "336–323 לפנה״ס",
+        "en": "336–323 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "אלכסנדר הגדול — חזון האימפריה",
+        "text": "אלכסנדר ירש את אביו פיליפוס השני במוקדון, הביס את האימפריה הפרסית והגיע עד הודו. כיבושיו יצרו מרחב שבו השפה והתרבות היוונית נפגשו עם מסורות מקומיות.",
+        "glossary": "קרב גאוגמלה בשנת 331 לפנה״ס הכריע את המאבק מול דריווש השלישי. בשנת 324 נערכו בשושן נישואים בין אנשי חצר מוקדונים לנשים פרסיות."
+      },
+      "en": {
+        "title": "Alexander the Great — an imperial vision",
+        "text": "Alexander succeeded Philip II in Macedon, defeated the Persian Empire and reached India. His conquests created a vast region where Greek language and culture encountered local traditions.",
+        "glossary": "The Battle of Gaugamela in 331 BCE was decisive against Darius III. In 324, marriages between Macedonian courtiers and Persian women took place at Susa."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-02",
+      "time": {
+        "he": "323 לפנה״ס",
+        "en": "323 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "מות אלכסנדר בבבל",
+        "text": "אלכסנדר מת בבבל בגיל 32, ללא יורש בוגר המסוגל לשלוט באימפריה. מצביאיו ניסו תחילה לשמור על אחדותה בשם משפחת המלוכה, אך מאבקי כוח פירקו אותה.",
+        "glossary": "פיליפוס השלישי ואלכסנדר הרביעי הוכרזו מלכים. סיבת מותו של אלכסנדר אינה ידועה בוודאות."
+      },
+      "en": {
+        "title": "Alexander's death in Babylon",
+        "text": "Alexander died in Babylon aged 32, leaving no adult heir capable of ruling his empire. His generals initially tried to preserve unity in the royal family's name, but rivalries fragmented it.",
+        "glossary": "Philip III and Alexander IV were proclaimed kings. Alexander's cause of death remains uncertain."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-03",
+      "time": {
+        "he": "323–281 לפנה״ס",
+        "en": "323–281 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "מלחמות הדיאדוכים",
+        "text": "יורשי אלכסנדר נאבקו על השליטה במוקדון, מצרים ואסיה. הבריתות השתנו שוב ושוב, ובסופו של דבר נוצרו ממלכות עצמאיות שנשלטו בידי שושלות שונות.",
+        "glossary": "בקרב איפסוס בשנת 301 לפנה״ס הובס אנטיגונוס חד־העין בידי קואליציית יריבים."
+      },
+      "en": {
+        "title": "Wars of the Diadochi",
+        "text": "Alexander's successors fought for control of Macedon, Egypt and Asia. Alliances repeatedly shifted, eventually producing independent kingdoms ruled by separate dynasties.",
+        "glossary": "At Ipsus in 301 BCE, Antigonus the One-Eyed was defeated by a coalition of rivals."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-04",
+      "time": {
+        "he": "305–30 לפנה״ס",
+        "en": "305–30 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "ממלכת בית תלמי במצרים",
+        "text": "תלמי הראשון ייסד שושלת ששלטה במצרים מאלכסנדריה. המלכים שילבו מוסדות יווניים עם מסורות מצריות, ניהלו מערכת מיסוי מפותחת ותמכו במקדשים ובמחקר.",
+        "glossary": "אבן רוזטה משנת 196 לפנה״ס נושאת צו מתקופת תלמי החמישי בשלושה סוגי כתב, שסייע בפענוח ההירוגליפים."
+      },
+      "en": {
+        "title": "Ptolemaic Egypt",
+        "text": "Ptolemy I founded a dynasty ruling Egypt from Alexandria. Its kings combined Greek institutions with Egyptian traditions, administered an elaborate tax system and supported temples and scholarship.",
+        "glossary": "The Rosetta Stone of 196 BCE records a decree under Ptolemy V in three scripts, helping scholars decipher hieroglyphs."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-05",
+      "time": {
+        "he": "312–63 לפנה״ס",
+        "en": "312–63 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "האימפריה הסלאוקית",
+        "text": "סלאוקוס הראשון הקים ממלכה רחבת ידיים שכללה בתקופות שונות את סוריה, מסופוטמיה, איראן וחלקים ממרכז אסיה. ערים חדשות שימשו מוקדי מנהל ומסחר, לצד מוסדות מקומיים ותיקים.",
+        "glossary": "אנטיוכיה על האורונטס וסלאוקיה על החידקל היו מרכזים חשובים. פומפיוס סיפח את סוריה לרומא בשנת 64 לפנה״ס."
+      },
+      "en": {
+        "title": "Seleucid Empire",
+        "text": "Seleucus I established a vast kingdom that at various times included Syria, Mesopotamia, Iran and parts of Central Asia. New cities served as administrative and commercial centers alongside older local institutions.",
+        "glossary": "Antioch on the Orontes and Seleucia on the Tigris were major centers. Pompey annexed Syria to Rome in 64 BCE."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-06",
+      "time": {
+        "he": "277–168 לפנה״ס",
+        "en": "277–168 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "ממלכת מוקדון ובית אנטיגונוס",
+        "text": "אנטיגונוס השני גונאטס ביסס את שלטון שושלתו במוקדון. הממלכה התמודדה עם בריתות של ערים יווניות ובהמשך עם התרחבות רומא.",
+        "glossary": "פרסאוס, המלך האחרון של השושלת, הובס בקרב פידנה בשנת 168 לפנה״ס."
+      },
+      "en": {
+        "title": "Macedon and the Antigonid dynasty",
+        "text": "Antigonus II Gonatas consolidated his dynasty's rule in Macedon. The kingdom confronted leagues of Greek cities and later Roman expansion.",
+        "glossary": "Perseus, the dynasty's last king, was defeated at Pydna in 168 BCE."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-07",
+      "time": {
+        "he": "332 לפנה״ס ואילך",
+        "en": "From 332 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "אלכסנדריה — מרכז התרבות העולמי",
+        "text": "אלכסנדר ייסד את העיר בחוף הים התיכון של מצרים. תחת בית תלמי היא הפכה לנמל מרכזי ולמוקד של מסחר, מחקר וקהילות יווניות, מצריות ויהודיות.",
+        "glossary": "תרגום התורה ליוונית, ראשית תרגום השבעים, נקשר לקהילה היהודית באלכסנדריה במאה השלישית לפנה״ס."
+      },
+      "en": {
+        "title": "Alexandria — a world cultural center",
+        "text": "Alexander founded the city on Egypt's Mediterranean coast. Under the Ptolemies it became a major port and center of commerce, scholarship and Greek, Egyptian and Jewish communities.",
+        "glossary": "The Greek translation of the Torah, the beginning of the Septuagint, is associated with Alexandria's Jewish community in the third century BCE."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-08",
+      "time": {
+        "he": "המאה ה־3 לפנה״ס ואילך",
+        "en": "From the 3rd century BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "הספרייה הגדולה של אלכסנדריה",
+        "text": "הספרייה והמוסאיון היו מוסדות מחקר בחסות בית תלמי. חוקרים אספו כתבים, השוו גרסאות של יצירות ועסקו בלשון, מתמטיקה ואסטרונומיה.",
+        "glossary": "קלימכוס ערך קטלוג ספרותי חשוב. אין ודאות לגבי מספר המגילות או מועד חורבנה הסופי של הספרייה."
+      },
+      "en": {
+        "title": "Great Library of Alexandria",
+        "text": "The Library and Mouseion were scholarly institutions supported by the Ptolemies. Scholars collected texts, compared versions of literary works and studied language, mathematics and astronomy.",
+        "glossary": "Callimachus compiled an important literary catalogue. The number of scrolls and date of the library's final destruction are uncertain."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-09",
+      "time": {
+        "he": "המאה ה־3 לפנה״ס",
+        "en": "3rd century BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "המגדלור של אלכסנדריה",
+        "text": "המגדלור הוקם באי פארוס כדי לסייע לספינות להגיע לנמל אלכסנדריה. הוא נחשב לאחד משבעת פלאי העולם העתיק וניזוק ברעידות אדמה לאורך הדורות.",
+        "glossary": "בנייתו הושלמה בתקופת תלמי השני. גובהו המדויק אינו ידוע; מצודת קאיתבאי נבנתה מאוחר יותר באתרו."
+      },
+      "en": {
+        "title": "Lighthouse of Alexandria",
+        "text": "The lighthouse was built on Pharos Island to guide ships into Alexandria's harbor. Counted among the Seven Wonders of the ancient world, it suffered earthquake damage over the centuries.",
+        "glossary": "It was completed under Ptolemy II. Its exact height is uncertain; the later Qaitbay Citadel occupies its site."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-10",
+      "time": {
+        "he": "המאה ה־3–2 לפנה״ס",
+        "en": "3rd–2nd centuries BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "המדע ההלניסטי",
+        "text": "אוקלידס ארגן ידע גאומטרי בספר יסודות. ארכימדס מסירקוזה חקר גאומטריה ומכניקה, וארטוסתנס השתמש במדידות זווית ומרחק כדי לאמוד את היקף כדור הארץ.",
+        "glossary": "ארטוסתנס השווה את גובה השמש באלכסנדריה ובסיינה, אסואן של ימינו. אריסטרכוס מסאמוס הציע מודל שבו הארץ מקיפה את השמש."
+      },
+      "en": {
+        "title": "Hellenistic science",
+        "text": "Euclid organized geometric knowledge in the Elements. Archimedes of Syracuse studied geometry and mechanics, while Eratosthenes used angular and distance measurements to estimate Earth's circumference.",
+        "glossary": "Eratosthenes compared the Sun's elevation in Alexandria and Syene, modern Aswan. Aristarchus of Samos proposed that Earth orbits the Sun."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-11",
+      "time": {
+        "he": "סביב 300 לפנה״ס ואילך",
+        "en": "From around 300 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "הפילוסופיה ההלניסטית",
+        "text": "האסכולה הסטואית הדגישה חיים בהתאם לתבונה ולמידות טובות. אפיקורוס לימד שהנאה יציבה קשורה לשלוות נפש, לחברות ולהפחתת פחדים, ולא למותרות בלתי מוגבלות.",
+        "glossary": "זנון מקיטיון לימד באכסדרת הסטואה באתונה; אפיקורוס ייסד שם את אסכולת הגן."
+      },
+      "en": {
+        "title": "Hellenistic philosophy",
+        "text": "Stoicism emphasized living according to reason and virtue. Epicurus taught that lasting pleasure involves tranquility, friendship and reducing fears rather than unlimited luxury.",
+        "glossary": "Zeno of Citium taught at the Stoa in Athens; Epicurus founded his Garden school there."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-12",
+      "time": {
+        "he": "323–30 לפנה״ס",
+        "en": "323–30 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "האמנות והאדריכלות ההלניסטית",
+        "text": "אמנים הלניסטיים הרחיבו את מגוון הנושאים והציגו תנועה, רגשות, גילאים ומצבים אנושיים שונים. מלכים השקיעו במבנים ציבוריים ובפסלים שהביעו עוצמה ויוקרה.",
+        "glossary": "ניקה מסמותרקיה והמזבח הגדול בפרגמון הם דוגמאות בולטות; תיארוך חלק מהפסלים אינו ודאי."
+      },
+      "en": {
+        "title": "Hellenistic art and architecture",
+        "text": "Hellenistic artists broadened their subjects, portraying movement, emotion, different ages and human conditions. Kings invested in public buildings and sculptures expressing power and prestige.",
+        "glossary": "The Winged Victory of Samothrace and the Great Altar of Pergamon are prominent examples; some sculptures have uncertain dates."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-13",
+      "time": {
+        "he": "332–167 לפנה״ס",
+        "en": "332–167 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "ארץ ישראל תחת השלטון ההלניסטי",
+        "text": "לאחר כיבושי אלכסנדר עברה הארץ בין שלטון בית תלמי לבית סלאוקוס. השפה היוונית, מוסדות עירוניים ומנהגי תרבות חדשים התפשטו לצד מסורות יהודיות ומקומיות.",
+        "glossary": "קרב פניאון סביב שנת 200 לפנה״ס העביר את השליטה באזור לידי אנטיוכוס השלישי. מרשה הייתה מרכז רב־תרבותי."
+      },
+      "en": {
+        "title": "The Land of Israel under Hellenistic rule",
+        "text": "After Alexander's conquests, the region passed between Ptolemaic and Seleucid rule. Greek language, urban institutions and cultural practices spread alongside Jewish and local traditions.",
+        "glossary": "The Battle of Panium around 200 BCE transferred regional control to Antiochus III. Maresha was a multicultural center."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-14",
+      "time": {
+        "he": "167–63 לפנה״ס",
+        "en": "167–63 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "מרד המכבים וממלכת החשמונאים",
+        "text": "גזרות אנטיוכוס הרביעי והעימותים הפנימיים ביהודה הובילו למרד בהנהגת משפחת מתתיהו. חנוכת המקדש בשנת 164 לפנה״ס נעשתה יסוד לחג החנוכה. בהמשך התבססה עצמאות חשמונאית.",
+        "glossary": "שמעון החשמונאי ביסס שלטון עצמאי סביב 142 לפנה״ס; כניסת פומפיוס לירושלים בשנת 63 סיימה את עצמאותה המדינית."
+      },
+      "en": {
+        "title": "Maccabean revolt and Hasmonean kingdom",
+        "text": "The decrees of Antiochus IV and internal conflicts in Judea led to a revolt led by Mattathias's family. The Temple's rededication in 164 BCE became the basis of Hanukkah. Hasmonean independence later emerged.",
+        "glossary": "Simon established independent rule around 142 BCE; Pompey's entry into Jerusalem in 63 ended its political independence."
+      },
+      "image": null
+    },
+    {
+      "id": "hellenistic-15",
+      "time": {
+        "he": "51–30 לפנה״ס",
+        "en": "51–30 BCE"
+      },
+      "timeGroup": 22,
+      "he": {
+        "title": "קלאופטרה וסיום התקופה ההלניסטית",
+        "text": "קלאופטרה השביעית ניסתה לשמור על עצמאות מצרים באמצעות בריתות עם יוליוס קיסר ובהמשך מרקוס אנטוניוס. לאחר ניצחון אוקטביאנוס הפכה מצרים לפרובינקיה רומית.",
+        "glossary": "קרב אקטיום בשנת 31 לפנה״ס הכריע את המאבק. מות קלאופטרה בשנת 30 מסמן את סיום התקופה ההלניסטית במובן המדיני המקובל."
+      },
+      "en": {
+        "title": "Cleopatra and the end of the Hellenistic era",
+        "text": "Cleopatra VII sought to preserve Egypt's independence through alliances with Julius Caesar and later Mark Antony. After Octavian's victory, Egypt became a Roman province.",
+        "glossary": "The Battle of Actium in 31 BCE decided the conflict. Cleopatra's death in 30 marks the conventional political end of the Hellenistic era."
+      },
+      "image": null
     }
   ]
 }
