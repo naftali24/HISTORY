@@ -68,6 +68,8 @@ main{padding:7px;overflow:hidden;display:flex;flex-direction:column}
 #periodDialog p{margin:6px;text-align:center}
 @media(max-height:480px){#imageSection{flex-basis:clamp(70px,calc(29dvh - 32px),55%)}.card{padding:5px 8px}header{padding:3px 8px}h1{margin-bottom:3px}}
 [hidden]{display:none!important}
+
+#periodDialog{position:relative;inset:auto;flex:1;min-height:0;align-items:stretch;padding:7px;background:transparent;overflow:hidden;z-index:1}.periodPanel{width:min(700px,100%);max-height:none;margin-inline:auto;overflow-y:auto;box-shadow:none;padding:7px}body.menu-open main{display:none}#periodList button{display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:start}#periodList .menuDate{font-size:12px;font-weight:700;flex:0 0 auto;max-width:42%;text-align:end}#periodList .menuName{flex:1;min-width:0}
 </style>
 </head>
 <body>
@@ -109,7 +111,7 @@ main{padding:7px;overflow:hidden;display:flex;flex-direction:column}
 </section>
 </article>
 </main>
-<div id="periodDialog" role="dialog" aria-modal="true" aria-labelledby="periodTitle" hidden><div class="periodPanel">
+<div id="periodDialog" role="region" aria-labelledby="periodTitle" hidden><div class="periodPanel">
 <h2 id="periodTitle"></h2>
 <div id="periodList"></div>
 <button type="button" id="closePeriods"></button>
@@ -4450,6 +4452,7 @@ async function startTimeline() {
     byId("imagePlaceholder").textContent = labels.empty;
     byId("periodTitle").textContent = labels.periods;
     byId("closePeriods").textContent = labels.close;
+    const menuDates = {"origin-01":["לפני כ־13.8 מיליארד שנה","About 13.8 billion years ago"],"life-01":["לפני כ־3.5 מיליארד שנה","About 3.5 billion years ago"],"life-11":["לפני כ־1.6 מיליארד שנה","About 1.6 billion years ago"],"life-16":["לפני 539–485 מיליון שנה","539–485 million years ago"],"life-21":["לפני כ־230 מיליון שנה","About 230 million years ago"],"life-26":["לפני כ־56 מיליון שנה","About 56 million years ago"],"human-01":["לפני כ־300,000 שנה","About 300,000 years ago"],"human-06":["לפני 50,000–40,000 שנה","50,000–40,000 years ago"],"settlement-01":["לפני 20,000–15,000 שנה","20,000–15,000 years ago"],"agriculture-01":["לפני 15,000–12,000 שנה","15,000–12,000 years ago"],"human-16":["לפני 7,000–5,000 שנה","7,000–5,000 years ago"],"bronze-01":["3100–2600 לפנה״ס","3100–2600 BCE"],"civilization-01":["כ־2334 לפנה״ס","About 2334 BCE"],"greece-01":["800–600 לפנה״ס","800–600 BCE"],"rome-01":["753 לפנה״ס","753 BCE"],"persia-01":["800–600 לפנה״ס","800–600 BCE"],"china-01":["5000–3000 לפנה״ס","5000–3000 BCE"],"india-01":["3300–1300 לפנה״ס","3300–1300 BCE"],"hellenistic-01":["336–30 לפנה״ס","336–30 BCE"],"byzantine-01":["330–1453 לספירה","330–1453 CE"]};
     const menuEntries = periods.flatMap((period, index) => {
       const entries = [{
         label: period[language] + (period.ready ? "" : " · " + labels.pending),
@@ -4472,7 +4475,9 @@ async function startTimeline() {
     byId("periodList").replaceChildren(...menuEntries.filter(({ label, start }) => typeof label === "string" && label.trim() && Number.isInteger(start) && start >= 0).map(({ label, start }) => {
       const button = document.createElement("button");
       button.type = "button";
-      button.textContent = label;
+      const name = document.createElement("span"); name.className = "menuName"; name.textContent = label;
+      const date = document.createElement("span"); date.className = "menuDate"; date.textContent = menuDates[stations[start]?.id]?.[language === "he" ? 0 : 1] || stations[start]?.time?.[language] || "";
+      button.append(name,date);
       button.disabled = start < 0;
       button.addEventListener("click", () => {
         closePeriodMenu();
@@ -4538,8 +4543,8 @@ async function startTimeline() {
     if (mode === "continuous") readStation(mode);
   }
 
-  function openPeriodMenu() { const dialog = byId("periodDialog"); dialog.hidden = false; byId("closePeriods").focus(); }
-  function closePeriodMenu() { byId("periodDialog").hidden = true; byId("menuBtn").focus(); }
+  function openPeriodMenu() { const dialog = byId("periodDialog"); dialog.hidden = false; document.body.classList.add("menu-open"); }
+  function closePeriodMenu() { byId("periodDialog").hidden = true; document.body.classList.remove("menu-open"); byId("menuBtn").focus(); }
   byId("periodDialog").addEventListener("click", event => { if (event.target === byId("periodDialog")) closePeriodMenu(); });
   document.addEventListener("keydown", event => { if (event.key === "Escape" && !byId("periodDialog").hidden) closePeriodMenu(); });
   byId("speak").onclick = () => playback ? stopSpeech() : readStation("single");
@@ -4586,6 +4591,7 @@ async function startTimeline() {
   window.addEventListener("pagehide", () => synth?.cancel());
   document.getElementById("status").textContent = "";
   renderLanguage();
+  openPeriodMenu();
 }
 
 function enterFullscreen() {
