@@ -4744,12 +4744,13 @@ async function startTimeline() {
     byId("imagePlaceholder").textContent = labels.empty;
     byId("periodTitle").textContent = labels.periods;
     byId("closePeriods").textContent = labels.close;
-    const menuDates = {"origin-01":["לפני כ־13.8 B","About 13.8 B"],"life-01":["לפני כ־3.5 B","About 3.5 B"],"life-11":["לפני כ־1.6 B","About 1.6 B"],"life-16":["לפני 539–485 M","539–485 M"],"life-21":["לפני כ־230 M","About 230 M"],"life-26":["לפני כ־56 M","About 56 M"],"human-01":["לפני כ־300,000","About 300,000"],"human-06":["לפני 50,000–40,000","50,000–40,000"],"settlement-01":["לפני 20,000–15,000","20,000–15,000"],"agriculture-01":["לפני 15,000–12,000","15,000–12,000"],"human-16":["לפני 7,000–5,000","7,000–5,000"],"bronze-01":["3100–2600 BC","3100–2600 BC"],"civilization-01":["כ־2334 BC","About 2334 BC"],"greece-01":["800–600 BC","800–600 BC"],"rome-01":["753 BC","753 BC"],"persia-01":["800–600 BC","800–600 BC"],"china-01":["5000–3000 BC","5000–3000 BC"],"india-01":["3300–1300 BC","3300–1300 BC"],"hellenistic-01":["336–30 BC","336–30 BC"],"byzantine-01":["330–1453 AC","330–1453 AC"],"islam-01":["570–1258 AC","570–1258 AC"]};
+    const menuDates = {"origin-01":["לפני כ־13.8 B","About 13.8 B"],"life-01":["לפני כ־3.5 B","About 3.5 B"],"life-11":["לפני כ־1.6 B","About 1.6 B"],"life-16":["לפני 539–485 M","539–485 M"],"life-21":["לפני כ־230 M","About 230 M"],"life-26":["לפני כ־56 M","About 56 M"],"human-01":["לפני כ־300,000","About 300,000"],"human-06":["לפני 50,000–40,000","50,000–40,000"],"settlement-01":["לפני 20,000–15,000","20,000–15,000"],"agriculture-01":["לפני 15,000–12,000","15,000–12,000"],"human-16":["לפני 7,000–5,000","7,000–5,000"],"bronze-01":["3100–2600 BC","3100–2600 BC"],"civilization-01":["כ־2334 BC","About 2334 BC"],"greece-01":["800–600 BC","800–600 BC"],"rome-01":["753 BC","753 BC"],"persia-01":["800–600 BC","800–600 BC"],"china-01":["5000–3000 BC","5000–3000 BC"],"india-01":["3300–1300 BC","3300–1300 BC"],"hellenistic-01":["336–30 BC","336–30 BC"],"byzantine-01":["330–1453 AC","330–1453 AC"],"islam-01":["570–1258 AC","570–1258 AC"],"origin-21":["לפני כ־4.6 B","About 4.6 B"]};
     const menuEntries = periods.flatMap((period, index) => {
       const entries = [{
-        label: period[language] + (period.ready ? "" : " · " + labels.pending),
+        label: (index === 0 ? (language === "he" ? "המפץ הגדול עד הגלקסיות" : "The Big Bang to the galaxies") : period[language]) + (period.ready ? "" : " · " + labels.pending),
         start: periodStarts[index]
       }];
+      if (index === 0) entries.push({label: language === "he" ? "שביל החלב והשמש" : "The Milky Way and the Sun", start: stations.findIndex(s => s.id === "origin-21")});
       for (const start of (index >= 3 ? [] : sectionStarts[index])) {
         const stationId = stations[start].id;
         const sectionNames = {
@@ -4764,8 +4765,8 @@ async function startTimeline() {
       }
       return entries;
     });
-    const menuOrder = ["origin-01","life-01","life-11","life-16","life-21","life-26","human-01","human-06","settlement-01","agriculture-01","human-16","china-01","india-01","bronze-01","civilization-01","persia-01","greece-01","rome-01","hellenistic-01","byzantine-01","islam-01"];
-    const menuGroups = {"origin-01":0,"life-01":1,"life-11":1,"life-16":1,"life-21":1,"life-26":1,"human-01":2,"human-06":2,"settlement-01":2,"agriculture-01":2,"human-16":2,"china-01":3,"india-01":3,"bronze-01":3,"civilization-01":3,"persia-01":3,"greece-01":4,"rome-01":4,"hellenistic-01":4,"byzantine-01":5,"islam-01":5};
+    const menuOrder = ["origin-01","origin-21","life-01","life-11","life-16","life-21","life-26","human-01","human-06","settlement-01","agriculture-01","human-16","china-01","india-01","bronze-01","civilization-01","persia-01","greece-01","rome-01","hellenistic-01","byzantine-01","islam-01"];
+    const menuGroups = {"origin-01":0,"life-01":1,"life-11":1,"life-16":1,"life-21":1,"life-26":1,"human-01":2,"human-06":2,"settlement-01":2,"agriculture-01":2,"human-16":2,"china-01":3,"india-01":3,"bronze-01":3,"civilization-01":3,"persia-01":3,"greece-01":4,"rome-01":4,"hellenistic-01":4,"byzantine-01":5,"islam-01":5,"origin-21":0};
     const menuColors = ["#ffe06a","#24834c","#b17b4c","#f49a91","#77b9ef","#efa9d3"];
     const menuRank = entry => { const n = menuOrder.indexOf(stations[entry.start]?.id); return n < 0 ? 999 : n; };
     menuEntries.sort((a,b) => menuRank(a)-menuRank(b));
