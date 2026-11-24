@@ -69,7 +69,7 @@ main{padding:7px;overflow:hidden;display:flex;flex-direction:column}
 @media(max-height:480px){#imageSection{flex-basis:clamp(70px,calc(29dvh - 32px),55%)}.card{padding:5px 8px}header{padding:3px 8px}h1{margin-bottom:3px}}
 [hidden]{display:none!important}
 
-#periodDialog{position:relative;inset:auto;flex:1;min-height:0;align-items:stretch;padding:7px;background:transparent;overflow:hidden;z-index:1}.periodPanel{width:min(700px,100%);max-height:none;margin-inline:auto;overflow-y:auto;box-shadow:none;padding:7px}body.menu-open main{display:none}#periodList button{color:#fff;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:start}#periodList .menuDate{font-size:16px;font-weight:900;flex:0 0 auto;max-width:42%;text-align:end}#periodList .menuName{flex:1;min-width:0;font-size:16px}
+#periodDialog{position:relative;inset:auto;flex:1;min-height:0;align-items:stretch;padding:7px;background:transparent;overflow:hidden;z-index:1}.periodPanel{width:min(700px,100%);max-height:none;margin-inline:auto;overflow-y:auto;box-shadow:none;padding:7px}body.menu-open main{display:none}#periodList button{color:#000;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:start}#periodList .menuDate{font-size:16px;font-weight:900;flex:0 0 42%;max-width:42%;text-align:center}#periodList .menuName{flex:1;min-width:0;font-size:16px}
 </style>
 </head>
 <body>
@@ -4484,7 +4484,7 @@ async function startTimeline() {
       const date = document.createElement("span"); date.className = "menuDate"; date.textContent = menuDates[stations[start]?.id]?.[language === "he" ? 0 : 1] || stations[start]?.time?.[language] || "";
       button.append(name,date);
       const group = menuGroups[stations[start]?.id];
-      if (group !== undefined) { button.style.background = stations[start]?.id === "china-01" ? "#d52229" : menuColors[group]; button.style.color = "#fff"; if (group < 2) button.style.boxShadow = "inset 0 1px 3px #ffffff66, 0 0 7px "+menuColors[group]+"66"; }
+      if (group !== undefined) { button.style.background = group === 3 ? "#d52229" : menuColors[group]; button.style.color = "#000"; if (group < 2) button.style.boxShadow = "inset 0 1px 3px #ffffff66, 0 0 7px "+menuColors[group]+"66"; }
       button.disabled = start < 0;
       button.addEventListener("click", () => {
         closePeriodMenu();
