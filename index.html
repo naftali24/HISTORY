@@ -3871,7 +3871,7 @@ async function startTimeline() {
         label: period[language] + (period.ready ? "" : " · " + labels.pending),
         start: periodStarts[index]
       }];
-      for (const start of sectionStarts[index]) {
+      for (const start of (index >= 3 ? [] : sectionStarts[index])) {
         const stationId = stations[start].id;
         const sectionNames = {
           "settlement-01": {he:"ראשית יישובי הקבע — 10 תחנות",en:"Early permanent settlements — 10 stations"},
