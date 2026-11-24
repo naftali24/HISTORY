@@ -103,6 +103,13 @@
       "ready": true,
       "startStation": "byzantine-01",
       "sections": []
+    },
+    {
+      "he": "ראשית האסלאם והאימפריות המוסלמיות",
+      "en": "Early Islam and the Muslim empires",
+      "ready": true,
+      "startStation": "islam-01",
+      "sections": []
     }
   ],
   "stations": [
@@ -4152,6 +4159,291 @@
         "glossary": "The conquest occurred on 29 May 1453. Hagia Sophia was converted into a mosque, and Byzantine heritage continued to influence the Orthodox world."
       },
       "image": "images/byzantine-15.webp"
+    },
+    {
+      "id": "islam-01",
+      "time": {
+        "he": "המאה ה־6 לספירה",
+        "en": "6th century CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "חצי האי ערב לפני האסלאם",
+        "text": "בחצי האי ערב התקיימו שבטים נוודים, יישובי קבע ומרכזי מסחר. לצד פולחנים מקומיים התקיימו קהילות יהודיות ונוצריות.",
+        "glossary": "מכה הייתה מרכז פולחן סביב הכעבה; בדרום ערב התקיימו ממלכות בעלות מסורת חקלאית וכתב."
+      },
+      "en": {
+        "title": "Arabia before Islam",
+        "text": "Arabia contained nomadic tribes, settled communities and trading centers. Jewish and Christian communities existed alongside local religious traditions.",
+        "glossary": "Mecca was a religious center around the Kaaba; southern Arabia had kingdoms with agricultural and writing traditions."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-02",
+      "time": {
+        "he": "570–632 לספירה בקירוב",
+        "en": "About 570–632 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "מוחמד — הולדת האסלאם",
+        "text": "מוחמד נולד במכה. לפי המסורת המוסלמית, החל לקבל התגלויות סביב שנת 610 וקרא לאמונה באל אחד, לצד אחריות מוסרית וחברתית.",
+        "glossary": "המסורת קושרת את ההתגלות הראשונה למערת חירא ליד מכה."
+      },
+      "en": {
+        "title": "Muhammad and the birth of Islam",
+        "text": "Muhammad was born in Mecca. According to Islamic tradition, he began receiving revelations around 610 and preached belief in one God and moral and social responsibility.",
+        "glossary": "Tradition associates the first revelation with the cave of Hira near Mecca."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-03",
+      "time": {
+        "he": "622 לספירה",
+        "en": "622 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "ההיג'רה ממכה למדינה",
+        "text": "מוחמד ותומכיו עברו ממכה לית'רב, שנודעה בהמשך כמדינה. שם התגבשה קהילה מוסלמית בעלת מוסדות חברתיים ומדיניים.",
+        "glossary": "שנת ההיג'רה היא נקודת המוצא של הלוח המוסלמי הירחי."
+      },
+      "en": {
+        "title": "The Hijra from Mecca to Medina",
+        "text": "Muhammad and his followers migrated from Mecca to Yathrib, later known as Medina. A Muslim community with social and political institutions developed there.",
+        "glossary": "The year of the Hijra marks the beginning of the Islamic lunar calendar."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-04",
+      "time": {
+        "he": "המאה ה־7 לספירה",
+        "en": "7th century CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "הקוראן ועקרונות האסלאם",
+        "text": "הקוראן הוא ספר הקודש המרכזי באסלאם. הוא כולל מסרים על אמונה, מוסר, אחריות האדם והיחסים בין בני אדם. מסורות האסלאם מדגישות תפילה, צדקה, צום ועלייה לרגל.",
+        "glossary": "הקוראן מחולק ל־114 סורות; לפי המסורת, נוסח אחיד הופץ בתקופת הח'ליף עות'מאן."
+      },
+      "en": {
+        "title": "The Quran and principles of Islam",
+        "text": "The Quran is Islam's central sacred text. It addresses faith, morality, human responsibility and relationships. Islamic traditions emphasize prayer, charity, fasting and pilgrimage.",
+        "glossary": "The Quran contains 114 surahs; according to tradition, a standardized text was circulated under Caliph Uthman."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-05",
+      "time": {
+        "he": "630–633 לספירה",
+        "en": "630–633 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "איחוד חצי האי ערב",
+        "text": "מוחמד נכנס למכה בשנת 630 והרחיב את השפעת הקהילה המוסלמית. לאחר מותו התמודד אבו בכר עם מרידות ושבטים שהתנגדו לשלטון מדינה.",
+        "glossary": "מלחמות הרדה חיזקו את שליטת הח'ליפות בחצי האי ערב."
+      },
+      "en": {
+        "title": "Unification of Arabia",
+        "text": "Muhammad entered Mecca in 630 and expanded the Muslim community's influence. After his death, Abu Bakr confronted revolts and tribes resisting Medina's authority.",
+        "glossary": "The Ridda wars consolidated the caliphate's authority across Arabia."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-06",
+      "time": {
+        "he": "632–661 לספירה",
+        "en": "632–661 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "ארבעת הח'ליפים הראשונים",
+        "text": "אבו בכר, עומר, עות'מאן ועלי הנהיגו את הקהילה לאחר מות מוחמד. בתקופתם התרחב השלטון המוסלמי לסוריה, מצרים, עיראק ופרס.",
+        "glossary": "המסורת הסונית מכנה אותם הח'ליפים ישרי הדרך; הערכת מנהיגותם שונה במסורות שיעיות."
+      },
+      "en": {
+        "title": "The first four caliphs",
+        "text": "Abu Bakr, Umar, Uthman and Ali led the community after Muhammad's death. Muslim rule expanded into Syria, Egypt, Iraq and Persia.",
+        "glossary": "Sunni tradition calls them the Rightly Guided Caliphs; Shia traditions assess their leadership differently."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-07",
+      "time": {
+        "he": "632–680 לספירה ואילך",
+        "en": "632–680 CE and later"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "הפילוג בין הסונים לשיעים",
+        "text": "מחלוקות על הנהגת הקהילה לאחר מות מוחמד התפתחו לאורך דורות להבדלים דתיים ומדיניים. תומכי עלי ומשפחתו היו בסיס למסורת השיעית.",
+        "glossary": "מות חוסיין בכרבלא שבעיראק בשנת 680 נעשה אירוע מרכזי בזיכרון השיעי."
+      },
+      "en": {
+        "title": "The Sunni–Shia division",
+        "text": "Disputes over leadership after Muhammad's death developed over generations into religious and political differences. Supporters of Ali and his family formed the basis of Shia tradition.",
+        "glossary": "Husayn's death at Karbala in Iraq in 680 became central to Shia remembrance."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-08",
+      "time": {
+        "he": "636–638 לספירה",
+        "en": "636–638 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "כיבוש ארץ ישראל וירושלים",
+        "text": "לאחר ניצחון הח'ליפות על ביזנטיון בירמוך עברה הארץ בהדרגה לשלטון מוסלמי. ירושלים נכנעה סביב 637–638. קהילות מקומיות המשיכו להתקיים תחת הסדרי שלטון ומיסוי חדשים.",
+        "glossary": "רמלה נוסדה בראשית המאה השמינית והפכה למרכז המנהלי של מחוז פלסטין."
+      },
+      "en": {
+        "title": "Conquest of the Land of Israel and Jerusalem",
+        "text": "After the caliphate defeated Byzantium at the Yarmouk, the region gradually came under Muslim rule. Jerusalem surrendered around 637–638. Local communities continued under new administrative and tax arrangements.",
+        "glossary": "Ramla was founded in the early eighth century and became the administrative center of the district of Palestine."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-09",
+      "time": {
+        "he": "661–750 לספירה",
+        "en": "661–750 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "האימפריה האומיית — דמשק",
+        "text": "מועאויה הראשון ייסד שושלת שמרכזה בדמשק. הח'ליפות התרחבה מצפון אפריקה וספרד ועד מרכז אסיה, והערבית נעשתה שפה מנהלית מרכזית.",
+        "glossary": "עבד אל־מלכ הנהיג רפורמות במטבע ובמנהל; המסגד האומיי בדמשק נבנה בראשית המאה השמינית."
+      },
+      "en": {
+        "title": "The Umayyad Caliphate — Damascus",
+        "text": "Muawiya I founded a dynasty centered on Damascus. The caliphate expanded from North Africa and Spain to Central Asia, and Arabic became a major administrative language.",
+        "glossary": "Abd al-Malik introduced monetary and administrative reforms; the Umayyad Mosque in Damascus was built in the early eighth century."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-10",
+      "time": {
+        "he": "691–705 לספירה בקירוב",
+        "en": "About 691–705 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "כיפת הסלע ומסגד אל־אקצא",
+        "text": "כיפת הסלע הושלמה בירושלים בשנת 691–692 בתקופת עבד אל־מלכ. מסגד אל־אקצא התפתח בדרום מתחם הר הבית בתקופה האומיית ונבנה מחדש בעקבות רעידות אדמה.",
+        "glossary": "כיפת הסלע ומסגד אל־אקצא הם מבנים נפרדים במתחם הקדוש ליהדות ולאסלאם."
+      },
+      "en": {
+        "title": "Dome of the Rock and Al-Aqsa Mosque",
+        "text": "The Dome of the Rock was completed in Jerusalem in 691–692 under Abd al-Malik. Al-Aqsa Mosque developed in the southern part of the sacred compound during the Umayyad period and was rebuilt after earthquakes.",
+        "glossary": "The Dome of the Rock and Al-Aqsa Mosque are distinct buildings within a compound sacred to Judaism and Islam."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-11",
+      "time": {
+        "he": "711–756 לספירה",
+        "en": "711–756 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "כיבוש ספרד והקמת אל־אנדלוס",
+        "text": "כוחות מוסלמיים בהנהגת טארק אבן זיאד חצו מצפון אפריקה לחצי האי האיברי בשנת 711. רוב שטחי הממלכה הוויזיגותית עברו לשלטונם.",
+        "glossary": "עבד א־רחמן הראשון הקים אמירות עצמאית בקורדובה בשנת 756; השם גיברלטר נגזר מג'בל טארק."
+      },
+      "en": {
+        "title": "Conquest of Iberia and Al-Andalus",
+        "text": "Muslim forces led by Tariq ibn Ziyad crossed from North Africa into Iberia in 711. Most of the Visigothic kingdom came under their rule.",
+        "glossary": "Abd al-Rahman I founded an independent emirate in Cordoba in 756; Gibraltar derives its name from Jabal Tariq."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-12",
+      "time": {
+        "he": "750–1258 לספירה",
+        "en": "750–1258 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "האימפריה העבאסית — בגדד",
+        "text": "העבאסים הדיחו את האומיים והקימו מרכז שלטוני בעיראק. בגדד, שנוסדה בשנת 762, הפכה למוקד מסחר, תרבות ומנהל. עם הזמן התפתחו ממלכות עצמאיות בשולי הח'ליפות.",
+        "glossary": "הח'ליף אל־מנצור ייסד את בגדד; הארון א־רשיד ואל־מאמון מזוהים עם תקופות של פריחה תרבותית."
+      },
+      "en": {
+        "title": "The Abbasid Caliphate — Baghdad",
+        "text": "The Abbasids overthrew the Umayyads and established their political center in Iraq. Baghdad, founded in 762, became a center of commerce, culture and administration. Independent kingdoms gradually emerged on the caliphate's periphery.",
+        "glossary": "Caliph al-Mansur founded Baghdad; Harun al-Rashid and al-Mamun are associated with periods of cultural flourishing."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-13",
+      "time": {
+        "he": "המאה ה־8–13",
+        "en": "8th–13th centuries"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "תור הזהב של המדע המוסלמי",
+        "text": "חוקרים מרקעים דתיים ולשוניים שונים תרגמו כתבים יווניים, פרסיים והודיים לערבית ופיתחו ידע חדש באסטרונומיה, אופטיקה ומתמטיקה.",
+        "glossary": "בית החוכמה בבגדד נקשר לפעילות למדנית; אבן אל־היית'ם חקר את האור והראייה במצרים."
+      },
+      "en": {
+        "title": "The golden age of science in the Islamic world",
+        "text": "Scholars of diverse religious and linguistic backgrounds translated Greek, Persian and Indian works into Arabic and developed new knowledge in astronomy, optics and mathematics.",
+        "glossary": "Baghdad's House of Wisdom is associated with scholarship; Ibn al-Haytham studied light and vision in Egypt."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-14",
+      "time": {
+        "he": "המאה ה־9–12",
+        "en": "9th–12th centuries"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "הרפואה, המתמטיקה והפילוסופיה",
+        "text": "אל־ח'ואריזמי פיתח שיטות אלגבריות, אבן סינא כתב אנציקלופדיה רפואית ואבן רושד עסק בפרשנות אריסטו. יצירותיהם השפיעו גם על הלימוד באירופה.",
+        "glossary": "המילה אלגוריתם נגזרת משמו של אל־ח'ואריזמי; הקאנון של אבן סינא שימש ספר לימוד רפואי במשך מאות שנים."
+      },
+      "en": {
+        "title": "Medicine, mathematics and philosophy",
+        "text": "Al-Khwarizmi developed algebraic methods, Ibn Sina wrote a medical encyclopedia, and Ibn Rushd interpreted Aristotle. Their works also influenced European scholarship.",
+        "glossary": "The word algorithm derives from al-Khwarizmi's name; Ibn Sina's Canon served as a medical textbook for centuries."
+      },
+      "image": null
+    },
+    {
+      "id": "islam-15",
+      "time": {
+        "he": "1258 לספירה",
+        "en": "1258 CE"
+      },
+      "timeGroup": 24,
+      "he": {
+        "title": "כיבוש בגדד בידי המונגולים",
+        "text": "הולאגו, נכדו של ג'ינגיס חאן, כבש את בגדד והביא לסיום שלטון הח'ליפות העבאסית בעיר. הכיבוש גרם להרס נרחב, אך מרכזי התרבות המוסלמית המשיכו להתפתח במקומות אחרים.",
+        "glossary": "קהיר תחת הממלוכים נעשתה מרכז חשוב; בשנת 1261 הוקמה בה ח'ליפות עבאסית סמלית."
+      },
+      "en": {
+        "title": "The Mongol conquest of Baghdad",
+        "text": "Hulagu, a grandson of Genghis Khan, conquered Baghdad and ended Abbasid rule in the city. The conquest caused extensive destruction, but centers of Islamic culture continued developing elsewhere.",
+        "glossary": "Mamluk Cairo became an important center; a symbolic Abbasid caliphate was established there in 1261."
+      },
+      "image": null
     }
   ]
 }
