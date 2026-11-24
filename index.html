@@ -4472,12 +4472,19 @@ async function startTimeline() {
       }
       return entries;
     });
+    const menuOrder = ["origin-01","life-01","life-11","life-16","life-21","life-26","human-01","human-06","settlement-01","agriculture-01","human-16","china-01","india-01","bronze-01","civilization-01","persia-01","greece-01","rome-01","hellenistic-01","byzantine-01"];
+    const menuGroups = {"origin-01":0,"life-01":1,"life-11":1,"life-16":1,"life-21":1,"life-26":1,"human-01":2,"human-06":2,"settlement-01":2,"agriculture-01":2,"human-16":2,"china-01":3,"india-01":3,"bronze-01":3,"civilization-01":3,"persia-01":3,"greece-01":4,"rome-01":4,"hellenistic-01":4,"byzantine-01":5};
+    const menuColors = ["#ffe06a","#24834c","#b17b4c","#f49a91","#77b9ef","#efa9d3"];
+    const menuRank = entry => { const n = menuOrder.indexOf(stations[entry.start]?.id); return n < 0 ? 999 : n; };
+    menuEntries.sort((a,b) => menuRank(a)-menuRank(b));
     byId("periodList").replaceChildren(...menuEntries.filter(({ label, start }) => typeof label === "string" && label.trim() && Number.isInteger(start) && start >= 0).map(({ label, start }) => {
       const button = document.createElement("button");
       button.type = "button";
       const name = document.createElement("span"); name.className = "menuName"; name.textContent = label;
       const date = document.createElement("span"); date.className = "menuDate"; date.textContent = menuDates[stations[start]?.id]?.[language === "he" ? 0 : 1] || stations[start]?.time?.[language] || "";
       button.append(name,date);
+      const group = menuGroups[stations[start]?.id];
+      if (group !== undefined) { button.style.background = menuColors[group]; button.style.color = group === 1 ? "#fff" : "#241300"; if (group < 2) button.style.boxShadow = "inset 0 1px 3px #ffffff66, 0 0 7px "+menuColors[group]+"66"; }
       button.disabled = start < 0;
       button.addEventListener("click", () => {
         closePeriodMenu();
