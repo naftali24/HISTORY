@@ -4484,7 +4484,7 @@ async function startTimeline() {
       const date = document.createElement("span"); date.className = "menuDate"; date.textContent = menuDates[stations[start]?.id]?.[language === "he" ? 0 : 1] || stations[start]?.time?.[language] || "";
       button.append(name,date);
       const group = menuGroups[stations[start]?.id];
-      if (group !== undefined) { button.style.background = menuColors[group]; button.style.color = group === 1 ? "#fff" : "#241300"; if (group < 2) button.style.boxShadow = "inset 0 1px 3px #ffffff66, 0 0 7px "+menuColors[group]+"66"; }
+      if (group !== undefined) { button.style.background = stations[start]?.id === "china-01" ? "#d52229" : menuColors[group]; button.style.color = group === 1 || stations[start]?.id === "china-01" ? "#fff" : "#241300"; if (group < 2) button.style.boxShadow = "inset 0 1px 3px #ffffff66, 0 0 7px "+menuColors[group]+"66"; }
       button.disabled = start < 0;
       button.addEventListener("click", () => {
         closePeriodMenu();
